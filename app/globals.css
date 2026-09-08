@@ -32,7 +32,7 @@
   }
 
   .page-hero {
-    @apply relative flex h-[min(28rem,48svh)] min-h-[17rem] items-center overflow-hidden bg-brand-dark;
+    @apply relative flex h-[min(40rem,68svh)] min-h-[22rem] items-center overflow-hidden bg-brand-dark;
   }
 
   .page-hero-inner {
