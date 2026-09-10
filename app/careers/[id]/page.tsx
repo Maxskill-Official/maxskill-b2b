@@ -45,7 +45,7 @@ export default async function JobPostingPage({ params }: JobPostingPageProps) {
         titleClassName="max-w-4xl break-keep"
       />
 
-      <section className="section-container py-16 sm:py-20">
+      <section className="section-container pb-16 pt-8 sm:pb-20 sm:pt-10">
         <CareersBanner />
 
         <div className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-brand-card sm:mt-12">

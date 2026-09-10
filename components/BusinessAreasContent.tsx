@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import type { BusinessArea, FeaturedProject } from "@/data/businessAreas";
@@ -26,7 +25,7 @@ interface BusinessAreasContentProps {
 function FeaturedProjects({ projects }: { projects: FeaturedProject[] }) {
   if (projects.length === 0) {
     return (
-      <p className="text-sm text-white/60">대표 프로젝트는 준비 중입니다.</p>
+      <p className="text-sm text-white/60">주요 수행 프로젝트는 준비 중입니다.</p>
     );
   }
 
@@ -120,15 +119,9 @@ export default function BusinessAreasContent({
             </div>
 
             <div className="mt-14 sm:mt-16">
-              <div className="mb-6 flex flex-col gap-4 sm:mb-8 sm:flex-row sm:items-end sm:justify-between">
-                <h3 className="text-xl font-bold text-brand-blue-light">대표 프로젝트</h3>
-                <Link
-                  href={`/projects/list#${encodeURIComponent(area.id)}`}
-                  className="inline-flex shrink-0 rounded-full border border-white/30 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:border-white hover:bg-white/10"
-                >
-                  프로젝트 리스트
-                </Link>
-              </div>
+              <h3 className="mb-6 text-xl font-bold text-brand-blue-light sm:mb-8">
+                주요 수행 프로젝트
+              </h3>
               <FeaturedProjects projects={area.featured} />
             </div>
           </div>

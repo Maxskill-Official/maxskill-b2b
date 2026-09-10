@@ -10,7 +10,7 @@ export default function ContactPage() {
     <main>
       <PageHero subtitle="Contact Us" title="문의하기" />
 
-      <section className="section-container py-20 sm:py-28">
+      <section className="section-container pb-20 pt-8 sm:pb-28 sm:pt-10">
         <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-2 lg:items-stretch lg:gap-16">
           <div>
             <h2 className="text-2xl font-bold text-white">연락처 정보</h2>

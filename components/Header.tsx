@@ -13,7 +13,11 @@ function isServicesPath(pathname: string) {
 }
 
 function isProjectsPath(pathname: string) {
-  return pathname === "/projects" || pathname.startsWith("/projects/");
+  return pathname === "/projects";
+}
+
+function isPerformancePath(pathname: string) {
+  return pathname === "/projects/list";
 }
 
 function isCareersPath(pathname: string) {
@@ -30,10 +34,12 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [projectsOpen, setProjectsOpen] = useState(false);
+  const [performanceOpen, setPerformanceOpen] = useState(false);
   const [careersOpen, setCareersOpen] = useState(false);
   const [activeHash, setActiveHash] = useState("");
   const servicesActive = isServicesPath(pathname);
   const projectsActive = isProjectsPath(pathname);
+  const performanceActive = isPerformancePath(pathname);
   const careersActive = isCareersPath(pathname);
 
   useEffect(() => {
@@ -61,7 +67,7 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-12 lg:flex xl:gap-16 2xl:gap-20">
+        <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 lg:flex xl:gap-12 2xl:gap-16">
           <Link
             href="/about"
             className={`nav-link transition-colors ${
@@ -141,6 +147,43 @@ export default function Header() {
                       }`}
                     >
                       {service.title}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          <div className="group relative">
+            <Link
+              href="/projects/list"
+              className={`nav-link transition-colors ${
+                performanceActive
+                  ? "text-brand-blue"
+                  : "text-gray-200 hover:text-white"
+              }`}
+            >
+              수행실적
+            </Link>
+
+            <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-36 -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100">
+              <div className="overflow-hidden rounded-xl border border-white/10 bg-brand-dark shadow-2xl">
+                {projectCategories.map((category) => {
+                  const href = `/projects/list#${encodeURIComponent(category)}`;
+                  const isActive =
+                    performanceActive && hashMatches(activeHash, category);
+
+                  return (
+                    <Link
+                      key={category}
+                      href={href}
+                      className={`block whitespace-nowrap px-4 py-3.5 text-center text-sm font-semibold transition-colors ${
+                        isActive
+                          ? "bg-brand-blue/15 text-brand-blue"
+                          : "text-gray-200 hover:bg-white/5 hover:text-white"
+                      }`}
+                    >
+                      {category}
                     </Link>
                   );
                 })}
@@ -303,6 +346,46 @@ export default function Header() {
                       }`}
                     >
                       {service.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div>
+              <button
+                type="button"
+                onClick={() => setPerformanceOpen(!performanceOpen)}
+                className={`nav-link flex w-full items-center justify-between ${
+                  performanceActive ? "text-brand-blue" : "text-gray-200"
+                }`}
+              >
+                수행실적
+                <span
+                  className={`text-xs transition-transform ${performanceOpen ? "rotate-180" : ""}`}
+                  aria-hidden="true"
+                >
+                  ▼
+                </span>
+              </button>
+
+              {performanceOpen && (
+                <div className="mt-4 flex flex-col items-center gap-3">
+                  {projectCategories.map((category) => (
+                    <Link
+                      key={category}
+                      href={`/projects/list#${encodeURIComponent(category)}`}
+                      onClick={() => {
+                        setMenuOpen(false);
+                        setPerformanceOpen(false);
+                      }}
+                      className={`text-center text-sm font-semibold ${
+                        performanceActive && hashMatches(activeHash, category)
+                          ? "text-brand-blue"
+                          : "text-gray-300"
+                      }`}
+                    >
+                      {category}
                     </Link>
                   ))}
                 </div>

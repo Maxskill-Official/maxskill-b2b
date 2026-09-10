@@ -12,7 +12,7 @@ export default function PageHero({
   extraBlurs = false,
 }: PageHeroProps) {
   return (
-    <section className="page-hero">
+    <section className="page-hero h-72 min-h-72 sm:h-80 sm:min-h-80">
       <div className="absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-brand-blue/10 blur-3xl" />
       {extraBlurs && (
         <div className="absolute -bottom-40 left-1/4 h-[400px] w-[400px] rounded-full bg-brand-blue/5 blur-3xl" />

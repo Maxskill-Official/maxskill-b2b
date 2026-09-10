@@ -12,7 +12,7 @@ export default async function CareersPage() {
     <main>
       <PageHero subtitle="Careers" title="채용정보" />
 
-      <section className="section-container py-16 sm:py-20">
+      <section className="section-container pb-16 pt-8 sm:pb-20 sm:pt-10">
         <CareersBanner />
 
         <p className="mt-10 text-sm text-gray-400 sm:mt-12">

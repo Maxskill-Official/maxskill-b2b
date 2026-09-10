@@ -34,7 +34,7 @@ export default function ServicesPageContent() {
   }, []);
 
   return (
-    <section className="section-container py-20 sm:py-28">
+    <section className="section-container pb-20 pt-8 sm:pb-28 sm:pt-10">
       <div className="mx-auto max-w-5xl space-y-24 sm:space-y-32">
         {services.map((service, index) => (
           <div key={service.id}>

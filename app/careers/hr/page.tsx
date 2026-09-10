@@ -7,7 +7,7 @@ export default function CareersHrPage() {
     <main>
       <PageHero subtitle="Careers" title="인사제도" />
 
-      <section className="section-container py-16 sm:py-20">
+      <section className="section-container pb-16 pt-8 sm:pb-20 sm:pt-10">
         <CareersBanner />
 
         <div className="mt-14 space-y-14 sm:mt-16 sm:space-y-16">
