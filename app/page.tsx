@@ -1,4 +1,3 @@
-import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
@@ -11,23 +10,6 @@ export default function HomePage() {
     <main>
       <h1 className="sr-only">{companyInfo.name}</h1>
       <HeroSection />
-
-      <section className="flex min-h-[260px] items-center bg-brand-blue sm:min-h-[300px] lg:min-h-[340px]">
-        <div className="section-container py-8 text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            {companyInfo.vision}
-          </h2>
-          <p className="body-copy mx-auto mt-4 max-w-2xl text-white/80">
-            고객 만족을 통해 &apos;Good Company&apos;가 되겠습니다.
-          </p>
-          <Link
-            href="/about"
-            className="mt-8 inline-flex rounded-full bg-brand-blue-dark px-8 py-3.5 text-sm font-bold text-white shadow-md transition-colors hover:brightness-110"
-          >
-            회사소개 보기
-          </Link>
-        </div>
-      </section>
 
       <section className="section-container py-20 sm:py-28">
         <SectionHeading

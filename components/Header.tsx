@@ -85,7 +85,7 @@ export default function Header() {
               사업분야
             </Link>
 
-            <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-44 -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100">
+            <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-36 -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100">
               <div className="overflow-hidden rounded-xl border border-white/10 bg-brand-dark shadow-2xl">
                 {projectCategories.map((category) => {
                   const href = `/projects#${encodeURIComponent(category)}`;
@@ -96,7 +96,7 @@ export default function Header() {
                     <Link
                       key={category}
                       href={href}
-                      className={`block px-5 py-3.5 text-center text-sm font-semibold transition-colors ${
+                      className={`block whitespace-nowrap px-4 py-3.5 text-center text-sm font-semibold transition-colors ${
                         isActive
                           ? "bg-brand-blue/15 text-brand-blue"
                           : "text-gray-200 hover:bg-white/5 hover:text-white"
@@ -122,7 +122,7 @@ export default function Header() {
               업무분야
             </Link>
 
-            <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-60 -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100">
+            <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-36 -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100">
               <div className="overflow-hidden rounded-xl border border-white/10 bg-brand-dark shadow-2xl">
                 {services.map((service) => {
                   const href = `/services#${service.id}`;
@@ -134,7 +134,7 @@ export default function Header() {
                     <Link
                       key={service.id}
                       href={href}
-                      className={`block px-5 py-3.5 text-center text-sm font-semibold transition-colors ${
+                      className={`block whitespace-nowrap px-4 py-3.5 text-center text-sm font-semibold transition-colors ${
                         isActive
                           ? "bg-brand-blue/15 text-brand-blue"
                           : "text-gray-200 hover:bg-white/5 hover:text-white"
@@ -160,7 +160,7 @@ export default function Header() {
               인재채용
             </Link>
 
-            <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-44 -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100">
+            <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-36 -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100">
               <div className="overflow-hidden rounded-xl border border-white/10 bg-brand-dark shadow-2xl">
                 {careersNav.map((item) => {
                   const isActive =
@@ -172,7 +172,7 @@ export default function Header() {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className={`block px-5 py-3.5 text-center text-sm font-semibold transition-colors ${
+                      className={`block whitespace-nowrap px-4 py-3.5 text-center text-sm font-semibold transition-colors ${
                         isActive
                           ? "bg-brand-blue/15 text-brand-blue"
                           : "text-gray-200 hover:bg-white/5 hover:text-white"

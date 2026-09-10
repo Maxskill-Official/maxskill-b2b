@@ -28,7 +28,7 @@ export default function HeroSlideshow({
   }, [slides.length]);
 
   return (
-    <section className="page-hero">
+    <section className="page-hero h-[min(50rem,82svh)] min-h-[32rem]">
       <HeroBackgroundSlides slides={slides} activeIndex={activeIndex} />
 
       <div className="page-hero-inner">
