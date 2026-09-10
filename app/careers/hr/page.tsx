@@ -70,7 +70,7 @@ export default function CareersHrPage() {
                             </ul>
                           ) : (
                             <span className="text-sm text-gray-500 sm:text-base">
-                              —
+                              -
                             </span>
                           )}
                         </td>

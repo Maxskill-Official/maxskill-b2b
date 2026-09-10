@@ -11,11 +11,6 @@ export default function AboutPage() {
         <h1 className="page-title mt-5 max-w-3xl">
           회사소개
         </h1>
-        <p className="body-copy mt-6 max-w-4xl text-base text-gray-300 sm:text-lg">
-          화공, 발전, LNG 분야 플랜트 엔지니어링 전문기업
-          <br />
-          Piping Design, Stress Analysis, 3D CAD, 설계 IT
-        </p>
       </HeroSlideshow>
 
       <section className="flex min-h-[260px] items-center bg-brand-blue sm:min-h-[300px] lg:min-h-[340px]">

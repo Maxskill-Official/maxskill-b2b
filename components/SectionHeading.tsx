@@ -19,13 +19,13 @@ export default function SectionHeading({
         {label}
       </p>
       <h2
-        className={`mt-3 text-3xl font-bold tracking-tight sm:text-4xl ${light ? "text-white" : "text-white"}`}
+        className="mt-3 text-3xl font-bold tracking-tight text-brand-blue-light sm:text-4xl"
       >
         {title}
       </h2>
       {description && (
         <p
-          className={`body-copy mt-4 md:whitespace-nowrap ${light ? "text-white/70" : "text-gray-400"}`}
+          className={`readable-copy mt-5 md:whitespace-nowrap ${light ? "text-white/80" : ""}`}
         >
           {description}
         </p>

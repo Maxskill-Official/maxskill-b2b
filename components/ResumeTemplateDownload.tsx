@@ -18,7 +18,7 @@ export default function ResumeTemplateDownload({
           : "rounded-2xl border border-white/10 px-5 py-6 sm:px-7"
       }
     >
-      <p className="font-bold text-white">▣ 이력서 양식 다운로드</p>
+      <p className="font-bold text-white">이력서 양식 다운로드</p>
       <a
         href={resumeTemplateHref}
         download={resumeTemplateDownloadName}

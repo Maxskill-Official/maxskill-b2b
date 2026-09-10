@@ -15,7 +15,7 @@ const columns = [
 ] as const;
 
 const serviceLegend =
-  "M : Modeling · D : Design · S : Stress · C : Construction Supervisor";
+  "M: Modeling, D: Design, S: Stress, C: Construction Supervisor";
 
 const categoryLabels: Record<
   ProjectCategory,

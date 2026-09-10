@@ -54,4 +54,8 @@
   .body-copy {
     @apply break-keep leading-8;
   }
+
+  .readable-copy {
+    @apply break-keep leading-[1.95] text-brand-tan-light;
+  }
 }

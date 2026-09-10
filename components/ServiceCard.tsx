@@ -46,19 +46,19 @@ export default function ServiceCard({
       </div>
 
       <div className="flex flex-1 flex-col p-8 sm:p-10">
-        <h3 className="whitespace-nowrap text-xl font-bold text-white">{title}</h3>
-        <p className="body-copy mt-4 flex-1 text-sm text-gray-400">
+        <h3 className="whitespace-nowrap text-xl font-bold text-brand-blue-light">{title}</h3>
+        <p className="readable-copy mt-5 flex-1 text-[0.95rem] leading-[1.95]">
           {summary}
         </p>
 
         {items.length > 0 && (
-          <ul className="mt-6 space-y-2">
+          <ul className="mt-8 space-y-3.5">
             {items.map((item) => (
               <li
                 key={item}
-                className="flex items-center gap-2 text-sm text-gray-300"
+                className="readable-copy flex items-start gap-2.5 text-[0.95rem] leading-[1.85]"
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-brand-blue" />
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-blue" />
                 {item}
               </li>
             ))}

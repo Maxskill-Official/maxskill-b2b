@@ -40,7 +40,7 @@ function OutlineSection({
 
   return (
     <div className="border-t border-dashed border-white/15 py-5 first:border-t-0 first:pt-0 last:pb-0">
-      <p className="font-bold text-white">▣ {title}</p>
+      <p className="font-bold text-white">{title}</p>
       <ul className="mt-3 space-y-1.5">
         {items.map((item) => (
           <li key={item} className="body-copy text-sm text-gray-300">

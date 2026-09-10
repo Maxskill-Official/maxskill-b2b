@@ -74,14 +74,14 @@ function renderServiceItemCard(
         <p
           className={
             featured
-              ? "text-lg font-semibold text-white sm:text-xl"
-              : "font-semibold text-white"
+              ? "text-lg font-semibold text-brand-blue-light sm:text-xl"
+              : "font-semibold text-brand-blue-light"
           }
         >
           {item.name}
         </p>
         {item.description ? (
-          <p className="body-copy mt-2 text-xs text-gray-400 sm:text-sm">
+          <p className="readable-copy mt-3 text-sm leading-[1.9] sm:text-[0.95rem]">
             {item.description}
           </p>
         ) : null}
@@ -110,10 +110,10 @@ export default function ServiceDetail({
     >
       <div className="p-8 sm:p-10 lg:p-12">
         <p className="page-subtitle">Service</p>
-        <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+        <h2 className="mt-3 text-3xl font-bold text-brand-blue-light sm:text-4xl">
           {service.title}
         </h2>
-        <p className="body-copy mt-6 text-base font-medium text-brand-blue sm:text-lg">
+        <p className="readable-copy mt-6 text-base font-medium leading-[1.9] text-brand-blue sm:text-lg sm:leading-[2]">
           {service.summary}
         </p>
       </div>
@@ -142,11 +142,11 @@ export default function ServiceDetail({
       </div>
 
       <div className="p-8 sm:p-10 lg:p-12">
-        <div className="space-y-6">
+        <div className="space-y-8">
           {service.intro.map((paragraph) => (
             <p
               key={paragraph.slice(0, 40)}
-              className="body-copy text-base text-gray-300"
+              className="readable-copy text-base leading-[2]"
             >
               {paragraph}
             </p>
@@ -154,11 +154,11 @@ export default function ServiceDetail({
         </div>
 
         {service.highlights.length > 0 && (
-          <ul className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <ul className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {service.highlights.map((highlight) => (
               <li
                 key={highlight}
-                className="body-copy flex items-start gap-3 rounded-xl border border-brand-card-border bg-brand-dark/50 px-4 py-3 text-sm text-gray-200"
+                className="readable-copy flex items-start gap-3 rounded-xl border border-brand-card-border bg-brand-dark/50 px-4 py-4 text-sm leading-[1.85]"
               >
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-blue" />
                 {highlight}
@@ -169,7 +169,7 @@ export default function ServiceDetail({
 
         {service.platformLogos && service.platformLogos.length > 0 && (
           <div className="mt-10">
-            <p className="text-sm font-semibold text-white">3D Platform</p>
+            <p className="text-sm font-semibold text-brand-blue-light">3D Platform</p>
             <div className="mt-4 flex flex-wrap items-center gap-3">
               {service.platformLogos.map((logo) => (
                 <div
@@ -195,19 +195,19 @@ export default function ServiceDetail({
               key={section.title}
               className="rounded-xl border border-brand-card-border bg-brand-dark/40 px-5 py-6 sm:px-6"
             >
-              <h3 className="text-xl font-bold text-white">{section.title}</h3>
+              <h3 className="text-xl font-bold text-brand-blue-light">{section.title}</h3>
               <div className="mt-2 h-px w-full bg-brand-card-border" />
               {section.description ? (
-                <p className="body-copy mt-4 text-sm text-gray-400">
+                <p className="readable-copy mt-5 text-sm leading-[1.95]">
                   {section.description}
                 </p>
               ) : null}
 
-              <ul className="mt-5 space-y-2.5">
+              <ul className="mt-5 space-y-3.5">
                 {section.items.map((item) => (
                   <li
                     key={item.name}
-                    className="body-copy flex items-start gap-3 text-sm text-gray-200"
+                    className="readable-copy flex items-start gap-3 text-sm leading-[1.85]"
                   >
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-blue" />
                     {item.name}
@@ -220,13 +220,13 @@ export default function ServiceDetail({
         )}
 
         {stackedSections.length > 0 && (
-          <div className="mt-14 space-y-14">
+          <div className="mt-16 space-y-16">
             {stackedSections.map((section) => (
               <div key={section.title}>
-                <h3 className="text-xl font-bold text-white">{section.title}</h3>
+                <h3 className="text-xl font-bold text-brand-blue-light">{section.title}</h3>
                 <div className="mt-2 h-px w-full bg-brand-card-border" />
                 {section.description ? (
-                  <p className="body-copy mt-4 text-sm text-gray-400">
+                  <p className="readable-copy mt-5 text-sm leading-[1.95]">
                     {section.description}
                   </p>
                 ) : null}
@@ -236,13 +236,13 @@ export default function ServiceDetail({
                     {section.items.map((item) => (
                       <li
                         key={item.name}
-                        className="body-copy flex items-start gap-3 rounded-xl border border-brand-card-border bg-brand-dark/40 px-4 py-3 text-sm text-gray-200"
+                        className="readable-copy flex items-start gap-3 rounded-xl border border-brand-card-border bg-brand-dark/40 px-4 py-4 text-sm leading-[1.85]"
                       >
                         <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-blue" />
                         <span>
                           {item.name}
                           {item.description ? (
-                            <span className="body-copy mt-1.5 block text-xs text-gray-400 sm:text-sm">
+                            <span className="readable-copy mt-2 block text-sm leading-[1.9]">
                               {item.description}
                             </span>
                           ) : null}

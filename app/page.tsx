@@ -36,7 +36,7 @@ export default function HomePage() {
           description="화공, 발전, LNG, 산업설비"
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2">
           {businessAreas.map((area) => (
             <BusinessAreaCard key={area.id} area={area} />
           ))}
@@ -49,7 +49,7 @@ export default function HomePage() {
           title="업무분야"
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2">
           {services.map((service) => (
             <ServiceCard
               key={service.id}

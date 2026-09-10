@@ -42,13 +42,13 @@ function FeaturedProjects({ projects }: { projects: FeaturedProject[] }) {
               {project.year}
             </p>
           )}
-          <h3 className="mt-3 text-lg font-bold leading-snug text-white">
+          <h3 className="mt-3 text-lg font-bold leading-snug text-brand-blue-light">
             {project.displayName}
           </h3>
-          <p className="mt-3 text-sm font-medium text-white/80">
+          <p className="mt-3 text-sm font-medium text-brand-tan-light">
             {project.client}
           </p>
-          <p className="mt-1 text-sm text-white/55">{project.location}</p>
+          <p className="mt-1 text-sm text-brand-tan-light/80">{project.location}</p>
         </article>
       ))}
     </div>
@@ -94,10 +94,10 @@ export default function BusinessAreasContent({
           <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/15 to-black/5" />
 
           <div className="section-container relative flex w-full flex-1 flex-col justify-between py-20 sm:py-24 lg:py-28">
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)] lg:gap-16">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)] lg:gap-20">
               <div>
                 <p className="page-subtitle">Business Area</p>
-                <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+                <h2 className="mt-3 text-3xl font-bold text-brand-blue-light sm:text-4xl">
                   {area.title}
                 </h2>
                 {area.titleEn !== area.title && (
@@ -107,11 +107,11 @@ export default function BusinessAreasContent({
                 )}
               </div>
 
-              <div className="space-y-5">
+              <div className="max-w-3xl space-y-8">
                 {area.paragraphs.map((paragraph) => (
                   <p
                     key={paragraph.slice(0, 40)}
-                    className="body-copy text-base text-white/85"
+                    className="readable-copy text-base text-brand-blue-light sm:text-[1.05rem] sm:leading-[2.05]"
                   >
                     {paragraph}
                   </p>
@@ -119,9 +119,9 @@ export default function BusinessAreasContent({
               </div>
             </div>
 
-            <div className="mt-12 sm:mt-14">
+            <div className="mt-14 sm:mt-16">
               <div className="mb-6 flex flex-col gap-4 sm:mb-8 sm:flex-row sm:items-end sm:justify-between">
-                <h3 className="text-xl font-bold text-white">대표 프로젝트</h3>
+                <h3 className="text-xl font-bold text-brand-blue-light">대표 프로젝트</h3>
                 <Link
                   href={`/projects/list#${encodeURIComponent(area.id)}`}
                   className="inline-flex shrink-0 rounded-full border border-white/30 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:border-white hover:bg-white/10"

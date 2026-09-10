@@ -22,7 +22,7 @@ export const businessAreas: BusinessArea[] = [
     titleEn: "Chemical & Petrochemical",
     paragraphs: [
       "에틸렌 크래커(Ethylene Cracker), 폴리프로필렌(Polypropylene), 암모니아(Ammonia) 등 석유화학 및 Gas 플랜트의 배관 설계에 특화된 엔지니어링 서비스를 제공합니다.",
-      "고온·고압 및 저온·저압의 다양한 공정 조건을 고려하여 배관 설계를 수행하며, 배관 스트레스 해석과 서포트 설계를 체계적으로 연계하여 안전성과 신뢰성을 확보한 최적의 배관 설계 솔루션을 제공합니다.",
+      "고온 고압 및 저온 저압의 다양한 공정 조건을 고려하여 배관 설계를 수행하며, 배관 스트레스 해석과 서포트 설계를 체계적으로 연계하여 안전성과 신뢰성을 확보한 최적의 배관 설계 솔루션을 제공합니다.",
     ],
     featuredNames: [
       { match: "여수 금호폴리켐", display: "여수 금호폴리켐 EPDM PLANT" },
@@ -53,7 +53,7 @@ export const businessAreas: BusinessArea[] = [
     title: "LNG",
     titleEn: "LNG Plant",
     paragraphs: [
-      "LNG 인수기지 및 저장·기화·송출 설비의 배관 설계 서비스를 제공합니다.",
+      "LNG 인수기지 및 저장, 기화, 송출 설비의 배관 설계 서비스를 제공합니다.",
       "초저온 및 고압의 극한 운전 조건을 고려한 배관 설계와 응력 해석을 통해 안전성과 신뢰성을 확보하고, LNG 플랜트의 안정적인 운영을 지원하는 배관 설계 솔루션을 제공합니다.",
     ],
     featuredNames: [

@@ -29,13 +29,13 @@ export default async function ProjectsListPage() {
               href="/projects"
               className="mt-3 inline-block text-sm font-medium text-brand-blue hover:text-brand-blue-dark"
             >
-              ← 사업분야
+              사업분야로
             </Link>
           </div>
           <p className="text-sm font-medium text-gray-400">
             Total {projectStats.total} Projects
             {source === "sheet" && (
-              <span className="ml-2 text-brand-blue">· Google Sheet 연동</span>
+              <span className="ml-2 text-brand-blue">Google Sheet 연동</span>
             )}
           </p>
         </div>
