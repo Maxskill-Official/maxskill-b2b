@@ -96,7 +96,7 @@ export default function Header() {
                     <Link
                       key={category}
                       href={href}
-                      className={`block px-5 py-3.5 text-sm font-semibold transition-colors ${
+                      className={`block px-5 py-3.5 text-center text-sm font-semibold transition-colors ${
                         isActive
                           ? "bg-brand-blue/15 text-brand-blue"
                           : "text-gray-200 hover:bg-white/5 hover:text-white"
@@ -134,7 +134,7 @@ export default function Header() {
                     <Link
                       key={service.id}
                       href={href}
-                      className={`block px-5 py-3.5 text-sm font-semibold transition-colors ${
+                      className={`block px-5 py-3.5 text-center text-sm font-semibold transition-colors ${
                         isActive
                           ? "bg-brand-blue/15 text-brand-blue"
                           : "text-gray-200 hover:bg-white/5 hover:text-white"
@@ -172,7 +172,7 @@ export default function Header() {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className={`block px-5 py-3.5 text-sm font-semibold transition-colors ${
+                      className={`block px-5 py-3.5 text-center text-sm font-semibold transition-colors ${
                         isActive
                           ? "bg-brand-blue/15 text-brand-blue"
                           : "text-gray-200 hover:bg-white/5 hover:text-white"
@@ -245,7 +245,7 @@ export default function Header() {
               </button>
 
               {projectsOpen && (
-                <div className="mt-4 flex flex-col gap-3 border-l border-white/10 pl-4">
+                <div className="mt-4 flex flex-col items-center gap-3">
                   {projectCategories.map((category) => (
                     <Link
                       key={category}
@@ -254,7 +254,7 @@ export default function Header() {
                         setMenuOpen(false);
                         setProjectsOpen(false);
                       }}
-                      className={`text-sm font-semibold ${
+                      className={`text-center text-sm font-semibold ${
                         pathname === "/projects" &&
                         hashMatches(activeHash, category)
                           ? "text-brand-blue"
@@ -286,7 +286,7 @@ export default function Header() {
               </button>
 
               {servicesOpen && (
-                <div className="mt-4 flex flex-col gap-3 border-l border-white/10 pl-4">
+                <div className="mt-4 flex flex-col items-center gap-3">
                   {services.map((service) => (
                     <Link
                       key={service.id}
@@ -295,7 +295,7 @@ export default function Header() {
                         setMenuOpen(false);
                         setServicesOpen(false);
                       }}
-                      className={`text-sm font-semibold ${
+                      className={`text-center text-sm font-semibold ${
                         pathname === "/services" &&
                         activeHash === `#${service.id}`
                           ? "text-brand-blue"
@@ -327,7 +327,7 @@ export default function Header() {
               </button>
 
               {careersOpen && (
-                <div className="mt-4 flex flex-col gap-3 border-l border-white/10 pl-4">
+                <div className="mt-4 flex flex-col items-center gap-3">
                   {careersNav.map((item) => (
                     <Link
                       key={item.href}
@@ -336,7 +336,7 @@ export default function Header() {
                         setMenuOpen(false);
                         setCareersOpen(false);
                       }}
-                      className={`text-sm font-semibold ${
+                      className={`text-center text-sm font-semibold ${
                         pathname === item.href
                           ? "text-brand-blue"
                           : "text-gray-300"
