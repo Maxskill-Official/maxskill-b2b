@@ -19,9 +19,9 @@ export function HeroBackgroundSlides({
           }`}
           aria-hidden={index !== activeIndex}
         >
-          {/* 원본 파일 그대로 사용 (Next.js 압축 없음) + inset으로 전경 넓게 */}
+          {/* cover가 화면을 빈틈없이 채우는 최소 크기로 표시 */}
           <div
-            className="absolute -inset-[4%] bg-cover bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-no-repeat"
             style={{
               backgroundImage: `url(${slide.src})`,
               backgroundPosition: slide.position,
