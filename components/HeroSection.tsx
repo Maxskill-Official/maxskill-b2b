@@ -25,7 +25,7 @@ export default function HeroSection() {
       <HeroBackgroundSlides slides={heroSlides} activeIndex={activeIndex} />
 
       <div className="page-hero-inner items-center text-center">
-        <div className="relative z-20 max-w-5xl translate-y-8 sm:translate-y-10">
+        <div className="relative z-20 max-w-5xl translate-y-20 sm:translate-y-24 lg:translate-y-32">
           <h2 className="text-2xl font-bold leading-tight text-white drop-shadow-lg sm:text-3xl lg:text-4xl">
             {companyInfo.vision}
           </h2>

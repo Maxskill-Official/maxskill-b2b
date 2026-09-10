@@ -18,11 +18,11 @@ export const companyInfo = {
 };
 
 export const history = [
-  { year: "2004.10", event: "회사 설립" },
+  { year: "2004.10", event: "(주)맥스킬 설립" },
   { year: "2004.12", event: "고용노동부 인력파견업 등록" },
   { year: "2004.12", event: "한국엔지니어링협회 등록" },
   { year: "2010.05", event: "KSA 품질경영 ISO9001 인증 획득" },
-  { year: "2025.05", event: "아키텍처 연구개발실 설립" },
+  { year: "2025.05", event: "아키텍처 연구개발실 개소" },
 ];
 
 export { services, getServiceCardItems } from "@/data/services";

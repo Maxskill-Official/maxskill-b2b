@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SectionHeading from "@/components/SectionHeading";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import { companyInfo, history } from "@/data/company";
 
@@ -28,50 +27,52 @@ export default function AboutPage() {
       </section>
 
       <section className="section-container py-20 sm:py-28">
-        <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,400px)] lg:items-stretch lg:gap-14">
-          <div>
-            <SectionHeading
-              label="History"
-              title="회사 연혁"
-            />
+        <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-0">
+          <div className="flex items-end justify-center">
+            <div className="w-full max-w-[400px]">
+              <p className="page-subtitle">History</p>
+              <h2 className="mt-2 text-2xl font-bold tracking-tight text-brand-blue-light sm:text-3xl">
+                회사 연혁
+              </h2>
 
-            <div className="mt-14 space-y-0">
-              {history.map((item) => (
-                <div
-                  key={item.year + item.event}
-                  className="relative flex gap-8 border-l border-brand-card-border pb-10 pl-8 last:pb-0"
-                >
-                  <span className="absolute -left-2 top-0 flex h-4 w-4 items-center justify-center rounded-full bg-brand-blue" />
-                  <div className="shrink-0">
-                    <p className="brand-font text-sm text-brand-blue">
-                      {item.year}
-                    </p>
+              <div className="mt-8 space-y-0">
+                {history.map((item) => (
+                  <div
+                    key={item.year + item.event}
+                    className="relative flex gap-5 border-l border-brand-card-border pb-4 pl-6 last:pb-0"
+                  >
+                    <span className="absolute -left-1.5 top-1 flex h-3 w-3 items-center justify-center rounded-full bg-brand-blue" />
+                    <div className="shrink-0">
+                      <p className="brand-font text-xs leading-5 text-brand-blue">
+                        {item.year}
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-base font-semibold leading-5 text-white">
+                        {item.event}
+                      </p>
+                      <div className="mt-1.5 h-px w-full bg-brand-card-border" />
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-lg font-semibold text-white">
-                      {item.event}
-                    </p>
-                    <div className="mt-2 h-px w-full bg-brand-card-border" />
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
 
-          <div className="flex flex-col">
-            <div className="relative min-h-[22rem] flex-1 overflow-hidden rounded-2xl border border-brand-card-border bg-brand-card">
+          <div className="flex flex-col items-center justify-end">
+            <div className="relative mx-auto aspect-[20/21] w-full max-w-[200px] overflow-hidden rounded-2xl border border-brand-card-border bg-brand-card">
               <Image
                 src="/images/about/ceo-color.png"
                 alt={`${companyInfo.ceoTitle} ${companyInfo.ceoName}`}
                 fill
                 unoptimized
                 className="object-cover object-[58%_55%]"
-                sizes="(min-width: 1024px) 400px, 100vw"
+                sizes="200px"
                 priority
               />
             </div>
-            <div className="-translate-x-4 mt-4 grid w-full shrink-0 grid-cols-2 items-center gap-3 sm:-translate-x-5">
-              <p className="text-right text-sm font-medium text-white sm:text-base">
+            <div className="mt-3 flex shrink-0 items-center justify-center gap-3">
+              <p className="whitespace-nowrap text-sm font-medium text-white">
                 {companyInfo.ceoTitle} {companyInfo.ceoName}
               </p>
               <Image
@@ -80,7 +81,7 @@ export default function AboutPage() {
                 width={200}
                 height={46}
                 unoptimized
-                className="h-8 w-auto justify-self-start sm:h-9"
+                className="h-8 w-auto"
               />
             </div>
           </div>

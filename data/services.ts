@@ -112,8 +112,7 @@ export const services: Service[] = [
   {
     id: "stress",
     title: "Stress Analysis",
-    summary:
-      "Thermal Analysis, Special Support, Trouble Shooting, 배관 응력 해석",
+    summary: "Thermal Analysis, Special Support, Trouble Shooting",
     intro: [
       "설계 단계에서 Operating, Transient, Occasional Load Case를 검토하고, 현장에서 발생하는 Support 이슈, 진동, Leak 등 긴급 문제에 대한 해석, 대응안을 작성합니다. Piping Design과 연계하여 Stress ISO 도면을 작성합니다.",
       "국내외 화공, 발전, LNG 프로젝트에서 High Temperature, High Pressure 배관, Critical Line에 대한 해석 경험을 보유하고 있으며, Owner, EPC, Contractor 요구 Specification에 맞춘 해석 보고서를 작성합니다.",
@@ -188,8 +187,7 @@ export const services: Service[] = [
   {
     id: "cad",
     title: "3D CAD",
-    summary:
-      "설계의 모든 과정을 3D CAD 기반으로 수행하여 정확성, 효율성, 품질을 향상",
+    summary: "Modeling, Model Check",
     intro: [
       "Piping, Structure, Equipment, Support, Instrument & Electrical, Duct, HVAC 등 전 공종을 3D Model",
       "3D Model 기반으로 Clash Check 및 Design Review를 수행하여 설계 오류를 사전에 검증",
@@ -341,7 +339,7 @@ export const services: Service[] = [
               "S3D, E3D, AutoCAD, Excel/VBA 등 플랫폼 기반 Custom Macro, Report, Interface 개발. 프로젝트 Standard, Template, Check List 자동화와 Line List, 3D Model, ISO/BOM 자동 생성 Workflow를 지원합니다.",
           },
           {
-            name: "3D Total Application",
+            name: "MaxskillWorkPro",
             description:
               "3D 작업의 통일성과 정확성을 높이고 작업시간을 단축하여, 전체적인 Project 품질 향상을 목적으로 개발된 3D 통합 Add-in 프로그램입니다.",
           },

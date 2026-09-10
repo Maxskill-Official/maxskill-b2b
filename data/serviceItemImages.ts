@@ -137,10 +137,11 @@ export const serviceItemImages: Record<
     "object-contain object-center",
     "relative h-56 overflow-hidden bg-brand-dark sm:h-64",
   ),
-  "programming/3D Total Application": {
+  "programming/MaxskillWorkPro": {
     src: "/images/services/maxskill-workpro.png",
-    alt: "3D Total Application, MaxskillWorkPro",
+    alt: "MaxskillWorkPro 기능 현황",
     filename: "maxskill-workpro.png",
+    imageClass: "-mt-[12%]",
     intrinsic: true,
   },
   "programming/P&ID": itemImage(
