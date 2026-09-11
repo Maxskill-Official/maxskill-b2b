@@ -27,7 +27,7 @@ export default function JobPostingTable({ postings }: JobPostingTableProps) {
               {[
                 { label: "번호", accent: "text-brand-blue" },
                 { label: "공고일자", accent: "text-brand-blue" },
-                { label: "채용명", accent: "text-brand-tan" },
+                { label: "채용공고", accent: "text-brand-tan" },
                 { label: "접수기간", accent: "text-brand-blue" },
                 { label: "상태", accent: "text-brand-blue" },
               ].map((col) => (

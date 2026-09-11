@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 export default async function ProjectsListPage() {
-  const { groupedProjects, projectStats, source } = await getProjectsPageData();
+  const { groupedProjects, projectStats } = await getProjectsPageData();
 
   return (
     <main>
@@ -27,9 +27,6 @@ export default async function ProjectsListPage() {
           </div>
           <p className="text-sm font-medium text-gray-400">
             Total {projectStats.total} Projects
-            {source === "sheet" && (
-              <span className="ml-2 text-brand-blue">Google Sheet 연동</span>
-            )}
           </p>
         </div>
 

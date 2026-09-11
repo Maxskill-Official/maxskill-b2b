@@ -19,7 +19,7 @@ export const businessAreas: BusinessArea[] = [
   {
     id: "화공",
     title: "화공",
-    titleEn: "Chemical & Petrochemical",
+    titleEn: "Petrochemical Plant",
     paragraphs: [
       "에틸렌 크래커(Ethylene Cracker), 폴리프로필렌(Polypropylene), 암모니아(Ammonia) 등 석유화학 및 Gas 플랜트의 배관 설계에 특화된 엔지니어링 서비스를 제공합니다.",
       "고온 고압 및 저온 저압의 다양한 공정 조건을 고려하여 배관 설계를 수행하며, 배관 스트레스 해석과 서포트 설계를 체계적으로 연계하여 안전성과 신뢰성을 확보한 최적의 배관 설계 솔루션을 제공합니다.",
@@ -35,7 +35,7 @@ export const businessAreas: BusinessArea[] = [
   {
     id: "발전",
     title: "발전",
-    titleEn: "Power",
+    titleEn: "Power Plant",
     paragraphs: [
       "POWER BLOCK, BOP 및 HRSG를 포함한 발전 플랜트의 배관 설계 서비스를 제공합니다.",
       "발전설비의 운전 조건과 배관 시스템의 특성을 종합적으로 고려하여 배관 배치, 스트레스 해석 및 서포트 설계를 수행하며, 발전 플랜트의 안정적인 운전과 효율적인 설계를 위한 최적의 엔지니어링 솔루션을 제공합니다.",

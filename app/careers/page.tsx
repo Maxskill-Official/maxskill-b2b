@@ -16,7 +16,7 @@ export default async function CareersPage() {
         <CareersBanner />
 
         <p className="mt-10 text-sm text-gray-400 sm:mt-12">
-          상세한 정보를 원하시면 해당 채용명을 클릭하시기 바랍니다.
+          상세 내용은 해당 공고를 클릭하여 확인해 주세요.
         </p>
 
         <div className="mt-6">

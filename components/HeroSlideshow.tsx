@@ -31,7 +31,7 @@ export default function HeroSlideshow({
     <section className="page-hero h-[min(50rem,82svh)] min-h-[32rem]">
       <HeroBackgroundSlides slides={slides} activeIndex={activeIndex} />
 
-      <div className="page-hero-inner">
+      <div className="page-hero-inner justify-start pt-[6.5rem] sm:pt-[7.25rem]">
         <div className="page-hero-copy">{children}</div>
       </div>
 

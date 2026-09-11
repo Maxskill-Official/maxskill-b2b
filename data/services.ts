@@ -268,7 +268,7 @@ export const services: Service[] = [
   {
     id: "programming",
     title: "설계 IT",
-    summary: "Admin, Program",
+    summary: "Admin, Programming",
     intro: [],
     highlights: [],
     sectionsLayout: "split",
@@ -289,7 +289,7 @@ export const services: Service[] = [
         ],
       },
       {
-        title: "Program",
+        title: "Programming",
         description: "",
         display: "list",
         items: [
@@ -329,7 +329,7 @@ export const services: Service[] = [
         ],
       },
       {
-        title: "Program",
+        title: "Programming",
         description: "",
         display: "featured",
         items: [
@@ -352,7 +352,7 @@ export const services: Service[] = [
       },
     ],
     image: serviceBanner("programming.jpg"),
-    imageAlt: "설계 IT, Program",
+    imageAlt: "설계 IT, Programming",
   },
 ];
 
