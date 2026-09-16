@@ -2,9 +2,9 @@ export const heroSlides = [
   {
     category: "화공",
     label: "Petrochemical Plant",
-    src: "/images/hero/lng.jpg",
+    src: "/images/hero/chemical.jpg",
     alt: "석유화학 플랜트 전경",
-    position: "center 52%",
+    position: "center 48%",
   },
   {
     category: "발전",

@@ -29,7 +29,7 @@ export const businessAreas: BusinessArea[] = [
       "사우디 APCO PHD/UTOS Project",
       "Sarawak PetChem Methanol",
     ],
-    image: "/images/hero/lng.jpg",
+    image: "/images/hero/chemical.jpg",
     imageAlt: "석유화학 플랜트 전경",
   },
   {
