@@ -81,6 +81,9 @@ function parseCsv(text: string): string[][] {
 
 function normalizeCategory(value: string): ProjectCategory | null {
   const trimmed = value.trim();
+  if (trimmed === "Gas/LNG" || trimmed.toLowerCase() === "gas/lng") {
+    return "LNG";
+  }
   return CATEGORIES.includes(trimmed as ProjectCategory)
     ? (trimmed as ProjectCategory)
     : null;

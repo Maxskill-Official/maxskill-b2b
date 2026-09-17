@@ -2,6 +2,10 @@ import Link from "next/link";
 import type { BusinessArea } from "@/data/businessAreas";
 
 export default function BusinessAreaCard({ area }: { area: BusinessArea }) {
+  const preview = area.subAreas?.length
+    ? area.subAreas.map((sub) => sub.paragraphs[0]).filter(Boolean)
+    : area.paragraphs;
+
   return (
     <Link
       href={`/projects#${encodeURIComponent(area.id)}`}
@@ -22,9 +26,11 @@ export default function BusinessAreaCard({ area }: { area: BusinessArea }) {
             {area.titleEn}
           </p>
         )}
-        <p className="readable-copy mt-5 flex-1 text-[0.95rem] text-brand-blue-light">
-          {area.paragraphs[0]}
-        </p>
+        <div className="readable-copy mt-5 flex-1 space-y-3 text-[0.95rem] text-brand-blue-light">
+          {preview.map((text) => (
+            <p key={text}>{text}</p>
+          ))}
+        </div>
       </div>
     </Link>
   );

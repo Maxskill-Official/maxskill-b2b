@@ -14,8 +14,8 @@ export const heroSlides = [
     position: "center 42%",
   },
   {
-    category: "LNG",
-    label: "LNG Plant",
+    category: "Gas/LNG",
+    label: "Gas/LNG",
     src: "/images/hero/lng-tanks.png",
     alt: "LNG 저장탱크 전경",
     position: "center 50%",

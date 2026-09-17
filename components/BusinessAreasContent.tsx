@@ -22,6 +22,23 @@ interface BusinessAreasContentProps {
   areas: BusinessAreaView[];
 }
 
+function ScopeLines({ lines }: { lines: string[][] }) {
+  if (lines.length === 0) return null;
+
+  return (
+    <div className="space-y-1">
+      {lines.map((items) => (
+        <p
+          key={items.join(" · ")}
+          className="whitespace-nowrap text-[0.95rem] font-medium leading-snug text-sky-200 [text-shadow:0_1px_8px_rgba(0,0,0,0.75)] sm:text-base lg:text-[1.05rem]"
+        >
+          {items.join(" · ")}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 function FeaturedProjects({ projects }: { projects: FeaturedProject[] }) {
   if (projects.length === 0) {
     return (
@@ -93,27 +110,47 @@ export default function BusinessAreasContent({
           <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/15 to-black/5" />
 
           <div className="section-container relative flex w-full flex-1 flex-col justify-between py-20 sm:py-24 lg:py-28">
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)] lg:gap-20">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(12rem,0.55fr)_minmax(0,1fr)] lg:items-start lg:gap-12">
               <div>
                 <p className="page-subtitle">Business Area</p>
-                <h2 className="mt-3 text-3xl font-bold text-brand-blue-light sm:text-4xl">
+                <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
                   {area.title}
                 </h2>
                 {area.titleEn !== area.title && (
-                  <p className="mt-3 text-base font-medium text-brand-blue sm:text-lg">
+                  <p className="mt-3 text-base font-medium text-sky-300 sm:text-lg">
                     {area.titleEn}
                   </p>
                 )}
               </div>
 
-              <div className="max-w-3xl space-y-8">
+              <div className="min-w-0 space-y-3 overflow-x-auto lg:overflow-visible lg:pt-36 xl:pt-44">
                 {area.paragraphs.map((paragraph) => (
                   <p
                     key={paragraph.slice(0, 40)}
-                    className="readable-copy text-base text-brand-blue-light sm:text-[1.05rem] sm:leading-[2.05]"
+                    className="break-keep text-lg font-medium leading-snug text-white sm:text-xl sm:leading-snug"
                   >
                     {paragraph}
                   </p>
+                ))}
+                <ScopeLines lines={area.scopes} />
+                {area.subAreas?.map((sub) => (
+                  <div key={sub.title} className="space-y-2 pt-2">
+                    <h3 className="text-xl font-bold text-white">
+                      {sub.title}
+                      <span className="ml-2 text-base font-medium text-sky-300">
+                        {sub.titleEn}
+                      </span>
+                    </h3>
+                    {sub.paragraphs.map((paragraph) => (
+                      <p
+                        key={paragraph.slice(0, 40)}
+                        className="break-keep text-lg font-medium leading-snug text-white sm:text-xl sm:leading-snug"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                    <ScopeLines lines={sub.scopes} />
+                  </div>
                 ))}
               </div>
             </div>

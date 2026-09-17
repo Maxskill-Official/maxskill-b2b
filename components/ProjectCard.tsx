@@ -37,7 +37,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <span
           className={`brand-font inline-flex rounded-full px-3 py-1 text-[10px] tracking-wider ${categoryStyles[project.category]}`}
         >
-          {project.category}
+          {project.category === "LNG" ? "Gas/LNG" : project.category}
         </span>
         <span className="text-sm font-bold text-black/50">{project.year}</span>
       </div>

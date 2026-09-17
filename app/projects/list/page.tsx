@@ -7,7 +7,7 @@ export const revalidate = 300;
 export const metadata = {
   title: "수행실적 | MAXSKILL",
   description:
-    "최근 10년간 화공, 발전, LNG, 산업설비 분야에서 수행한 프로젝트 목록입니다.",
+    "최근 10년간 화공, 발전, Gas/LNG, 산업설비 분야에서 수행한 프로젝트 목록입니다.",
 };
 
 export default async function ProjectsListPage() {

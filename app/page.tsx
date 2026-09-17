@@ -15,7 +15,7 @@ export default function HomePage() {
         <SectionHeading
           label="Business Areas"
           title="사업분야"
-          description="화공, 발전, LNG, 산업설비"
+          description="화공, 발전, Gas/LNG, 산업설비"
         />
 
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2">

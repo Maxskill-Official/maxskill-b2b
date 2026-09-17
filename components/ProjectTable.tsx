@@ -23,7 +23,7 @@ const categoryLabels: Record<
 > = {
   화공: { ko: "화공", en: "Petrochemical Plant", badge: "bg-brand-tan text-black" },
   발전: { ko: "발전", en: "Power Plant", badge: "bg-brand-blue text-white" },
-  LNG: { ko: "LNG", en: "LNG Plant", badge: "bg-emerald-500 text-white" },
+  LNG: { ko: "Gas/LNG", en: "Gas/LNG", badge: "bg-emerald-500 text-white" },
   산업설비: {
     ko: "산업설비",
     en: "Industrial Facilities",

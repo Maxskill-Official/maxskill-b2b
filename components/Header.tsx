@@ -5,8 +5,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { careersNav } from "@/data/careers";
+import { businessAreas } from "@/data/businessAreas";
 import { projectCategories } from "@/data/projects";
 import { services } from "@/data/services";
+
+function businessAreaLabel(category: (typeof projectCategories)[number]) {
+  return businessAreas.find((area) => area.id === category)?.title ?? category;
+}
 
 function isServicesPath(pathname: string) {
   return pathname === "/services" || pathname.startsWith("/services/");
@@ -108,7 +113,7 @@ export default function Header() {
                           : "text-gray-200 hover:bg-white/5 hover:text-white"
                       }`}
                     >
-                      {category}
+                      {businessAreaLabel(category)}
                     </Link>
                   );
                 })}
@@ -183,7 +188,7 @@ export default function Header() {
                           : "text-gray-200 hover:bg-white/5 hover:text-white"
                       }`}
                     >
-                      {category}
+                      {businessAreaLabel(category)}
                     </Link>
                   );
                 })}
@@ -304,7 +309,7 @@ export default function Header() {
                           : "text-gray-300"
                       }`}
                     >
-                      {category}
+                      {businessAreaLabel(category)}
                     </Link>
                   ))}
                 </div>
@@ -385,7 +390,7 @@ export default function Header() {
                           : "text-gray-300"
                       }`}
                     >
-                      {category}
+                      {businessAreaLabel(category)}
                     </Link>
                   ))}
                 </div>

@@ -8,7 +8,7 @@ export const revalidate = 300;
 export const metadata = {
   title: "사업분야 | MAXSKILL",
   description:
-    "화공, 발전, LNG, 산업설비 분야의 배관 설계 엔지니어링 서비스를 제공합니다.",
+    "화공, 발전, Gas/LNG, 산업설비 분야의 배관 설계 엔지니어링 서비스를 제공합니다.",
 };
 
 export default async function ProjectsPage() {
