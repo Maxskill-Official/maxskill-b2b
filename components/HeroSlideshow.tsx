@@ -28,10 +28,10 @@ export default function HeroSlideshow({
   }, [slides.length]);
 
   return (
-    <section className="page-hero h-[min(28rem,46svh)] min-h-[18rem]">
+    <section className="page-hero !h-auto min-h-[20rem] flex-1">
       <HeroBackgroundSlides slides={slides} activeIndex={activeIndex} />
 
-      <div className="page-hero-inner justify-start pt-6 sm:pt-8">
+      <div className="page-hero-inner justify-start pt-8 sm:pt-10">
         <div className="page-hero-copy">{children}</div>
       </div>
 

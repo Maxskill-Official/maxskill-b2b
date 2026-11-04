@@ -5,26 +5,28 @@ import { companyInfo, history } from "@/data/company";
 export default function AboutPage() {
   return (
     <main>
-      <HeroSlideshow>
-        <p className="page-subtitle">About Us</p>
-        <h1 className="page-title mt-2 max-w-3xl">
-          회사소개
-        </h1>
-      </HeroSlideshow>
+      <div className="flex min-h-[calc(100dvh-6rem)] flex-col">
+        <HeroSlideshow>
+          <p className="page-subtitle">About Us</p>
+          <h1 className="page-title mt-3 max-w-3xl">
+            회사소개
+          </h1>
+        </HeroSlideshow>
 
-      <section className="flex min-h-[220px] items-center bg-brand-blue sm:min-h-[240px] lg:min-h-[260px]">
-        <div className="section-container py-8 text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-white/75">
-            Vision
-          </p>
-          <h2 className="mt-3 whitespace-nowrap text-[clamp(0.85rem,2.1vw,1.85rem)] font-bold text-white sm:text-3xl lg:text-4xl">
-            {companyInfo.vision}
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl whitespace-nowrap break-keep text-sm text-white/80 sm:text-base">
-            고객 만족을 통해 &apos;Good Company&apos;가 되겠습니다.
-          </p>
-        </div>
-      </section>
+        <section className="flex shrink-0 items-center bg-brand-blue py-10 sm:py-12 lg:py-14">
+          <div className="section-container text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-white/75">
+              Vision
+            </p>
+            <h2 className="mt-3 whitespace-nowrap text-[clamp(0.85rem,2.1vw,1.85rem)] font-bold text-white sm:text-3xl lg:text-4xl">
+              {companyInfo.vision}
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl whitespace-nowrap break-keep text-sm text-white/80 sm:text-base">
+              고객 만족을 통해 &apos;Good Company&apos;가 되겠습니다.
+            </p>
+          </div>
+        </section>
+      </div>
 
       <section className="section-container py-20 sm:py-28">
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-0">
