@@ -53,7 +53,7 @@ export const serviceItemImages: Record<
     "E3D Plant Model, 설비, 구조, 배관 Plot Plan 배치",
     "object-cover object-center",
   ),
-  "piping/3D Plan Dwg., ISO Dwg.": itemImage(
+  "piping/Piping Plan Dwg., ISO Dwg.": itemImage(
     "piping-iso-dwg.jpg",
     "CAESAR II Isometric, 시공용 ISO 도면, Support, 치수",
     "object-cover object-center",
@@ -69,7 +69,7 @@ export const serviceItemImages: Record<
     "piping-support-detail.jpg",
     "Support Detail Drawing, LOOKING EAST, Section, Base Plate",
     "object-cover object-center",
-    "relative h-56 overflow-hidden bg-black sm:h-64",
+    "relative h-72 overflow-hidden bg-black sm:h-80",
   ),
   "piping/Information Dwg. etc": itemImage(
     "piping-information-dwg.jpg",

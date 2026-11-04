@@ -7,12 +7,12 @@ export default function AboutPage() {
     <main>
       <HeroSlideshow>
         <p className="page-subtitle">About Us</p>
-        <h1 className="page-title mt-5 max-w-3xl">
+        <h1 className="page-title mt-2 max-w-3xl">
           회사소개
         </h1>
       </HeroSlideshow>
 
-      <section className="flex min-h-[260px] items-center bg-brand-blue sm:min-h-[300px] lg:min-h-[340px]">
+      <section className="flex min-h-[220px] items-center bg-brand-blue sm:min-h-[240px] lg:min-h-[260px]">
         <div className="section-container py-8 text-center">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-white/75">
             Vision

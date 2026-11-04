@@ -58,4 +58,10 @@
   .readable-copy {
     @apply break-keep leading-[1.95] text-brand-tan-light;
   }
+
+  .service-desc {
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR",
+      system-ui, sans-serif;
+    @apply break-keep text-[0.95rem] font-normal leading-[1.95] text-brand-tan-light;
+  }
 }

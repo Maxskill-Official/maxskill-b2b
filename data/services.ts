@@ -39,7 +39,7 @@ export const services: Service[] = [
     title: "Piping Design",
     summary: "Planning, Basic Design, Detail Design",
     intro: [
-      "Planning 단계에서는 WBS, 마일스톤 기반 일정 수립과 Mechanical, Instrument, Electrical, Civil 등 유관 공종 간 인터페이스를 조율합니다. Basic Design에서는 Plot Plan을 통해 배관 라우팅, 설비 배치를 작성하고, Detail Design에서는 3D Plan/ISO, Stress ISO, Support Detail, Information 도면을 제공합니다.",
+      "Planning 단계에서는 WBS, 마일스톤 기반 일정 수립과 Mechanical, Instrument, Electrical, Civil 등 유관 공종 간 인터페이스를 조율합니다. Basic Design에서는 Plot Plan을 통해 배관 라우팅, 설비 배치를 작성하고, Detail Design에서는 Piping Plan/ISO, Stress ISO, Support Detail, Information 도면을 작성합니다.",
       "국내외 대형 EPC 프로젝트의 배관 설계를 수행합니다.",
     ],
     highlights: [
@@ -52,17 +52,17 @@ export const services: Service[] = [
       {
         title: "Planning",
         description:
-          "프로젝트 착수 초기부터 설계 일정, 공정, 협업 체계를 수립하여 이후 설계 단계의 품질과 납기를 확보합니다.",
+          "프로젝트 요구사항 및 설계 기준을 검토하고, 배관 설계 범위와 수행 계획을 수립합니다.",
         items: [
           {
             name: "Project Scheduling",
             description:
-              "설계 WBS에 의한 배관설계 마일스톤, M/H 산출 및 일정 관리를 수행합니다.",
+              "프로젝트 일정 및 주요 마일스톤을 수립하고, 배관 설계 진행 현황과 공정별 진척도를 관리합니다.",
           },
           {
             name: "Coordination",
             description:
-              "Mechanical, Instrument, Electrical, Civil, HVAC 등 타 공종과의 인터페이스 조율. 3D 모델, P&ID, Plot Plan 간 정합성 검토 및 설계 변경 사항 공유 체계를 운영합니다.",
+              "발주처 및 유관 공종과의 기술적 협의를 통해 설계 인터페이스를 조정하고 업무를 수행합니다.",
           },
         ],
       },
@@ -81,12 +81,12 @@ export const services: Service[] = [
       {
         title: "Detail Design",
         description:
-          "현장 시공, Stress Analysis,3D 모델링에 직접 연계되는 상세 설계 도면을 작성합니다.",
+          "3D 모델링, 배관 배치, 응력해석 및 ISO 도면 작성 등을 통해 시공에 필요한 상세 설계 도서를 작성합니다.",
         items: [
           {
-            name: "3D Plan Dwg., ISO Dwg.",
+            name: "Piping Plan Dwg., ISO Dwg.",
             description:
-              "3D 모델 기반 Plan 도면 및 Isometric 도면 작성. Line Number, Material, Insulation, Testing 정보를 포함한 시공용 ISO 도면을 제공합니다.",
+              "3D 모델 기반 Plan 도면 및 Isometric 도면 작성. Line Number, Material, Insulation, Testing 정보를 포함한 시공용 ISO 도면을 작성합니다.",
           },
           {
             name: "Stress ISO Dwg.",
@@ -96,7 +96,7 @@ export const services: Service[] = [
           {
             name: "Support Detail Dwg.",
             description:
-              "Pipe Support, Guide, Anchor, Spring Hanger 등 지지대 상세 도면. Standard Support 및 Special Support 설계를 포함합니다.",
+              "배관 하중 및 설계 조건을 고려하여 배관 지지대(Support)의 구조와 설치 상세를 설계하고 제작·시공에 필요한 도면을 작성합니다.",
           },
           {
             name: "Information Dwg. etc",
@@ -127,7 +127,7 @@ export const services: Service[] = [
       {
         title: "Thermal Analysis",
         description:
-          "온도 변화에 따른 배관 관련 열팽창, 응력, 변위를 해석하여 안전한 배관 설계를 지원합니다.",
+          "온도 변화에 따른 배관의 열팽창, 응력, 변위를 해석하여 안전한 배관 설계를 지원합니다.",
         items: [
           {
             name: "Thermal Analysis",
@@ -189,7 +189,7 @@ export const services: Service[] = [
     title: "3D CAD",
     summary: "Modeling, Model Check",
     intro: [
-      "Piping, Structure, Equipment, Support, Instrument & Electrical, Duct, HVAC 등 전 공종을 3D Model",
+      "Piping, Structure, Equipment, Support, Instrument & Electrical, Duct, HVAC 등 전 공종 3D Modeling을 수행합니다.",
       "3D Model 기반으로 Clash Check 및 Design Review를 수행하여 설계 오류를 사전에 검증",
       "Navisworks를 활용한 3D 통합 검토 및 설계 검증",
     ],
@@ -220,27 +220,27 @@ export const services: Service[] = [
       {
         title: "Modeling",
         description:
-          "Piping, Structure, Equipment, Support, Instrument & Electrical, Duct, HVAC 등 전 공종을 3D Model",
+          "Piping, Structure, Equipment, Support, Instrument & Electrical, Duct, HVAC 등 전 공종 3D Modeling을 수행합니다.",
         items: [
           {
             name: "Equip./Structure",
             description:
-              "Pressure Vessel, Heat Exchanger, Pump, Compressor, Steel Structure, Pipe Rack 등 Equipment, Structure 3D 모델링.",
+              "Pressure Vessel, Heat Exchanger, Pump, Compressor, Steel Structure, Pipe Rack 등 Equipment와 Structure를 Modeling 합니다.",
           },
           {
             name: "Piping/Support",
             description:
-              "Piping Route, Valve, Flange, In-line Item, Pipe Support 3D 모델링. ISO 도면 자동 생성을 위한 Attribute 관리.",
+              "Piping Route, Valve, Flange, In-line Item, Pipe Support 3D Modeling 및 ISO 도면 자동 생성을 위한 Attribute를 관리합니다.",
           },
           {
             name: "Instrument & Elec.",
             description:
-              "Instrument, Cable Tray, Conduit, Junction Box, Panel 등 Instrument, Electrical 3D 모델링.",
+              "Instrument Item, Cable Way, Tray, Conduit, Junction Box, Panel 등 Instrument 및 Electrical 공종 Item을 Modeling 합니다.",
           },
           {
             name: "Duct/HVAC Etc.",
             description:
-              "Duct, HVAC Equipment, Fire Protection, Architectural Element 등 부 공종 3D 모델링.",
+              "Duct, HVAC Equipment, Fire Protection, Architectural Element 등을 대부분 공종 Item을 Modeling 합니다.",
           },
         ],
       },

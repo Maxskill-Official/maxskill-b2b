@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 import BusinessAreaCard from "@/components/BusinessAreaCard";
-import { companyInfo, services, getServiceCardItems } from "@/data/company";
+import { companyInfo, services } from "@/data/company";
 import { businessAreas } from "@/data/businessAreas";
 
 export default function HomePage() {
@@ -38,7 +38,6 @@ export default function HomePage() {
               href={`/services#${service.id}`}
               title={service.title}
               summary={service.summary}
-              items={getServiceCardItems(service)}
               image={service.image}
               imageAlt={service.imageAlt}
               imageContain={

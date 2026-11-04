@@ -5,7 +5,6 @@ interface ServiceCardProps {
   href: string;
   title: string;
   summary: string;
-  items: string[];
   image: string;
   imageAlt: string;
   imageContain?: boolean;
@@ -16,7 +15,6 @@ export default function ServiceCard({
   href,
   title,
   summary,
-  items,
   image,
   imageAlt,
   imageContain = false,
@@ -50,20 +48,6 @@ export default function ServiceCard({
         <p className="readable-copy mt-5 flex-1 text-[0.95rem] leading-[1.95]">
           {summary}
         </p>
-
-        {items.length > 0 && (
-          <ul className="mt-8 space-y-3.5">
-            {items.map((item) => (
-              <li
-                key={item}
-                className="readable-copy flex items-start gap-2.5 text-[0.95rem] leading-[1.85]"
-              >
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-blue" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        )}
       </div>
     </Link>
   );

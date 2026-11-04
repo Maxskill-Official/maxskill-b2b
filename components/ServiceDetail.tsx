@@ -81,7 +81,7 @@ function renderServiceItemCard(
           {item.name}
         </p>
         {item.description ? (
-          <p className="readable-copy mt-3 text-sm leading-[1.9] sm:text-[0.95rem]">
+          <p className="service-desc mt-3">
             {item.description}
           </p>
         ) : null}
@@ -145,7 +145,7 @@ export default function ServiceDetail({
                 <h3 className="text-xl font-bold text-brand-blue-light">{section.title}</h3>
                 <div className="mt-2 h-px w-full bg-brand-card-border" />
                 {section.description ? (
-                  <p className="readable-copy mt-5 text-sm leading-[1.95]">
+                  <p className="service-desc mt-5">
                     {section.description}
                   </p>
                 ) : null}
@@ -155,13 +155,13 @@ export default function ServiceDetail({
                     {section.items.map((item) => (
                       <li
                         key={item.name}
-                        className="readable-copy flex items-start gap-3 rounded-xl border border-brand-card-border bg-brand-dark/40 px-4 py-4 text-sm leading-[1.85]"
+                        className="flex items-start gap-3 rounded-xl border border-brand-card-border bg-brand-dark/40 px-4 py-4"
                       >
                         <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-blue" />
                         <span>
                           {item.name}
                           {item.description ? (
-                            <span className="readable-copy mt-2 block text-sm leading-[1.9]">
+                            <span className="service-desc mt-2 block">
                               {item.description}
                             </span>
                           ) : null}

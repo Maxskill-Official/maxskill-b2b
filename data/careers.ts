@@ -1,10 +1,6 @@
 export const careersBannerText =
   "맥스킬에서는 함께 할 유능한 인재를 찾고 있습니다.";
 
-export const careersNav = [
-  { href: "/careers", label: "채용정보" },
-] as const;
-
 /** 채용 상세에서 이력서 양식을 받을 때 쓰는 주소 */
 export const resumeTemplateHref = "/api/resume-template";
 export const resumeTemplateDownloadName = "(주)맥스킬 이력서 양식.xlsx";

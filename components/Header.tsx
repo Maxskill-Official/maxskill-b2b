@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { careersNav } from "@/data/careers";
 import { businessAreas } from "@/data/businessAreas";
 import { projectCategories } from "@/data/projects";
 import { services } from "@/data/services";
@@ -40,7 +39,6 @@ export default function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [projectsOpen, setProjectsOpen] = useState(false);
   const [performanceOpen, setPerformanceOpen] = useState(false);
-  const [careersOpen, setCareersOpen] = useState(false);
   const [activeHash, setActiveHash] = useState("");
   const servicesActive = isServicesPath(pathname);
   const projectsActive = isProjectsPath(pathname);
@@ -196,43 +194,16 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="group relative">
-            <Link
-              href="/careers"
-              className={`nav-link transition-colors ${
-                careersActive
-                  ? "text-brand-blue"
-                  : "text-gray-200 hover:text-white"
-              }`}
-            >
-              인재채용
-            </Link>
-
-            <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-36 -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100">
-              <div className="overflow-hidden rounded-xl border border-white/10 bg-brand-dark shadow-2xl">
-                {careersNav.map((item) => {
-                  const isActive =
-                    item.href === "/careers"
-                      ? pathname === "/careers"
-                      : pathname === item.href;
-
-                  return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className={`block whitespace-nowrap px-4 py-3.5 text-center text-sm font-semibold transition-colors ${
-                        isActive
-                          ? "bg-brand-blue/15 text-brand-blue"
-                          : "text-gray-200 hover:bg-white/5 hover:text-white"
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+          <Link
+            href="/careers"
+            className={`nav-link transition-colors ${
+              careersActive
+                ? "text-brand-blue"
+                : "text-gray-200 hover:text-white"
+            }`}
+          >
+            인재채용
+          </Link>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -397,45 +368,15 @@ export default function Header() {
               )}
             </div>
 
-            <div>
-              <button
-                type="button"
-                onClick={() => setCareersOpen(!careersOpen)}
-                className={`nav-link flex w-full items-center justify-between ${
-                  careersActive ? "text-brand-blue" : "text-gray-200"
-                }`}
-              >
-                인재채용
-                <span
-                  className={`text-xs transition-transform ${careersOpen ? "rotate-180" : ""}`}
-                  aria-hidden="true"
-                >
-                  ▼
-                </span>
-              </button>
-
-              {careersOpen && (
-                <div className="mt-4 flex flex-col items-center gap-3">
-                  {careersNav.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => {
-                        setMenuOpen(false);
-                        setCareersOpen(false);
-                      }}
-                      className={`text-center text-sm font-semibold ${
-                        pathname === item.href
-                          ? "text-brand-blue"
-                          : "text-gray-300"
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            <Link
+              href="/careers"
+              onClick={() => setMenuOpen(false)}
+              className={`nav-link ${
+                careersActive ? "text-brand-blue" : "text-gray-200"
+              }`}
+            >
+              인재채용
+            </Link>
 
             <Link
               href="/contact"
