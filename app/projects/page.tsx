@@ -20,11 +20,7 @@ export default async function ProjectsPage() {
 
   return (
     <main>
-      <PageHero
-        subtitle="Business Areas"
-        title="사업분야"
-        compact
-      />
+      <PageHero subtitle="Business Areas" title="사업분야" />
 
       <BusinessAreasContent areas={areas} />
     </main>
