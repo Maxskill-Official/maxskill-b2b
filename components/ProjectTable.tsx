@@ -45,7 +45,7 @@ function CategoryBar({ category }: { category: ProjectCategory }) {
       <span
         className={`inline-block rounded-lg px-4 py-2 text-sm font-extrabold tracking-wide sm:text-base ${label.badge}`}
       >
-        {label.ko} {label.en}
+        {label.ko === label.en ? label.ko : `${label.ko} ${label.en}`}
       </span>
       <p className="text-xs text-gray-500 sm:text-sm sm:whitespace-nowrap">
         {serviceLegend}

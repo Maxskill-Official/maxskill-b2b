@@ -23,7 +23,7 @@ export default async function ProjectsPage() {
       <PageHero
         subtitle="Business Areas"
         title="사업분야"
-        extraBlurs
+        compact
       />
 
       <BusinessAreasContent areas={areas} />

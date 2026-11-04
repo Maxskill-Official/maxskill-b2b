@@ -3,6 +3,7 @@ interface PageHeroProps {
   title: string;
   titleClassName?: string;
   extraBlurs?: boolean;
+  compact?: boolean;
 }
 
 export default function PageHero({
@@ -10,9 +11,16 @@ export default function PageHero({
   title,
   titleClassName = "max-w-3xl",
   extraBlurs = false,
+  compact = false,
 }: PageHeroProps) {
   return (
-    <section className="page-hero h-72 min-h-72 sm:h-80 sm:min-h-80">
+    <section
+      className={
+        compact
+          ? "page-hero h-52 min-h-52 sm:h-56 sm:min-h-56"
+          : "page-hero h-72 min-h-72 sm:h-80 sm:min-h-80"
+      }
+    >
       <div className="absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-brand-blue/10 blur-3xl" />
       {extraBlurs && (
         <div className="absolute -bottom-40 left-1/4 h-[400px] w-[400px] rounded-full bg-brand-blue/5 blur-3xl" />
