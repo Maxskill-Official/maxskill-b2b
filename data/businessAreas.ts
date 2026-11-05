@@ -73,8 +73,8 @@ export const businessAreas: BusinessArea[] = [
       "KSA JUBAIL NET COGENERATION IPP Project",
       "Tanajib WISPP Project",
     ],
-    image: "/images/hero/power-plant-2.png",
-    imageAlt: "발전 플랜트 전경",
+    image: "/images/hero/power-plant-focused.jpg",
+    imageAlt: "발전 설비 전경",
   },
   {
     id: "LNG",
@@ -105,8 +105,8 @@ export const businessAreas: BusinessArea[] = [
       "카타르 LNG NFXP EPC.2 Project",
       "Philippines Atimonam One Energy LNG to Power Project",
     ],
-    image: "/images/hero/lng-tanks.png",
-    imageAlt: "LNG 저장탱크 전경",
+    image: "/images/hero/gas-lng-terminal.jpg",
+    imageAlt: "Gas/LNG 저장 및 공급시설 전경",
   },
   {
     id: "산업설비",
@@ -148,8 +148,8 @@ export const businessAreas: BusinessArea[] = [
       },
       { match: "흑연", display: "DYPNF 구형흑연 기본설계" },
     ],
-    image: "/images/hero/industrial-wwt.png",
-    imageAlt: "산업 수처리 설비 전경",
+    image: "/images/hero/semiconductor-building.jpg",
+    imageAlt: "반도체 산업설비 전경",
   },
 ];
 
