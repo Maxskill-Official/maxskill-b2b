@@ -9,7 +9,7 @@ export default function BusinessAreaCard({ area }: { area: BusinessArea }) {
   return (
     <Link
       href={`/projects#${encodeURIComponent(area.id)}`}
-      className="group relative flex min-h-[240px] flex-col overflow-hidden rounded-2xl border border-white/10 p-8 transition-colors hover:border-brand-blue/40 sm:min-h-[260px] sm:p-10"
+      className="group relative flex min-h-[18.125rem] flex-col overflow-hidden rounded-2xl border border-white/10 p-8 transition-colors hover:border-brand-blue/40 sm:p-10"
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"

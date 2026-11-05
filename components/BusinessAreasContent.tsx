@@ -47,11 +47,11 @@ function FeaturedProjects({ projects }: { projects: FeaturedProject[] }) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+    <div className="grid grid-cols-1 items-stretch gap-4 md:grid-cols-3">
       {projects.map((project) => (
         <article
           key={project.id}
-          className="rounded-2xl border border-white/15 bg-black/50 p-6 backdrop-blur-sm"
+          className="flex h-full min-h-[11.5rem] flex-col rounded-2xl border border-white/15 bg-black/50 p-6 backdrop-blur-sm"
         >
           {project.year > 0 && (
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-brand-blue">

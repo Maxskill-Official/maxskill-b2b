@@ -7,42 +7,30 @@ interface ServiceDetailProps {
   sectionId?: string;
 }
 
+function itemImageBackground(containerClass?: string) {
+  if (containerClass?.includes("bg-white")) return "bg-white";
+  if (containerClass?.includes("bg-black")) return "bg-black";
+  return "bg-brand-dark";
+}
+
 function renderServiceItemCard(
   serviceId: string,
   item: ServiceItem,
   featured: boolean,
 ) {
   const itemImage = getServiceItemImage(serviceId, item.name);
+  const imageBg = itemImageBackground(itemImage?.imageContainerClass);
+  const bodyClass =
+    itemImage?.imageBodyClass ??
+    "px-4 pb-5 pt-3 sm:px-5 sm:pb-6 sm:pt-4";
 
   return (
     <div
       key={item.name}
-      className="overflow-hidden rounded-xl border border-brand-card-border bg-brand-dark/40"
+      className="flex h-full flex-col overflow-hidden rounded-xl border border-brand-card-border bg-brand-dark/40"
     >
-      {itemImage && (
-        featured || itemImage.intrinsic ? (
-          <div className="overflow-hidden bg-brand-dark">
-            <Image
-              src={itemImage.src}
-              alt={itemImage.alt}
-              width={featured ? 1024 : 1600}
-              height={featured ? 682 : 880}
-              className={`block h-auto w-full ${itemImage.imageClass ?? ""}`}
-              sizes={
-                featured
-                  ? "(max-width: 1024px) 100vw, 1024px"
-                  : "(max-width: 1024px) 100vw, 512px"
-              }
-              quality={95}
-            />
-          </div>
-        ) : (
-        <div
-          className={
-            itemImage.imageContainerClass ??
-            "relative h-56 overflow-hidden bg-brand-dark sm:h-64"
-          }
-        >
+      {itemImage ? (
+        <div className={`relative h-56 overflow-hidden sm:h-64 ${imageBg}`}>
           {itemImage.unoptimized ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
@@ -63,14 +51,10 @@ function renderServiceItemCard(
             />
           )}
         </div>
-        )
+      ) : (
+        <div className="h-56 sm:h-64" />
       )}
-      <div
-        className={
-          itemImage?.imageBodyClass ??
-          "px-4 pb-5 pt-3 sm:px-5 sm:pb-6 sm:pt-4"
-        }
-      >
+      <div className={`h-[180px] shrink-0 overflow-hidden ${bodyClass}`}>
         <p
           className={
             featured
@@ -81,9 +65,7 @@ function renderServiceItemCard(
           {item.name}
         </p>
         {item.description ? (
-          <p className="service-desc mt-3">
-            {item.description}
-          </p>
+          <p className="service-desc mt-3">{item.description}</p>
         ) : null}
       </div>
     </div>
@@ -142,12 +124,12 @@ export default function ServiceDetail({
           <div className="space-y-16">
             {stackedSections.map((section) => (
               <div key={section.title}>
-                <h3 className="text-xl font-bold text-brand-blue-light">{section.title}</h3>
+                <h3 className="text-xl font-bold text-brand-blue-light">
+                  {section.title}
+                </h3>
                 <div className="mt-2 h-px w-full bg-brand-card-border" />
                 {section.description ? (
-                  <p className="service-desc mt-5">
-                    {section.description}
-                  </p>
+                  <p className="service-desc mt-5">{section.description}</p>
                 ) : null}
 
                 {section.display === "list" ? (
@@ -169,18 +151,6 @@ export default function ServiceDetail({
                       </li>
                     ))}
                   </ul>
-                ) : section.display === "featured" ? (
-                  <div className="mt-6 space-y-5">
-                    {section.items[0] &&
-                      renderServiceItemCard(service.id, section.items[0], true)}
-                    {section.items.length > 1 && (
-                      <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-                        {section.items.slice(1).map((item) =>
-                          renderServiceItemCard(service.id, item, false),
-                        )}
-                      </div>
-                    )}
-                  </div>
                 ) : (
                   <div
                     className={`mt-6 grid grid-cols-1 gap-5 ${

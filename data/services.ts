@@ -334,11 +334,6 @@ export const services: Service[] = [
         display: "featured",
         items: [
           {
-            name: "Customizing",
-            description:
-              "S3D, E3D, AutoCAD, Excel/VBA 등 플랫폼 기반 Custom Macro, Report, Interface 개발. 프로젝트 Standard, Template, Check List 자동화와 Line List, 3D Model, ISO/BOM 자동 생성 Workflow를 지원합니다.",
-          },
-          {
             name: "MaxskillWorkPro",
             description:
               "3D 작업의 통일성과 정확성을 높이고 작업시간을 단축하여, 전체적인 Project 품질 향상을 목적으로 개발된 3D 통합 Add-in 프로그램입니다.",
@@ -346,7 +341,7 @@ export const services: Service[] = [
           {
             name: "P&ID",
             description:
-              "P&ID와 3D 모델 간 Line Number, Valve, Instrument, Equipment Tag 정합성 검토 기준 설정. P&ID Update 연동 Admin.",
+              "P&ID로 부터 Piping BM을 추출하여 3D 모델 간 Line List, Valve, Instrument, Equipment Tag 적합성 검토를 합니다. P&ID로 부터 추출한 BM을 Update 연동하여 Validation Check 기능을 갖추고 있습니다.",
           },
         ],
       },
