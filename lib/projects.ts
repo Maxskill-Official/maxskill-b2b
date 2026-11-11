@@ -1,6 +1,31 @@
 import { projects as fallbackProjects } from "@/data/projects";
 import type { Project, ProjectCategory } from "@/data/projects";
+import { withoutCorporationMarker } from "@/lib/companyName";
 import { fetchProjectsFromGoogleSheet } from "@/lib/googleSheetProjects";
+
+function correctProjectName(name: string) {
+  return name
+    .replace(/\b(?:APCO|APOC|ACPO)[ /]+(?:PHD|PDH)(?=\/UTOS\b)/gi, "APOC PDH")
+    .replace(/\bMeehanaol\b/gi, "Methanol")
+    .replace(/\bFaclon\b/gi, "Falcon")
+    .replace(/ph-1[,·]?\s*2공구/gi, "ph-1 · 2공구");
+}
+
+function correctClient(project: Project) {
+  const client = withoutCorporationMarker(project.client);
+  if (project.name.includes("금호폴리켐") && client.includes("포스코건설")) {
+    return "포스코이앤씨";
+  }
+  return client;
+}
+
+function correctProjectNames(projectList: Project[]) {
+  return projectList.map((project) => ({
+    ...project,
+    name: withoutCorporationMarker(correctProjectName(project.name)),
+    client: correctClient(project),
+  }));
+}
 
 export function computeProjectStats(projectList: Project[]) {
   return {
@@ -27,7 +52,7 @@ export async function getProjects(): Promise<Project[]> {
   const csvUrl = process.env.GOOGLE_SHEETS_PROJECTS_CSV_URL;
 
   if (!csvUrl) {
-    return fallbackProjects;
+    return correctProjectNames(fallbackProjects);
   }
 
   try {
@@ -36,12 +61,12 @@ export async function getProjects(): Promise<Project[]> {
       console.warn(
         "Google Sheet returned no valid projects; using local fallback.",
       );
-      return fallbackProjects;
+      return correctProjectNames(fallbackProjects);
     }
-    return sheetProjects;
+    return correctProjectNames(sheetProjects);
   } catch (error) {
     console.error("Failed to load projects from Google Sheet:", error);
-    return fallbackProjects;
+    return correctProjectNames(fallbackProjects);
   }
 }
 

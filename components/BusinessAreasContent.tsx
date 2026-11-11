@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import type { BusinessArea, FeaturedProject } from "@/data/businessAreas";
+import { withoutCorporationMarker } from "@/lib/companyName";
 
 function scrollToHash(hash: string) {
   if (!hash) return;
@@ -20,6 +21,45 @@ export type BusinessAreaView = BusinessArea & {
 
 interface BusinessAreasContentProps {
   areas: BusinessAreaView[];
+}
+
+function DescriptionBlocks({
+  paragraphs,
+  scopes,
+}: {
+  paragraphs: string[];
+  scopes: string[][];
+}) {
+  const paired = paragraphs.length > 0 && paragraphs.length === scopes.length;
+
+  if (!paired) {
+    return (
+      <>
+        {paragraphs.map((paragraph) => (
+          <p
+            key={paragraph.slice(0, 40)}
+            className="break-keep text-lg font-medium leading-snug text-white sm:text-xl sm:leading-snug"
+          >
+            {paragraph}
+          </p>
+        ))}
+        <ScopeLines lines={scopes} />
+      </>
+    );
+  }
+
+  return (
+    <div className="space-y-5">
+      {paragraphs.map((paragraph, index) => (
+        <div key={paragraph.slice(0, 40)} className="space-y-2">
+          <p className="break-keep text-lg font-medium leading-snug text-white sm:text-xl sm:leading-snug">
+            {paragraph}
+          </p>
+          <ScopeLines lines={[scopes[index]]} />
+        </div>
+      ))}
+    </div>
+  );
 }
 
 function ScopeLines({ lines }: { lines: string[][] }) {
@@ -59,10 +99,10 @@ function FeaturedProjects({ projects }: { projects: FeaturedProject[] }) {
             </p>
           )}
           <h3 className="mt-3 text-lg font-bold leading-snug text-brand-blue-light">
-            {project.displayName}
+            {withoutCorporationMarker(project.displayName)}
           </h3>
           <p className="mt-3 text-sm font-medium text-brand-tan-light">
-            {project.client}
+            {withoutCorporationMarker(project.client)}
           </p>
           <p className="mt-1 text-sm text-brand-tan-light/80">{project.location}</p>
         </article>
@@ -124,15 +164,10 @@ export default function BusinessAreasContent({
               </div>
 
               <div className="min-w-0 space-y-3 overflow-x-auto lg:overflow-visible lg:pt-36 xl:pt-44">
-                {area.paragraphs.map((paragraph) => (
-                  <p
-                    key={paragraph.slice(0, 40)}
-                    className="break-keep text-lg font-medium leading-snug text-white sm:text-xl sm:leading-snug"
-                  >
-                    {paragraph}
-                  </p>
-                ))}
-                <ScopeLines lines={area.scopes} />
+                <DescriptionBlocks
+                  paragraphs={area.paragraphs}
+                  scopes={area.scopes}
+                />
                 {area.subAreas?.map((sub) => (
                   <div key={sub.title} className="space-y-2 pt-2">
                     <h3 className="text-xl font-bold text-white">

@@ -1,5 +1,6 @@
 import { projects as fallbackProjects } from "@/data/projects";
 import type { Project, ProjectCategory } from "@/data/projects";
+import { withoutCorporationMarker } from "@/lib/companyName";
 
 export type FeaturedName = string | { match: string; display: string };
 
@@ -30,7 +31,7 @@ export const businessAreas: BusinessArea[] = [
     title: "화공",
     titleEn: "Petrochemical Plant",
     paragraphs: [
-      "석유·가스·화학 원료를 다양한 공정을 통해 제품으로 생산하는 산업 플랜트",
+      "석유·가스·화학 원료를 다양한 공정을 통해 제품으로 생산하는 플랜트",
     ],
     scopes: [
       [
@@ -45,7 +46,7 @@ export const businessAreas: BusinessArea[] = [
     ],
     featuredNames: [
       { match: "여수 금호폴리켐", display: "여수 금호폴리켐 EPDM PLANT" },
-      "사우디 APCO PHD/UTOS Project",
+      "사우디 APOC PDH/UTOS Project",
       "Sarawak PetChem Methanol",
     ],
     image: "/images/hero/chemical.jpg",
@@ -64,13 +65,12 @@ export const businessAreas: BusinessArea[] = [
         "LNG 발전",
         "HRSG",
         "보일러",
-        "원자력 BOP",
-        "신재생·수소 발전",
+        "신재생 수소 발전",
       ],
     ],
     featuredNames: [
       "Qatar Facility E IWPP Project",
-      "KSA JUBAIL NET COGENERATION IPP Project",
+      "KSA Amiral Cogen IPP",
       "Tanajib WISPP Project",
     ],
     image: "/images/hero/power-plant-focused.jpg",
@@ -81,7 +81,7 @@ export const businessAreas: BusinessArea[] = [
     title: "Gas/LNG",
     titleEn: "Gas/LNG",
     paragraphs: [
-      "천연가스 및 산업용 가스를 생산·처리·저장·공급하는 플랜트 및 인프라",
+      "천연가스 및 산업용 가스를 생산·처리·저장·공급하는 플랜트",
       "천연가스를 극저온 상태로 액화·저장·운송·기화하여 공급하는 에너지 산업",
     ],
     scopes: [
@@ -141,10 +141,10 @@ export const businessAreas: BusinessArea[] = [
       },
     ],
     featuredNames: [
-      { match: "현대제철", display: "현대제철 (HPLS)" },
+      { match: "현대제철", display: "미국현대제철소(HPLS)" },
       {
         match: "P5 ph-1",
-        display: "삼성전자 P5 ph-1 2공구(삼성물산)",
+        display: "삼성전자 P5 ph-1 · 2공구(삼성물산)",
       },
       { match: "흑연", display: "DYPNF 구형흑연 기본설계" },
     ],
@@ -173,7 +173,8 @@ function featuredMatchName(item: FeaturedName) {
 }
 
 function featuredDisplayName(item: FeaturedName, project: Project) {
-  return typeof item === "string" ? project.name : item.display;
+  const label = typeof item === "string" ? project.name : item.display;
+  return withoutCorporationMarker(label);
 }
 
 export function pickFeaturedProjects(

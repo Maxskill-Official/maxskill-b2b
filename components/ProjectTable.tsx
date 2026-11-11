@@ -3,6 +3,7 @@ import {
   type Project,
   type ProjectCategory,
 } from "@/data/projects";
+import { withoutCorporationMarker } from "@/lib/companyName";
 
 const columns = [
   { key: "name", label: "프로젝트", accent: "text-brand-tan" },
@@ -85,7 +86,7 @@ function TableBody({ projects }: { projects: Project[] }) {
             {project.name}
           </td>
           <td className="whitespace-nowrap px-5 py-4 text-sm font-medium text-gray-300 sm:px-6 sm:text-base">
-            {project.client}
+            {withoutCorporationMarker(project.client)}
           </td>
           <td className="whitespace-nowrap px-5 py-4 text-sm font-semibold text-gray-300 sm:px-6 sm:text-base">
             {project.category}

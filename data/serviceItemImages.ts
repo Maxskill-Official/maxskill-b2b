@@ -39,14 +39,16 @@ export const serviceItemImages: Record<
 > = {
   // ── Piping Design ──
   "piping/Project Scheduling": itemImage(
-    "piping-project-scheduling.jpg",
-    "E3D Pipe Rack Top View, WBS, 일정 계획용 전체 배관 레이아웃",
-    "object-cover object-center",
+    "piping-project-scheduling.png",
+    "Project Scheduling, 일정표, Key Tasks, Deliverables",
+    "object-contain object-center",
+    "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "piping/Coordination": itemImage(
     "piping-coordination.jpg",
-    "E3D Clash Check, 다공종 Coordination, 간섭 검토",
-    "object-cover object-center",
+    "Coordination Areas, Integrated Plot Plan, 다공종 협의",
+    "object-contain object-center",
+    "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "piping/Plot Plan": itemImage(
     "piping-plot-plan.jpg",
@@ -92,9 +94,10 @@ export const serviceItemImages: Record<
     "object-cover object-[40%_12%]",
   ),
   "stress/Analysis Report": itemImage(
-    "stress-analysis-report.jpg",
-    "Code Stress by Percent, 해석 결과 3D 시각화",
-    "object-cover object-[35%_50%]",
+    "stress-analysis-report.png",
+    "P&ID, FEA Nozzle Stress, 3D Piping Stress Analysis Report",
+    "object-contain object-center",
+    "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "stress/Special Support": itemImage(
     "stress-special-support.jpg",
@@ -112,9 +115,9 @@ export const serviceItemImages: Record<
     "object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
-  "stress/Field Support": itemImage(
+  "stress/Field Supervision": itemImage(
     "stress-field-support.jpg",
-    "Support Detail Drawing, Field Support, Spring Hanger Setting",
+    "Support Detail Drawing, Field Supervision, Spring Hanger Setting",
     "object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
@@ -153,7 +156,7 @@ export const serviceItemImages: Record<
     "Piping, Support 3D Modeling",
     "object-cover object-center",
   ),
-  "cad/Instrument & Elec.": itemImage(
+  "cad/Instrument & Electrical": itemImage(
     "cad-instrument-elec.jpg",
     "Instrument, Electrical 3D Modeling, Cable Tray",
     "object-cover object-center",

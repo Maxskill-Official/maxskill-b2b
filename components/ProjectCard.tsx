@@ -1,4 +1,5 @@
 import type { Project, ProjectCategory } from "@/data/projects";
+import { withoutCorporationMarker } from "@/lib/companyName";
 
 const categoryStyles: Record<ProjectCategory, string> = {
   화공: "bg-brand-blue/20 text-brand-blue",
@@ -49,7 +50,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <dl className="mt-5 space-y-2 text-sm text-black/70">
         <div className="flex gap-3">
           <dt className="shrink-0 font-medium text-black/50">발주처</dt>
-          <dd className="font-semibold text-black/80">{project.client}</dd>
+          <dd className="font-semibold text-black/80">
+            {withoutCorporationMarker(project.client)}
+          </dd>
         </div>
         <div className="flex gap-3">
           <dt className="shrink-0 font-medium text-black/50">지역</dt>

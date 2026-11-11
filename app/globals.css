@@ -65,3 +65,402 @@
     @apply break-keep text-[0.95rem] font-normal leading-[1.95] text-brand-tan-light;
   }
 }
+
+.cad-workflow {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cad-workflow-stage {
+  position: relative;
+  width: min(100%, 1000px);
+  aspect-ratio: 1000 / 620;
+}
+
+.cad-workflow-lines {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.cad-workflow-path {
+  fill: none;
+  stroke: #16c7ef;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1 16;
+}
+
+.cad-workflow-mask {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 22;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.cad-workflow-node {
+  position: absolute;
+  z-index: 3;
+}
+
+.cad-workflow-model {
+  top: 2%;
+  left: 35%;
+  width: 57%;
+  height: 48%;
+  animation: cad-model-in 12s ease-in-out infinite;
+}
+
+.cad-workflow-review {
+  top: 9%;
+  left: 3%;
+  width: 27%;
+  height: 34%;
+}
+
+.cad-workflow-review-label {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  z-index: 3;
+  width: 27%;
+  text-align: center;
+  color: #073f91;
+  font-size: clamp(0.6rem, 1.8vw, 1.1rem);
+}
+
+.cad-workflow-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+}
+
+.cad-workflow-label::before {
+  width: 0.48em;
+  height: 0.48em;
+  flex: none;
+  background: #143cff;
+  content: "";
+}
+
+.cad-workflow-custom {
+  position: absolute;
+  top: 53%;
+  left: 42%;
+  z-index: 3;
+  display: grid;
+  width: 18%;
+  justify-items: center;
+  gap: 0.35rem;
+  color: #111;
+  font-size: clamp(0.55rem, 1.6vw, 1rem);
+  font-weight: 700;
+}
+
+.cad-workflow-cylinder {
+  width: 46%;
+  aspect-ratio: 1 / 0.8;
+  border: 2px solid #111;
+  border-radius: 50% / 18%;
+  background: linear-gradient(90deg, #006780 0%, #00c4e8 50%, #009ab8 100%);
+  box-shadow: inset 0 7px 0 rgba(255, 255, 255, 0.28);
+}
+
+.cad-workflow-plan {
+  top: 70%;
+  left: 6%;
+  width: 24%;
+  height: 27%;
+}
+
+.cad-workflow-report {
+  position: absolute;
+  top: 77%;
+  left: 48%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: clamp(0.25rem, 0.8vw, 0.6rem);
+  color: #073f91;
+  font-size: clamp(0.65rem, 2vw, 1.2rem);
+}
+
+.cad-workflow-report-icon {
+  position: relative;
+  display: block;
+  width: clamp(2rem, 7vw, 4.5rem);
+  aspect-ratio: 1.35;
+}
+
+.cad-workflow-report-icon i {
+  position: absolute;
+  width: 80%;
+  height: 75%;
+  border: 2px solid #111;
+  border-radius: 0 0 0.35rem 0.35rem;
+  background: #fff;
+}
+
+.cad-workflow-report-icon i:nth-child(1) {
+  top: 0;
+  right: 0;
+}
+
+.cad-workflow-report-icon i:nth-child(2) {
+  top: 12%;
+  right: 10%;
+}
+
+.cad-workflow-report-icon i:nth-child(3) {
+  top: 24%;
+  right: 20%;
+}
+
+.cad-workflow-iso {
+  top: 70%;
+  right: 3%;
+  width: 23%;
+  height: 27%;
+}
+
+.cad-workflow-step-review,
+.cad-workflow-step-custom,
+.cad-workflow-step-plan,
+.cad-workflow-step-report,
+.cad-workflow-step-iso {
+  opacity: 0;
+  transform: translateY(10px) scale(0.97);
+}
+
+.cad-workflow-step-review {
+  animation: cad-step-review 12s ease-in-out infinite;
+}
+
+.cad-workflow-step-custom {
+  animation: cad-step-custom 12s ease-in-out infinite;
+}
+
+.cad-workflow-step-plan {
+  animation: cad-step-plan 12s ease-in-out infinite;
+}
+
+.cad-workflow-step-report {
+  animation: cad-step-report 12s ease-in-out infinite;
+}
+
+.cad-workflow-step-iso {
+  animation: cad-step-iso 12s ease-in-out infinite;
+}
+
+.cad-workflow-mask-review {
+  animation: cad-line-review 12s linear infinite;
+}
+
+.cad-workflow-mask-custom {
+  animation: cad-line-custom 12s linear infinite;
+}
+
+.cad-workflow-mask-plan {
+  animation: cad-line-plan 12s linear infinite;
+}
+
+.cad-workflow-mask-report {
+  animation: cad-line-report 12s linear infinite;
+}
+
+.cad-workflow-mask-iso {
+  animation: cad-line-iso 12s linear infinite;
+}
+
+@keyframes cad-model-in {
+  0%,
+  3% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  9%,
+  92% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+}
+
+@keyframes cad-line-review {
+  0%,
+  11% {
+    stroke-dashoffset: 1;
+  }
+  20%,
+  92% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes cad-step-review {
+  0%,
+  20% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+  24%,
+  92% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cad-line-custom {
+  0%,
+  25% {
+    stroke-dashoffset: 1;
+  }
+  34%,
+  92% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes cad-step-custom {
+  0%,
+  34% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+  38%,
+  92% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cad-line-plan {
+  0%,
+  39% {
+    stroke-dashoffset: 1;
+  }
+  49%,
+  92% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes cad-step-plan {
+  0%,
+  49% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+  53%,
+  92% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cad-line-report {
+  0%,
+  54% {
+    stroke-dashoffset: 1;
+  }
+  64%,
+  92% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes cad-step-report {
+  0%,
+  64% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+  68%,
+  92% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cad-line-iso {
+  0%,
+  69% {
+    stroke-dashoffset: 1;
+  }
+  79%,
+  92% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes cad-step-iso {
+  0%,
+  79% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+  83%,
+  92% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cad-workflow-model,
+  .cad-workflow-step-review,
+  .cad-workflow-step-custom,
+  .cad-workflow-step-plan,
+  .cad-workflow-step-report,
+  .cad-workflow-step-iso,
+  .cad-workflow-mask {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    stroke-dashoffset: 0;
+  }
+}

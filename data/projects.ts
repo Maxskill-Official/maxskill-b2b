@@ -96,7 +96,7 @@ export const projects: Project[] = [
   {
     id: 9,
     name: "여수 금호폴리켐 70,000MT/Y EPDM PLANT 건설공사",
-    client: "㈜포스코건설",
+    client: "포스코이앤씨",
     category: "화공",
     year: 2022,
     location: "Korea",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
   },
   {
     id: 10,
-    name: "사우디 APCO PHD/UTOS Project",
+    name: "사우디 APOC PDH/UTOS Project",
     client: "Samsung E&A",
     category: "화공",
     year: 2021,
@@ -155,7 +155,7 @@ export const projects: Project[] = [
   },
   {
     id: 15,
-    name: "Sarawak Meehanaol FEED",
+    name: "Sarawak Methanol FEED",
     client: "Samsung E&A",
     category: "화공",
     year: 2019,
@@ -337,7 +337,7 @@ export const projects: Project[] = [
   },
   {
     id: 33,
-    name: "Dow-Mitsui Faclon Project",
+    name: "Dow-Mitsui Falcon Project",
     client: "Samsung E&A",
     category: "화공",
     year: 2012,
@@ -571,7 +571,7 @@ export const projects: Project[] = [
   },
   {
     id: 56,
-    name: "삼성전자 P5 ph-1 2공구(삼성물산)",
+    name: "삼성전자 P5 ph-1 · 2공구(삼성물산)",
     client: "삼성물산",
     category: "산업설비",
     year: 0,

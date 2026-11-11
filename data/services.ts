@@ -39,8 +39,8 @@ export const services: Service[] = [
     title: "Piping Design",
     summary: "Planning, Basic Design, Detail Design",
     intro: [
-      "Planning 단계에서는 WBS, 마일스톤 기반 일정 수립과 Mechanical, Instrument, Electrical, Civil 등 유관 공종 간 인터페이스를 조율합니다. Basic Design에서는 Plot Plan을 통해 배관 라우팅, 설비 배치를 작성하고, Detail Design에서는 Piping Plan/ISO, Stress ISO, Support Detail, Information 도면을 작성합니다.",
-      "국내외 대형 EPC 프로젝트의 배관 설계를 수행합니다.",
+      "Planning 단계 WBS, 마일스톤 기반 일정 수립, Mechanical, Instrument, Electrical, Civil 등 유관 공종 간 인터페이스 조율. Basic Design Plot Plan을 통한 배관 라우팅, 설비 배치 작성, Detail Design Piping Plan/ISO, Stress ISO, Support Detail, Information 도면 작성.",
+      "국내외 대형 EPC 프로젝트 배관 설계.",
     ],
     highlights: [
       "Planning, Basic Design, Detail Design 단계별 수행",
@@ -51,57 +51,54 @@ export const services: Service[] = [
     sections: [
       {
         title: "Planning",
-        description:
-          "프로젝트 요구사항 및 설계 기준을 검토하고, 배관 설계 범위와 수행 계획을 수립합니다.",
+        description: "",
         items: [
           {
             name: "Project Scheduling",
             description:
-              "프로젝트 일정 및 주요 마일스톤을 수립하고, 배관 설계 진행 현황과 공정별 진척도를 관리합니다.",
+              "프로젝트 일정 및 주요 마일스톤 수립, 배관 설계 진행 현황과 공정별 진척도 관리.",
           },
           {
             name: "Coordination",
             description:
-              "발주처 및 유관 공종과의 기술적 협의를 통해 설계 인터페이스를 조정하고 업무를 수행합니다.",
+              "발주처 및 유관 공종과의 기술적 협의를 통한 설계 인터페이스 조정, 업무 수행.",
           },
         ],
       },
       {
         title: "Basic Design",
-        description:
-          "플랜트 전체 배관, 설비 배치의 기본 골격을 확정하는 단계로, 이후 Detail Design의 기준이 됩니다.",
+        description: "",
         items: [
           {
             name: "Plot Plan",
             description:
-              "Equipment, Structure, Pipe Rack, Utility, Roadway 등을 반영한 설비 배치도, Pipe Routing, Valve Access, Maintenance Space를 반영한 배치안을 작성합니다.",
+              "Equipment, Structure, Pipe Rack, Utility, Roadway 등을 반영한 설비 배치도, Pipe Routing, Valve Access, Maintenance Space를 반영한 배치안 작성.",
           },
         ],
       },
       {
         title: "Detail Design",
-        description:
-          "3D 모델링, 배관 배치, 응력해석 및 ISO 도면 작성 등을 통해 시공에 필요한 상세 설계 도서를 작성합니다.",
+        description: "",
         items: [
           {
             name: "Piping Plan Dwg., ISO Dwg.",
             description:
-              "3D 모델 기반 Plan 도면 및 Isometric 도면 작성. Line Number, Material, Insulation, Testing 정보를 포함한 시공용 ISO 도면을 작성합니다.",
+              "3D 모델 기반 Plan 도면 및 Isometric 도면 작성. Line Number, Material, Insulation, Testing 정보를 포함한 시공용 ISO 도면 작성.",
           },
           {
             name: "Stress ISO Dwg.",
             description:
-              "Stress Analysis 결과를 반영한 ISO 도면 작성. Support 위치, Expansion Joint, Special Item 등 해석 결과 연계 사항을 도면에 명확히 표기합니다.",
+              "Stress Analysis 결과를 반영한 ISO 도면 작성. Support 위치, Expansion Joint, Special Item 등 해석 결과 연계 사항 도면 표기.",
           },
           {
             name: "Support Detail Dwg.",
             description:
-              "배관 하중 및 설계 조건을 고려하여 배관 지지대(Support)의 구조와 설치 상세를 설계하고 제작·시공에 필요한 도면을 작성합니다.",
+              "배관 하중 및 설계 조건 고려, 배관 지지대(Support) 구조와 설치 상세 설계, 제작·시공용 도면 작성.",
           },
           {
             name: "Information Dwg. etc",
             description:
-              "Line List, Valve List, Material Take-off, Tie-in List 등 배관 설계 부속 문서. 프로젝트 요구에 따른 Information Sheet 및 기타 참조 도면을 제공합니다.",
+              "Line List, Valve List, Material Take-off, Tie-in List 등 배관 설계 부속 문서. 프로젝트 요구에 따른 Information Sheet 및 기타 참조 도면 제공.",
           },
         ],
       },
@@ -114,8 +111,8 @@ export const services: Service[] = [
     title: "Stress Analysis",
     summary: "Thermal Analysis, Special Support, Trouble Shooting",
     intro: [
-      "설계 단계에서 Operating, Transient, Occasional Load Case를 검토하고, 현장에서 발생하는 Support 이슈, 진동, Leak 등 긴급 문제에 대한 해석, 대응안을 작성합니다. Piping Design과 연계하여 Stress ISO 도면을 작성합니다.",
-      "국내외 화공, 발전, LNG 프로젝트에서 High Temperature, High Pressure 배관, Critical Line에 대한 해석 경험을 보유하고 있으며, Owner, EPC, Contractor 요구 Specification에 맞춘 해석 보고서를 작성합니다.",
+      "설계 단계 Operating, Transient, Occasional Load Case 검토, 현장 Support 이슈, 진동, Leak 등 긴급 문제 해석 및 대응안 작성. Piping Design 연계 Stress ISO 도면 작성.",
+      "국내외 화공, 발전, LNG 프로젝트 High Temperature, High Pressure 배관, Critical Line 해석 경험 보유, Owner, EPC, Contractor 요구 Specification에 맞춘 해석 보고서 작성.",
     ],
     highlights: [
       "Thermal, Sustained, Occasional Load Case 종합 검토",
@@ -126,57 +123,54 @@ export const services: Service[] = [
     sections: [
       {
         title: "Thermal Analysis",
-        description:
-          "온도 변화에 따른 배관의 열팽창, 응력, 변위를 해석하여 안전한 배관 설계를 지원합니다.",
+        description: "",
         items: [
           {
             name: "Thermal Analysis",
             description:
-              "Operating, Design, Hydro Test, Upset Condition 등 Load Case별 응력, 변위 해석. ASME B31.3/B31.1 기준 Allowable Stress 검토, Nozzle Load Check, Flange Leakage 검토를 수행합니다.",
+              "Operating, Design, Hydro Test, Upset Condition 등 Load Case별 응력, 변위 해석. ASME B31.3/B31.1 기준 Allowable Stress 검토, Nozzle Load Check, Flange Leakage 검토.",
           },
           {
             name: "Load Case Review",
             description:
-              "Sustained, Expansion, Occasional(Wind, Seismic, Water Hammer) Load 조합 검토. Support Gap, Cold Spring, Expansion Loop 적정성 평가를 수행합니다.",
+              "Sustained, Expansion, Occasional(Wind, Seismic, Water Hammer) Load 조합 검토. Support Gap, Cold Spring, Expansion Loop 적정성 평가.",
           },
           {
             name: "Analysis Report",
             description:
-              "Stress Mark-up, Support Load Summary, Nozzle Load Table, Critical Line List 등 해석 보고서 및 Piping Design 연계 산출물을 제공합니다.",
+              "Stress Mark-up, Support Load Summary, Nozzle Load Table, Critical Line List 등 해석 보고서 및 Piping Design 연계 산출물 제공.",
           },
         ],
       },
       {
         title: "Special Support",
-        description:
-          "일반 Standard Support로 해결되지 않는 구간에 대한 특수 지지대, Spring Hanger 설계를 수행합니다.",
+        description: "",
         items: [
           {
             name: "Special Support",
             description:
-              "Spring Hanger, Constant Support, Guide, Anchor, Expansion Joint 등 Special Support 선정 및 Detail Design. Manufacturer Catalogue와 연계하여 Custom Support를 설계합니다.",
+              "Spring Hanger, Constant Support, Guide, Anchor, Expansion Joint 등 Special Support 선정 및 Detail Design. Manufacturer Catalogue 연계 Custom Support 설계.",
           },
           {
             name: "Support Optimization",
             description:
-              "Support 수량, 위치 최적화를 통한 응력, 변위 만족 및 경제성 확보. Existing Plant Tie-in 구간 Support Review를 수행합니다.",
+              "Support 수량, 위치 최적화를 통한 응력, 변위 만족 및 경제성 확보. Existing Plant Tie-in 구간 Support Review.",
           },
         ],
       },
       {
         title: "Trouble Shooting",
-        description:
-          "시공, 운전 중 발생하는 배관 관련 이슈에 대한 원인 분석과 대응안을 작성합니다.",
+        description: "",
         items: [
           {
             name: "Trouble Shooting",
             description:
-              "Support Damage, Vibration, Leak, Misalignment 등 현장 이슈 긴급 해석. Root Cause Analysis 및 Retrofit Support 설계, As-built 조건 반영 Re-analysis를 수행합니다.",
+              "Support Damage, Vibration, Leak, Misalignment 등 현장 이슈 긴급 해석. Root Cause Analysis 및 Retrofit Support 설계, As-built 조건 반영 Re-analysis.",
           },
           {
-            name: "Field Support",
+            name: "Field Supervision",
             description:
-              "현장 실측 데이터 반영, Hot/Cold Position Check, Spring Hanger Setting Verification 등 시공, Commissioning 단계 기술을 지원합니다.",
+              "현장 실측 데이터 반영, Hot/Cold Position Check, Spring Hanger Setting Verification 등 시공, Commissioning 단계 기술 지원.",
           },
         ],
       },
@@ -189,8 +183,8 @@ export const services: Service[] = [
     title: "3D CAD",
     summary: "Modeling, Model Check",
     intro: [
-      "Piping, Structure, Equipment, Support, Instrument & Electrical, Duct, HVAC 등 전 공종 3D Modeling을 수행합니다.",
-      "3D Model 기반으로 Clash Check 및 Design Review를 수행하여 설계 오류를 사전에 검증",
+      "Piping, Structure, Equipment, Support, Instrument & Electrical, Duct, HVAC 등 전 공종 3D Modeling.",
+      "3D Model 기반 Clash Check 및 Design Review, 설계 오류 사전 검증",
       "Navisworks를 활용한 3D 통합 검토 및 설계 검증",
     ],
     highlights: [],
@@ -219,45 +213,43 @@ export const services: Service[] = [
     sections: [
       {
         title: "Modeling",
-        description:
-          "Piping, Structure, Equipment, Support, Instrument & Electrical, Duct, HVAC 등 전 공종 3D Modeling을 수행합니다.",
+        description: "",
         items: [
           {
             name: "Equip./Structure",
             description:
-              "Pressure Vessel, Heat Exchanger, Pump, Compressor, Steel Structure, Pipe Rack 등 Equipment와 Structure를 Modeling 합니다.",
+              "Pressure Vessel, Heat Exchanger, Pump, Compressor, Steel Structure, Pipe Rack & Shelter 등 Equipment와 Structure Modeling.",
           },
           {
             name: "Piping/Support",
             description:
-              "Piping Route, Valve, Flange, In-line Item, Pipe Support 3D Modeling 및 ISO 도면 자동 생성을 위한 Attribute를 관리합니다.",
+              "Piping Route, Valve, Flange, In-line Item, Pipe Support 3D Modeling 및 ISO 도면 자동 생성을 위한 Attribute 관리.",
           },
           {
-            name: "Instrument & Elec.",
+            name: "Instrument & Electrical",
             description:
-              "Instrument Item, Cable Way, Tray, Conduit, Junction Box, Panel 등 Instrument 및 Electrical 공종 Item을 Modeling 합니다.",
+              "Instrument Item, Cable Way, Tray, Conduit, Junction Box, Panel 등 Instrument 및 Electrical 공종 Item Modeling.",
           },
           {
             name: "Duct/HVAC Etc.",
             description:
-              "Duct, HVAC Equipment, Fire Protection, Architectural Element 등을 대부분 공종 Item을 Modeling 합니다.",
+              "Duct, HVAC Equipment, Fire Protection, Architectural Element 등 대부분 공종 Item Modeling.",
           },
         ],
       },
       {
         title: "Model Check",
-        description:
-          "3D Model 기반으로 Clash Check 및 Design Review를 수행하여 설계 오류를 사전에 검증하고, Navisworks를 활용한 3D 통합 검토 및 설계 검증을 수행합니다.",
+        description: "",
         items: [
           {
             name: "Model 검증",
             description:
-              "Design 및 Human Error 검토하여 3D Model의 정확성, 효율성, 품질을 향상합니다.",
+              "Design 및 Human Error 검토, 3D Model 정확성, 효율성, 품질 향상.",
           },
           {
             name: "Navisworks 검증",
             description:
-              "Hard, Soft, Clearance Check 등 간섭 검토 및 Report 작성. Design Tracking, Model Review로 Design과 Model의 정확성 및 품질을 검토합니다.",
+              "Hard, Soft, Clearance Check 등 간섭 검토 및 Report 작성. Design Tracking, Model Review 기반 Design과 Model 정확성 및 품질 확인.",
           },
         ],
       },
@@ -319,12 +311,12 @@ export const services: Service[] = [
           {
             name: "Project Setup",
             description:
-              "Project의 모든 특성과 조건을 고려하여 프로젝트를 생성하고, ISO, PLAN, Support Drawing의 Setting 작업을 수행합니다. Modeling 관련 Error 및 Trouble을 해결합니다.",
+              "Project의 모든 특성과 조건 고려, 프로젝트 생성, ISO, PLAN, Support Drawing Setting.",
           },
           {
             name: "Specification & Catalogue",
             description:
-              "PMS를 기반으로 전 공정의 Specification을 작성하고, Vendor Print의 내용과 형상을 기반으로 Catalogue를 생성합니다.",
+              "PMS 기반 전 공정 Specification 작성, Vendor Print 내용과 형상 기반 Catalogue 생성. Modeling 관련 Error 및 Trouble 해결.",
           },
         ],
       },
@@ -336,12 +328,12 @@ export const services: Service[] = [
           {
             name: "MaxskillWorkPro",
             description:
-              "3D 작업의 통일성과 정확성을 높이고 작업시간을 단축하여, 전체적인 Project 품질 향상을 목적으로 개발된 3D 통합 Add-in 프로그램입니다.",
+              "3D 작업의 통일성과 정확성 향상, 작업시간 단축, 전체적인 Project 품질 향상을 위한 3D 통합 Add-in 프로그램.",
           },
           {
             name: "P&ID",
             description:
-              "P&ID로 부터 Piping BM을 추출하여 3D 모델 간 Line List, Valve, Instrument, Equipment Tag 적합성 검토를 합니다. P&ID로 부터 추출한 BM을 Update 연동하여 Validation Check 기능을 갖추고 있습니다.",
+              "P&ID로 부터 Piping BM 추출, 3D 모델 간 Line List, Valve, Instrument, Equipment Tag 적합성 검토. P&ID로 부터 추출한 BM Update 연동 Validation Check 기능.",
           },
         ],
       },

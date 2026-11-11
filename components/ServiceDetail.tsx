@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CadWorkflowBanner from "@/components/CadWorkflowBanner";
 import type { Service, ServiceItem } from "@/data/services";
 import { getServiceItemImage } from "@/data/serviceItemImages";
 
@@ -99,24 +100,28 @@ export default function ServiceDetail({
       <div
         className={`relative overflow-hidden border-y border-white/10 ${
           service.id === "cad"
-            ? "aspect-[16/9] bg-white"
+            ? "aspect-[50/31] bg-white"
             : service.id === "piping"
               ? "aspect-[16/9] bg-brand-dark"
               : "h-72 sm:h-96"
         }`}
       >
-        <Image
-          src={service.image}
-          alt={service.imageAlt}
-          fill
-          className={
-            service.id === "cad" || service.id === "piping"
-              ? "object-contain object-center"
-              : "object-cover"
-          }
-          sizes="(max-width: 768px) 100vw, 1024px"
-          priority={sectionId === "piping"}
-        />
+        {service.id === "cad" ? (
+          <CadWorkflowBanner />
+        ) : (
+          <Image
+            src={service.image}
+            alt={service.imageAlt}
+            fill
+            className={
+              service.id === "piping"
+                ? "object-contain object-center"
+                : "object-cover"
+            }
+            sizes="(max-width: 768px) 100vw, 1024px"
+            priority={sectionId === "piping"}
+          />
+        )}
       </div>
 
       <div className="p-8 sm:p-10 lg:p-12">
