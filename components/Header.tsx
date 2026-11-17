@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import LogoutButton from "@/components/LogoutButton";
 import { businessAreas } from "@/data/businessAreas";
 import { projectCategories } from "@/data/projects";
 import { services } from "@/data/services";
@@ -247,6 +248,14 @@ export default function Header() {
           >
             {employeeLabel}
           </Link>
+          {sessionUser && (
+            <div className="hidden sm:block">
+              <LogoutButton
+                compact
+                onLoggedOut={() => setSessionUser(null)}
+              />
+            </div>
+          )}
           <Link
             href="/contact"
             className="brand-font hidden rounded-full border border-white/30 px-6 py-2.5 text-sm text-white transition-colors hover:border-white hover:bg-white/5 sm:inline-flex lg:text-base"
@@ -425,6 +434,17 @@ export default function Header() {
             >
               {employeeLabel}
             </Link>
+            {sessionUser && (
+              <div>
+                <LogoutButton
+                  compact
+                  onLoggedOut={() => {
+                    setSessionUser(null);
+                    setMenuOpen(false);
+                  }}
+                />
+              </div>
+            )}
 
             <Link
               href="/contact"
