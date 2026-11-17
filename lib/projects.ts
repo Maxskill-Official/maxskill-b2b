@@ -8,12 +8,12 @@ function correctProjectName(name: string) {
     .replace(/\b(?:APCO|APOC|ACPO)[ /]+(?:PHD|PDH)(?=\/UTOS\b)/gi, "APOC PDH")
     .replace(/\bMeehanaol\b/gi, "Methanol")
     .replace(/\bFaclon\b/gi, "Falcon")
-    .replace(/ph-1[,·]?\s*2공구/gi, "ph-1 · 2공구");
+    .replace(/ph-1\s*[/,·.]?\s*2공구/gi, "Ph-1/2공구");
 }
 
 function correctClient(project: Project) {
   const client = withoutCorporationMarker(project.client);
-  if (project.name.includes("금호폴리켐") && client.includes("포스코건설")) {
+  if (client.includes("포스코건설")) {
     return "포스코이앤씨";
   }
   return client;

@@ -64,7 +64,7 @@ export default function AboutPage() {
           <div className="flex flex-col items-center justify-end">
             <div className="relative mx-auto aspect-[20/21] w-full max-w-[200px] overflow-hidden rounded-2xl border border-brand-card-border bg-brand-card">
               <Image
-                src="/images/about/ceo-color.png"
+                src="/images/about/ceo-color.jpg"
                 alt={`${companyInfo.ceoTitle} ${companyInfo.ceoName}`}
                 fill
                 unoptimized

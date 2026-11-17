@@ -16,7 +16,7 @@ export const projects: Project[] = [
   {
     id: 1,
     name: "구영흑연 공장 신설 사전설계용역",
-    client: "디와이피엔에프㈜",
+    client: "디와이피엔에프",
     category: "화공",
     year: 2024,
     location: "Korea",
@@ -26,7 +26,7 @@ export const projects: Project[] = [
   {
     id: 2,
     name: "인도네시아 IBEE FEED Project",
-    client: "㈜하이테크엔지니어링",
+    client: "하이테크엔지니어링",
     category: "화공",
     year: 2024,
     location: "Indonesia",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
   {
     id: 5,
     name: "여수암모니아 터미널 건설기술 타당성검토용역",
-    client: "(주)삼안",
+    client: "삼안",
     category: "화공",
     year: 2023,
     location: "Korea",
@@ -66,7 +66,7 @@ export const projects: Project[] = [
   {
     id: 6,
     name: "당진기지#5~7 저장탱크설계용역",
-    client: "(주)삼안",
+    client: "삼안",
     category: "화공",
     year: 2023,
     location: "Korea",
@@ -86,7 +86,7 @@ export const projects: Project[] = [
   {
     id: 8,
     name: "25% NaCI 중 메탄올 제거설비",
-    client: "에쓰씨엔지니어링(주)",
+    client: "에쓰씨엔지니어링",
     category: "화공",
     year: 2023,
     location: "Korea",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
   {
     id: 11,
     name: "한화솔루션 울산2공장 노후 PVC 중합기",
-    client: "에쓰씨엔지니어링㈜",
+    client: "에쓰씨엔지니어링",
     category: "화공",
     year: 2021,
     location: "Korea",
@@ -146,7 +146,7 @@ export const projects: Project[] = [
   {
     id: 14,
     name: "Saudi Aramco HUGRS Project",
-    client: "㈜캔두",
+    client: "캔두",
     category: "화공",
     year: 2020,
     location: "Saudi",
@@ -168,7 +168,7 @@ export const projects: Project[] = [
   {
     id: 16,
     name: "M16 Ph1 Gas Plant Project",
-    client: "에쓰씨엔지니어링㈜",
+    client: "에쓰씨엔지니어링",
     category: "화공",
     year: 2019,
     location: "Korea",
@@ -178,7 +178,7 @@ export const projects: Project[] = [
   {
     id: 17,
     name: "YNCC NCC2 Project",
-    client: "(주)한화건설",
+    client: "한화건설",
     category: "화공",
     year: 2019,
     location: "Korea",
@@ -188,7 +188,7 @@ export const projects: Project[] = [
   {
     id: 18,
     name: "롯데케미칼 POE Project(Rev.1)",
-    client: "롯데건설㈜",
+    client: "롯데건설",
     category: "화공",
     year: 2018,
     location: "Korea",
@@ -208,7 +208,7 @@ export const projects: Project[] = [
   {
     id: 20,
     name: "JG SUMMIT PKG-1 Project",
-    client: "(주)포스코건설",
+    client: "포스코이앤씨",
     category: "화공",
     year: 2017,
     location: "Philippines",
@@ -218,7 +218,7 @@ export const projects: Project[] = [
   {
     id: 21,
     name: "PTTGC ORP Project",
-    client: "(주)캔두",
+    client: "캔두",
     category: "화공",
     year: 2017,
     location: "Thailand",
@@ -228,7 +228,7 @@ export const projects: Project[] = [
   {
     id: 22,
     name: "DE-AROMATIZATION SOLVENT Project",
-    client: "(주)한화건설",
+    client: "한화건설",
     category: "화공",
     year: 2017,
     location: "Korea",
@@ -248,7 +248,7 @@ export const projects: Project[] = [
   {
     id: 24,
     name: "PETRONAS(RAPID PKG#5 LLDPE Project)",
-    client: "(주)캔두",
+    client: "캔두",
     category: "화공",
     year: 2016,
     location: "Malaysia",
@@ -288,7 +288,7 @@ export const projects: Project[] = [
   {
     id: 28,
     name: "Hyundai Chemical MX Project",
-    client: "롯데건설(주)",
+    client: "롯데건설",
     category: "화공",
     year: 2014,
     location: "Korea",
@@ -298,7 +298,7 @@ export const projects: Project[] = [
   {
     id: 29,
     name: "ENI IRAQ R.V (IRAQ Eni Zubair DGS North Package)",
-    client: "(주)캔두",
+    client: "캔두",
     category: "화공",
     year: 2014,
     location: "Iraq",
@@ -350,7 +350,7 @@ export const projects: Project[] = [
   {
     id: 34,
     name: "O Mon IV HRSG",
-    client: "비에이치아이㈜",
+    client: "비에이치아이",
     category: "발전",
     year: 2025,
     location: "Vietnam",
@@ -360,7 +360,7 @@ export const projects: Project[] = [
   {
     id: 35,
     name: "Tung Hsiao 2 HRSG",
-    client: "비에이치아이㈜",
+    client: "비에이치아이",
     category: "발전",
     year: 2025,
     location: "Taiwan",
@@ -370,7 +370,7 @@ export const projects: Project[] = [
   {
     id: 36,
     name: "Qatar Facility E IWPP Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2025,
     location: "Qatar",
@@ -380,7 +380,7 @@ export const projects: Project[] = [
   {
     id: 37,
     name: "KSA JUBAIL NET COGENERATION IPP Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2024,
     location: "Saudi",
@@ -390,7 +390,7 @@ export const projects: Project[] = [
   {
     id: 38,
     name: "ROMANIA SMR FEED PHASE 2 Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2024,
     location: "Romania",
@@ -400,7 +400,7 @@ export const projects: Project[] = [
   {
     id: 39,
     name: "KSA Amiral Cogen IPP",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2024,
     location: "Saudi",
@@ -410,7 +410,7 @@ export const projects: Project[] = [
   {
     id: 40,
     name: "Saudi Arabia Amiral Cogen Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2022,
     location: "Saudi",
@@ -420,7 +420,7 @@ export const projects: Project[] = [
   {
     id: 41,
     name: "Tanajib WISPP Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2021,
     location: "Saudi",
@@ -430,7 +430,7 @@ export const projects: Project[] = [
   {
     id: 42,
     name: "Shoaiba Ph.4",
-    client: "두산중공업㈜",
+    client: "두산중공업",
     category: "발전",
     year: 2019,
     location: "Saudi",
@@ -440,7 +440,7 @@ export const projects: Project[] = [
   {
     id: 43,
     name: "UHP RO Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2018,
     location: "Qatar",
@@ -450,7 +450,7 @@ export const projects: Project[] = [
   {
     id: 44,
     name: "Shoaiba RO Project",
-    client: "두산중공업(주)",
+    client: "두산중공업",
     category: "발전",
     year: 2017,
     location: "Saudi",
@@ -460,7 +460,7 @@ export const projects: Project[] = [
   {
     id: 45,
     name: "Qatar Facility D IWPP Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2015,
     location: "Qatar",
@@ -470,7 +470,7 @@ export const projects: Project[] = [
   {
     id: 46,
     name: "Turkey Kirikkale Independent Power Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2014,
     location: "Turkey",
@@ -480,7 +480,7 @@ export const projects: Project[] = [
   {
     id: 47,
     name: "EMAL PHASEE II CCPP Project (Rev.1)",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "발전",
     year: 2014,
     location: "UAE",
@@ -492,7 +492,7 @@ export const projects: Project[] = [
   {
     id: 48,
     name: "YHP LPG Terminal Project",
-    client: "SGC이테크건설(주)",
+    client: "SGC이테크건설",
     category: "LNG",
     year: 2023,
     location: "Korea",
@@ -502,7 +502,7 @@ export const projects: Project[] = [
   {
     id: 49,
     name: "카타르 LNG NFXP EPC.2 Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "LNG",
     year: 2023,
     location: "Qatar",
@@ -512,7 +512,7 @@ export const projects: Project[] = [
   {
     id: 50,
     name: "Philippines Atimonam One Energy LNG to Power Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "LNG",
     year: 2023,
     location: "Philippines",
@@ -522,7 +522,7 @@ export const projects: Project[] = [
   {
     id: 51,
     name: "카타르 NFS LNG Project",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "LNG",
     year: 2022,
     location: "Qatar",
@@ -532,7 +532,7 @@ export const projects: Project[] = [
   {
     id: 52,
     name: "PV Gas Thi Vai LNG Receiving Terminal",
-    client: "삼성물산(주)",
+    client: "삼성물산",
     category: "LNG",
     year: 2019,
     location: "Vietnam",
@@ -542,7 +542,7 @@ export const projects: Project[] = [
   {
     id: 53,
     name: "POSCO SNG (Rev.1)",
-    client: "(주)포스코건설",
+    client: "포스코이앤씨",
     category: "LNG",
     year: 2012,
     location: "Korea",
@@ -571,7 +571,7 @@ export const projects: Project[] = [
   },
   {
     id: 56,
-    name: "삼성전자 P5 ph-1 · 2공구(삼성물산)",
+    name: "삼성전자 P5 Ph-1/2공구(삼성물산)",
     client: "삼성물산",
     category: "산업설비",
     year: 0,

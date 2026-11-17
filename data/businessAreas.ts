@@ -143,8 +143,8 @@ export const businessAreas: BusinessArea[] = [
     featuredNames: [
       { match: "현대제철", display: "미국현대제철소(HPLS)" },
       {
-        match: "P5 ph-1",
-        display: "삼성전자 P5 ph-1 · 2공구(삼성물산)",
+        match: "P5 Ph-1",
+        display: "삼성전자 P5 Ph-1/2공구(삼성물산)",
       },
       { match: "흑연", display: "DYPNF 구형흑연 기본설계" },
     ],

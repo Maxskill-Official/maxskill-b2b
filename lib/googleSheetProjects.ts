@@ -127,7 +127,7 @@ function mapRow(
   return {
     id: 0,
     name,
-    client: client.toUpperCase() === "SAMSUNG S&T" ? "삼성물산(주)" : client,
+    client: client.toUpperCase() === "SAMSUNG S&T" ? "삼성물산" : client,
     category,
     year,
     location: fields.location?.trim() || "-",
