@@ -79,6 +79,8 @@ export default function Header() {
   const employeeLabel = sessionUser
     ? [sessionUser.name, sessionUser.position].filter(Boolean).join(" ")
     : "직원 로그인";
+  const employeeHref =
+    sessionUser?.role === "admin" ? "/admin/jobs" : "/login";
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-brand-dark/95 backdrop-blur-md">
@@ -236,7 +238,7 @@ export default function Header() {
 
         <div className="flex items-center gap-4">
           <Link
-            href="/login"
+            href={employeeHref}
             className={`hidden text-sm font-semibold transition-colors sm:inline-flex ${
               pathname === "/login" || pathname.startsWith("/admin/")
                 ? "text-brand-blue"
@@ -417,7 +419,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/login"
+              href={employeeHref}
               onClick={() => setMenuOpen(false)}
               className="text-base font-semibold text-gray-200"
             >
