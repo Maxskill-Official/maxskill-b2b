@@ -181,7 +181,10 @@ export default function AdminJobsManager({
         </div>
       </section>
 
-      <section className="rounded-2xl border border-white/10 bg-brand-card p-6 sm:p-8">
+      <section
+        id="job-form"
+        className="scroll-mt-28 rounded-2xl border border-white/10 bg-brand-card p-6 sm:p-8"
+      >
         <h2 className="text-xl font-bold text-white">
           {editing ? "채용공고 수정" : "채용공고 등록"}
         </h2>
