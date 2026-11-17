@@ -79,7 +79,7 @@ export default function Header() {
 
   const employeeLabel = sessionUser
     ? [sessionUser.name, sessionUser.position].filter(Boolean).join(" ")
-    : "직원 로그인";
+    : "";
   const employeeHref =
     sessionUser?.role === "admin" ? "/admin/jobs" : "/login";
 
@@ -238,16 +238,18 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Link
-            href={employeeHref}
-            className={`hidden text-sm font-semibold transition-colors sm:inline-flex ${
-              pathname === "/login" || pathname.startsWith("/admin/")
-                ? "text-brand-blue"
-                : "text-gray-300 hover:text-white"
-            }`}
-          >
-            {employeeLabel}
-          </Link>
+          {sessionUser && (
+            <Link
+              href={employeeHref}
+              className={`hidden text-sm font-semibold transition-colors sm:inline-flex ${
+                pathname === "/login" || pathname.startsWith("/admin/")
+                  ? "text-brand-blue"
+                  : "text-gray-300 hover:text-white"
+              }`}
+            >
+              {employeeLabel}
+            </Link>
+          )}
           {sessionUser && (
             <div className="hidden sm:block">
               <LogoutButton
@@ -427,23 +429,25 @@ export default function Header() {
               인재채용
             </Link>
 
-            <Link
-              href={employeeHref}
-              onClick={() => setMenuOpen(false)}
-              className="text-base font-semibold text-gray-200"
-            >
-              {employeeLabel}
-            </Link>
             {sessionUser && (
-              <div>
-                <LogoutButton
-                  compact
-                  onLoggedOut={() => {
-                    setSessionUser(null);
-                    setMenuOpen(false);
-                  }}
-                />
-              </div>
+              <>
+                <Link
+                  href={employeeHref}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base font-semibold text-gray-200"
+                >
+                  {employeeLabel}
+                </Link>
+                <div>
+                  <LogoutButton
+                    compact
+                    onLoggedOut={() => {
+                      setSessionUser(null);
+                      setMenuOpen(false);
+                    }}
+                  />
+                </div>
+              </>
             )}
 
             <Link

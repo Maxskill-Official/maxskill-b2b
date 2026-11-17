@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { companyInfo } from "@/data/company";
 
 export default function Footer() {
@@ -24,11 +25,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/20 pt-8">
+        <div className="mt-10 flex items-center justify-between gap-4 border-t border-white/20 pt-8">
           <p className="text-sm text-white/60">
             © {new Date().getFullYear()} {companyInfo.name}. All rights
             reserved.
           </p>
+          <Link
+            href="/login"
+            className="text-xs text-white/30 transition hover:text-white/60"
+          >
+            로그인
+          </Link>
         </div>
       </div>
     </footer>
