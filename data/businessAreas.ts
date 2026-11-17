@@ -73,7 +73,7 @@ export const businessAreas: BusinessArea[] = [
       "KSA Amiral Cogen IPP",
       "Tanajib WISPP Project",
     ],
-    image: "/images/hero/power-plant-focused.jpg",
+    image: "/images/hero/power-plant-clean.jpg",
     imageAlt: "발전 설비 전경",
   },
   {
@@ -148,7 +148,7 @@ export const businessAreas: BusinessArea[] = [
       },
       { match: "흑연", display: "DYPNF 구형흑연 기본설계" },
     ],
-    image: "/images/hero/semiconductor-building.jpg",
+    image: "/images/hero/semiconductor-building-clean.jpg",
     imageAlt: "반도체 산업설비 전경",
   },
 ];

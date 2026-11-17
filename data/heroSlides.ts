@@ -9,7 +9,7 @@ export const heroSlides = [
   {
     category: "발전",
     label: "Power Plant",
-    src: "/images/hero/power-plant-focused.jpg",
+    src: "/images/hero/power-plant-clean.jpg",
     alt: "발전 설비 전경",
     position: "center 50%",
   },
@@ -23,7 +23,7 @@ export const heroSlides = [
   {
     category: "산업설비",
     label: "Industrial",
-    src: "/images/hero/semiconductor-building.jpg",
+    src: "/images/hero/semiconductor-building-clean.jpg",
     alt: "반도체 산업설비 전경",
     position: "center 50%",
   },
