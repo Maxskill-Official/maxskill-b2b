@@ -8,6 +8,7 @@ import {
 } from "@/lib/jobPostingsDb";
 
 export const dynamic = "force-dynamic";
+export const preferredRegion = "sin1";
 
 export async function GET() {
   const user = await getCurrentUser().catch(() => null);

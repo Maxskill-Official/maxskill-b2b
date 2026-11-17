@@ -7,6 +7,8 @@ import {
   updateJobPosting,
 } from "@/lib/jobPostingsDb";
 
+export const preferredRegion = "sin1";
+
 function parseId(value: string) {
   const id = Number.parseInt(value, 10);
   return Number.isSafeInteger(id) && id > 0 ? id : null;

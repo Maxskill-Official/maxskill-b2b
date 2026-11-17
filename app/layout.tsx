@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+export const preferredRegion = "sin1";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",

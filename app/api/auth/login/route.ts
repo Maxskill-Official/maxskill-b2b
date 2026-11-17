@@ -9,6 +9,7 @@ import {
 } from "@/lib/auth";
 
 export const runtime = "nodejs";
+export const preferredRegion = "sin1";
 
 const loginSchema = z.object({
   loginId: z.string().trim().min(1).max(100),
