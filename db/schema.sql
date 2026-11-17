@@ -2,6 +2,7 @@ CREATE TABLE IF NOT EXISTS users (
   id BIGSERIAL PRIMARY KEY,
   login_id TEXT NOT NULL UNIQUE,
   name TEXT NOT NULL,
+  position TEXT,
   password_hash TEXT NOT NULL,
   role TEXT NOT NULL DEFAULT 'employee'
     CHECK (role IN ('employee', 'admin')),
@@ -9,6 +10,9 @@ CREATE TABLE IF NOT EXISTS users (
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+ALTER TABLE users
+  ADD COLUMN IF NOT EXISTS position TEXT;
 
 CREATE INDEX IF NOT EXISTS users_active_login_idx
   ON users (login_id)

@@ -21,7 +21,8 @@ export default async function LoginPage({
         {user ? (
           <div className="mt-8">
             <p className="text-lg font-semibold text-white">
-              {user.name}님, 로그인되어 있습니다.
+              {[user.name, user.position].filter(Boolean).join(" ")}님,
+              로그인되어 있습니다.
             </p>
             <p className="mt-2 text-sm text-gray-400">
               권한: {user.role === "admin" ? "관리자" : "일반 사원"}

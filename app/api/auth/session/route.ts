@@ -8,7 +8,12 @@ export async function GET() {
     const user = await getCurrentUser();
     return NextResponse.json({
       user: user
-        ? { name: user.name, loginId: user.loginId, role: user.role }
+        ? {
+            name: user.name,
+            position: user.position,
+            loginId: user.loginId,
+            role: user.role,
+          }
         : null,
     });
   } catch {

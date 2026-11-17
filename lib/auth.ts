@@ -12,6 +12,7 @@ export interface SessionUser {
   id: number;
   loginId: string;
   name: string;
+  position: string | null;
   role: UserRole;
 }
 
@@ -88,9 +89,10 @@ export async function getCurrentUser(): Promise<SessionUser | null> {
     id: string;
     login_id: string;
     name: string;
+    position: string | null;
     role: UserRole;
   }[]>`
-    SELECT id, login_id, name, role
+    SELECT id, login_id, name, position, role
     FROM users
     WHERE id = ${session.userId}
       AND active = TRUE
@@ -104,6 +106,7 @@ export async function getCurrentUser(): Promise<SessionUser | null> {
     id: Number(user.id),
     loginId: user.login_id,
     name: user.name,
+    position: user.position,
     role: user.role,
   };
 }
@@ -133,10 +136,11 @@ export async function authenticateUser(
     id: string;
     login_id: string;
     name: string;
+    position: string | null;
     password_hash: string;
     role: UserRole;
   }[]>`
-    SELECT id, login_id, name, password_hash, role
+    SELECT id, login_id, name, position, password_hash, role
     FROM users
     WHERE LOWER(login_id) = LOWER(${loginId})
       AND active = TRUE
@@ -186,6 +190,7 @@ export async function authenticateUser(
     id: Number(row.id),
     loginId: row.login_id,
     name: row.name,
+    position: row.position,
     role: row.role,
   };
 }

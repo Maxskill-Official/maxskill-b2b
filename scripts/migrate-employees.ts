@@ -30,15 +30,20 @@ async function main() {
       emp_id: string;
       emp_kor_nm: string;
       emp_pw: string;
+      position: string | null;
     }>(`
     SELECT
-      LTRIM(RTRIM(emp_id)) AS emp_id,
-      LTRIM(RTRIM(emp_kor_nm)) AS emp_kor_nm,
-      LTRIM(RTRIM(emp_pw)) AS emp_pw
-    FROM dbo.PJ_EMPLOYEE
-    WHERE ISNULL(retire_at, N'N') = N'N'
-      AND NULLIF(LTRIM(RTRIM(emp_id)), N'') IS NOT NULL
-      AND NULLIF(LTRIM(RTRIM(emp_pw)), N'') IS NOT NULL
+      LTRIM(RTRIM(employee.emp_id)) AS emp_id,
+      LTRIM(RTRIM(employee.emp_kor_nm)) AS emp_kor_nm,
+      LTRIM(RTRIM(employee.emp_pw)) AS emp_pw,
+      NULLIF(LTRIM(RTRIM(position.cd_nm)), N'') AS position
+    FROM dbo.PJ_EMPLOYEE AS employee
+    LEFT JOIN dbo.S_CODE AS position
+      ON position.cd = employee.clsf_cd
+      AND position.cd_stdr = N'clsf_cd'
+    WHERE ISNULL(employee.retire_at, N'N') = N'N'
+      AND NULLIF(LTRIM(RTRIM(employee.emp_id)), N'') IS NOT NULL
+      AND NULLIF(LTRIM(RTRIM(employee.emp_pw)), N'') IS NOT NULL
   `);
 
     const adminMatches = new Map<string, number>();
@@ -70,10 +75,13 @@ async function main() {
         const role = adminNames.has(employee.emp_kor_nm) ? "admin" : "employee";
 
         await tx`
-        INSERT INTO users (login_id, name, password_hash, role, active, updated_at)
+        INSERT INTO users (
+          login_id, name, position, password_hash, role, active, updated_at
+        )
         VALUES (
           ${employee.emp_id},
           ${employee.emp_kor_nm},
+          ${employee.position},
           ${passwordHash},
           ${role},
           TRUE,
@@ -81,6 +89,7 @@ async function main() {
         )
         ON CONFLICT (login_id) DO UPDATE SET
           name = EXCLUDED.name,
+          position = EXCLUDED.position,
           password_hash = EXCLUDED.password_hash,
           role = EXCLUDED.role,
           active = TRUE,

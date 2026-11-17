@@ -8,6 +8,12 @@ import { businessAreas } from "@/data/businessAreas";
 import { projectCategories } from "@/data/projects";
 import { services } from "@/data/services";
 
+interface HeaderSessionUser {
+  name: string;
+  position: string | null;
+  role: "employee" | "admin";
+}
+
 function businessAreaLabel(category: (typeof projectCategories)[number]) {
   return businessAreas.find((area) => area.id === category)?.title ?? category;
 }
@@ -40,6 +46,7 @@ export default function Header() {
   const [projectsOpen, setProjectsOpen] = useState(false);
   const [performanceOpen, setPerformanceOpen] = useState(false);
   const [activeHash, setActiveHash] = useState("");
+  const [sessionUser, setSessionUser] = useState<HeaderSessionUser | null>(null);
   const servicesActive = isServicesPath(pathname);
   const projectsActive = isProjectsPath(pathname);
   const performanceActive = isPerformancePath(pathname);
@@ -51,6 +58,27 @@ export default function Header() {
     window.addEventListener("hashchange", updateHash);
     return () => window.removeEventListener("hashchange", updateHash);
   }, [pathname]);
+
+  useEffect(() => {
+    let active = true;
+
+    fetch("/api/auth/session", { cache: "no-store" })
+      .then((response) => response.json())
+      .then((data) => {
+        if (active) setSessionUser(data.user ?? null);
+      })
+      .catch(() => {
+        if (active) setSessionUser(null);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [pathname]);
+
+  const employeeLabel = sessionUser
+    ? [sessionUser.name, sessionUser.position].filter(Boolean).join(" ")
+    : "직원 로그인";
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-brand-dark/95 backdrop-blur-md">
@@ -215,7 +243,7 @@ export default function Header() {
                 : "text-gray-300 hover:text-white"
             }`}
           >
-            직원 로그인
+            {employeeLabel}
           </Link>
           <Link
             href="/contact"
@@ -393,7 +421,7 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="text-base font-semibold text-gray-200"
             >
-              직원 로그인
+              {employeeLabel}
             </Link>
 
             <Link
