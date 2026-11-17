@@ -94,3 +94,7 @@ export interface JobPosting {
   contactPhone?: string;
   contactEmail?: string;
 }
+
+export interface AdminJobPosting extends JobPosting {
+  published: boolean;
+}

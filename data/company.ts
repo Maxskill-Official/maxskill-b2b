@@ -13,8 +13,8 @@ export const companyInfo = {
   description:
     "화공, 발전, LNG 분야 플랜트 엔지니어링 전문기업. Piping Design, Stress Analysis, 3D CAD, 설계 IT.",
   scaleYear: "2025",
-  revenue: "32억원",
-  headcount: "48명",
+  revenue: "45억원",
+  headcount: "60명",
 };
 
 export const history = [

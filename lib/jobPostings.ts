@@ -1,11 +1,21 @@
 import type { JobPosting } from "@/data/careers";
+import { hasDatabaseConfig } from "@/lib/db";
 import { fetchJobPostingsFromGoogleSheet } from "@/lib/googleSheetJobPostings";
 import {
   getFallbackJobPostings,
   readLocalJobPostings,
 } from "@/lib/jobBoardStore";
+import { getPublicJobPostingsFromDb } from "@/lib/jobPostingsDb";
 
 export async function getJobPostings(): Promise<JobPosting[]> {
+  if (hasDatabaseConfig()) {
+    try {
+      return await getPublicJobPostingsFromDb();
+    } catch (error) {
+      console.error("Failed to load job postings from database:", error);
+    }
+  }
+
   const csvUrl = process.env.GOOGLE_SHEETS_CAREERS_CSV_URL;
 
   if (csvUrl) {

@@ -208,6 +208,16 @@ export default function Header() {
 
         <div className="flex items-center gap-4">
           <Link
+            href="/login"
+            className={`hidden text-sm font-semibold transition-colors sm:inline-flex ${
+              pathname === "/login" || pathname.startsWith("/admin/")
+                ? "text-brand-blue"
+                : "text-gray-300 hover:text-white"
+            }`}
+          >
+            직원 로그인
+          </Link>
+          <Link
             href="/contact"
             className="brand-font hidden rounded-full border border-white/30 px-6 py-2.5 text-sm text-white transition-colors hover:border-white hover:bg-white/5 sm:inline-flex lg:text-base"
           >
@@ -376,6 +386,14 @@ export default function Header() {
               }`}
             >
               인재채용
+            </Link>
+
+            <Link
+              href="/login"
+              onClick={() => setMenuOpen(false)}
+              className="text-base font-semibold text-gray-200"
+            >
+              직원 로그인
             </Link>
 
             <Link
