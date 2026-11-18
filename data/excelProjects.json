@@ -1,0 +1,1232 @@
+[
+  {
+    "name": "구상흑연 공장신설 사전설계용역",
+    "client": "디와이피엔에프㈜",
+    "category": "화공",
+    "year": 2024,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 1
+  },
+  {
+    "name": "인도네시아 IBEE FEED Project",
+    "client": "㈜하이테크엔지니어링",
+    "category": "화공",
+    "year": 2024,
+    "location": "Indonesia",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 2
+  },
+  {
+    "name": "카타르 RLP Ethylene",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2024,
+    "location": "Qatar",
+    "service": "D,M",
+    "tool": "E3D",
+    "id": 3
+  },
+  {
+    "name": "멕시코 Pacifico Mexinol",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2023,
+    "location": "맥시코",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 4
+  },
+  {
+    "name": "여수암모니아 터미널 건설기술 타당성검토용역",
+    "client": "(주)삼안",
+    "category": "화공",
+    "year": 2023,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 5
+  },
+  {
+    "name": "HTC SAF Simple FEED Project",
+    "client": "(주)한화건설",
+    "category": "화공",
+    "year": 2023,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 6
+  },
+  {
+    "name": "25% NaCI 중 메탄올 제거설비",
+    "client": "에쓰씨엔지니어링(주)",
+    "category": "화공",
+    "year": 2023,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "E3D",
+    "id": 7
+  },
+  {
+    "name": "여수 금호폴리켐 70,000MT/Y EPDM PLANT 건설공사",
+    "client": "㈜포스코건설",
+    "category": "화공",
+    "year": 2022,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 8
+  },
+  {
+    "name": "한화솔루션 울산2공장 노후 PVC 중합기",
+    "client": "에쓰씨엔지니어링㈜",
+    "category": "화공",
+    "year": 2021,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 9
+  },
+  {
+    "name": "CA PLANT 구축관련 상세설계",
+    "client": "에쓰씨엔지니어링㈜",
+    "category": "화공",
+    "year": 2021,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "E3D",
+    "id": 10
+  },
+  {
+    "name": "사우디 APCO PHD/UTOS Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2021,
+    "location": "Saudi",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 11
+  },
+  {
+    "name": "러시아 Baltic Chemical Plant Cracker PKG",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2021,
+    "location": "Russia",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 12
+  },
+  {
+    "name": "HTC AOG Project",
+    "client": "한화건설㈜",
+    "category": "화공",
+    "year": 2021,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "SP2d",
+    "id": 13
+  },
+  {
+    "name": "PTI.ID Dos Boscas Phase 2",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2020,
+    "location": "Indonesia",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 14
+  },
+  {
+    "name": "카타르 QAPCO",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2020,
+    "location": "Qatar",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 15
+  },
+  {
+    "name": "Sarawak PetChem Methanol",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2020,
+    "location": "Malaysia",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 16
+  },
+  {
+    "name": "필리핀 JG SUMMIT PKG",
+    "client": "㈜포스코건설",
+    "category": "화공",
+    "year": 2020,
+    "location": "Philippines",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 17
+  },
+  {
+    "name": "Hassi Messaoud Refinery Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2020,
+    "location": "Algeria",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 18
+  },
+  {
+    "name": "SKSD CH NO2. Project",
+    "client": "에쓰씨엔지니어링㈜",
+    "category": "화공",
+    "year": 2020,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 19
+  },
+  {
+    "name": "Skid Module Prototype",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2020,
+    "location": "확인 필요",
+    "service": "D,M",
+    "tool": "SP2d",
+    "id": 20
+  },
+  {
+    "name": "Vietnam LSP HDPE/PP Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2020,
+    "location": "Vietnam",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 21
+  },
+  {
+    "name": "HSVC PP5 Project",
+    "client": "이테크건설㈜",
+    "category": "화공",
+    "year": 2020,
+    "location": "Korea",
+    "service": "확인 필요",
+    "tool": "확인 필요",
+    "id": 22
+  },
+  {
+    "name": "Saudi Aramco HUGRS Project",
+    "client": "㈜캔두",
+    "category": "화공",
+    "year": 2020,
+    "location": "Saudi",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 23
+  },
+  {
+    "name": "HTC VPE Project",
+    "client": "(주)한화건설",
+    "category": "화공",
+    "year": 2019,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 24
+  },
+  {
+    "name": "CEB.1 Project(FILM)",
+    "client": "에쓰씨엔지니어링㈜",
+    "category": "화공",
+    "year": 2019,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 25
+  },
+  {
+    "name": "김포 R&D Project(Rev.1)",
+    "client": "에쓰씨엔지니어링㈜",
+    "category": "화공",
+    "year": 2019,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 26
+  },
+  {
+    "name": "Sarawak Meehanaol FEED",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2019,
+    "location": "Malaysia",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 27
+  },
+  {
+    "name": "M16 Ph1 Gas Plant Project",
+    "client": "에쓰씨엔지니어링㈜",
+    "category": "화공",
+    "year": 2019,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "PDMS",
+    "id": 28
+  },
+  {
+    "name": "YNCC NCC2 Project",
+    "client": "(주)한화건설",
+    "category": "화공",
+    "year": 2019,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "PDMS",
+    "id": 29
+  },
+  {
+    "name": "CBDC Project(Rev.22)",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2019,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 30
+  },
+  {
+    "name": "롯데케미칼 POE Project(Rev.1)",
+    "client": "롯데건설㈜",
+    "category": "화공",
+    "year": 2018,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "SP3d",
+    "id": 31
+  },
+  {
+    "name": "SD Project",
+    "client": "에쓰씨엔지니어링㈜",
+    "category": "화공",
+    "year": 2018,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 32
+  },
+  {
+    "name": "NOE Project",
+    "client": "롯데건설(주)",
+    "category": "화공",
+    "year": 2018,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 33
+  },
+  {
+    "name": "CEB.1Project",
+    "client": "에쓰씨엔지니어링㈜",
+    "category": "화공",
+    "year": 2018,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "SP0d",
+    "id": 34
+  },
+  {
+    "name": "MP4 Project",
+    "client": "OCI 주식회사",
+    "category": "화공",
+    "year": 2018,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "SP1d",
+    "id": 35
+  },
+  {
+    "name": "SH.5 Project",
+    "client": "에쓰씨엔지니어링㈜",
+    "category": "화공",
+    "year": 2018,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "SP2d",
+    "id": 36
+  },
+  {
+    "name": "CFP Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2018,
+    "location": "UAE",
+    "service": "D,M,S",
+    "tool": "SP3d",
+    "id": 37
+  },
+  {
+    "name": "ISBL 외주계약 ADL Project",
+    "client": "(주)한화건설",
+    "category": "화공",
+    "year": 2018,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 38
+  },
+  {
+    "name": "R&D Project",
+    "client": "에쓰씨엔지니어링(주)",
+    "category": "화공",
+    "year": 2017,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 39
+  },
+  {
+    "name": "JG SUMMIT PKG-1 Project",
+    "client": "(주)포스코건설",
+    "category": "화공",
+    "year": 2017,
+    "location": "Philippines",
+    "service": "D,M,S",
+    "tool": "SP3d",
+    "id": 40
+  },
+  {
+    "name": "PTTGC ORP Project",
+    "client": "(주)캔두",
+    "category": "화공",
+    "year": 2017,
+    "location": "Thailand",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 41
+  },
+  {
+    "name": "Lotte Chemical POE Project",
+    "client": "롯데건설(주)",
+    "category": "화공",
+    "year": 2017,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 42
+  },
+  {
+    "name": "ISBL Project",
+    "client": "(주)한화건설",
+    "category": "화공",
+    "year": 2017,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 43
+  },
+  {
+    "name": "PTTGC PO Project",
+    "client": "(주)캔두",
+    "category": "화공",
+    "year": 2017,
+    "location": "Thailand",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 44
+  },
+  {
+    "name": "N-Heptane Project",
+    "client": "(주)한화건설",
+    "category": "화공",
+    "year": 2017,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 45
+  },
+  {
+    "name": "COK#7-#12(PHASE 2&3) EXPANSION Project",
+    "client": "에쓰씨엔지니어링(주)",
+    "category": "화공",
+    "year": 2017,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 46
+  },
+  {
+    "name": "MVR(V) Project",
+    "client": "에쓰씨엔지니어링(주)",
+    "category": "화공",
+    "year": 2017,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 47
+  },
+  {
+    "name": "MAJOON PNT",
+    "client": "현대건설(주)",
+    "category": "화공",
+    "year": 2017,
+    "location": "Saudi Arabia",
+    "service": "D",
+    "tool": "-",
+    "id": 48
+  },
+  {
+    "name": "IRAQ Eni Zubair Refinery (Rev.1)",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2017,
+    "location": "Iraq",
+    "service": "D",
+    "tool": "-",
+    "id": 49
+  },
+  {
+    "name": "DE-AROMATIZATION SOLVENT Project",
+    "client": "(주)한화건설",
+    "category": "화공",
+    "year": 2017,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "PDMS",
+    "id": 50
+  },
+  {
+    "name": "TPP3 Project",
+    "client": "(주)캔두",
+    "category": "화공",
+    "year": 2017,
+    "location": "Malaysia",
+    "service": "D",
+    "tool": "-",
+    "id": 51
+  },
+  {
+    "name": "BAPCO Modernization Program",
+    "client": "대우건설",
+    "category": "화공",
+    "year": 2016,
+    "location": "Bahrain",
+    "service": "D",
+    "tool": "-",
+    "id": 52
+  },
+  {
+    "name": "PTTGC PO (Propylene Oxide) Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2016,
+    "location": "Thailand",
+    "service": "D,M",
+    "tool": "SP2d",
+    "id": 53
+  },
+  {
+    "name": "Kuwait KNPC MAB#1 Clean Fuels (Rev.1)",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2016,
+    "location": "Kuwait",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 54
+  },
+  {
+    "name": "PETRONAS(RAPID PKG#5 LLDPE Project)",
+    "client": "(주)캔두",
+    "category": "화공",
+    "year": 2016,
+    "location": "Malaysia",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 55
+  },
+  {
+    "name": "SEA Louisiana Construction (America Lotte MEG)",
+    "client": "(주)캔두",
+    "category": "화공",
+    "year": 2015,
+    "location": "U.S.A.",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 56
+  },
+  {
+    "name": "S-OIL Residue Upgrade Complex Project",
+    "client": "대우건설",
+    "category": "화공",
+    "year": 2015,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 57
+  },
+  {
+    "name": "Takreer Processing Offshore Crude Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2015,
+    "location": "UAE",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 58
+  },
+  {
+    "name": "IOCL Plaradip PP Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2015,
+    "location": "India",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 59
+  },
+  {
+    "name": "Kazakhstan KLPE Ethylene Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2015,
+    "location": "Kazakhstan",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 60
+  },
+  {
+    "name": "Lotte Chemical IP Project",
+    "client": "(주)캔두",
+    "category": "화공",
+    "year": 2015,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 61
+  },
+  {
+    "name": "PETRONAS RAPID PKG#11.EO/EG",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2015,
+    "location": "Malaysia",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 62
+  },
+  {
+    "name": "NF3 Vent Gas",
+    "client": "OCI Co.,Ltd.",
+    "category": "화공",
+    "year": 2015,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 63
+  },
+  {
+    "name": "Hyundai Chemical MX Project",
+    "client": "롯데건설(주)",
+    "category": "화공",
+    "year": 2014,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "PDMS",
+    "id": 64
+  },
+  {
+    "name": "cGMP Plant Upgrade Phase 2 Project",
+    "client": "에스지씨이테크건설(주)",
+    "category": "화공",
+    "year": 2014,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 65
+  },
+  {
+    "name": "PTTGC LLDPE & Hexene1 Project",
+    "client": "(주)포스코건설",
+    "category": "화공",
+    "year": 2014,
+    "location": "Thailand",
+    "service": "D",
+    "tool": "-",
+    "id": 66
+  },
+  {
+    "name": "ENI IRAQ R.V(IRAQ Eni Zubair DGS North Package",
+    "client": "(주)캔두",
+    "category": "화공",
+    "year": 2014,
+    "location": "Iraq",
+    "service": "D,M",
+    "tool": "PDS",
+    "id": 67
+  },
+  {
+    "name": "Kuwait National Petroleum Company(KNPC Clean Fuels Project(CFP)MAB 1 Pkg.",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2014,
+    "location": "Kuwait",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 68
+  },
+  {
+    "name": "Sonatrach (Timimoun(TFD) Project)",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2014,
+    "location": "Algeria",
+    "service": "D",
+    "tool": "-",
+    "id": 69
+  },
+  {
+    "name": "Iraq West Qurna 2. Project(Rev.1)",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2013,
+    "location": "Iraq",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 70
+  },
+  {
+    "name": "Abu Dhabi Oil Refining Company",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2013,
+    "location": "UAE",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 71
+  },
+  {
+    "name": "PTT PHENOL Project",
+    "client": "(주)포스코건설",
+    "category": "화공",
+    "year": 2013,
+    "location": "Thailand",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 72
+  },
+  {
+    "name": "KPA4 Project",
+    "client": "(주)포스코건설",
+    "category": "화공",
+    "year": 2013,
+    "location": "Korea",
+    "service": "D,M,C,S",
+    "tool": "PDS",
+    "id": 73
+  },
+  {
+    "name": "Maaden Ammonia Refinery Steam Plant Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2012,
+    "location": "Saudi Arabia",
+    "service": "D",
+    "tool": "-",
+    "id": 74
+  },
+  {
+    "name": "Suncor Voyageur Hydrotreaters-Consulting",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2012,
+    "location": "Canada",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 75
+  },
+  {
+    "name": "Takreer Carbon Black & Delayed Coker",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2012,
+    "location": "Abudhabi",
+    "service": "D,M,C,S",
+    "tool": "PDS",
+    "id": 76
+  },
+  {
+    "name": "SKI V Project",
+    "client": "(주)포스코건설",
+    "category": "화공",
+    "year": 2012,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "PDS",
+    "id": 77
+  },
+  {
+    "name": "PTT PHR-3 Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2012,
+    "location": "Thailand",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 78
+  },
+  {
+    "name": "SAMCO.Acrylic Acid Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2012,
+    "location": "Saudi Arabia",
+    "service": "D,M",
+    "tool": "PDS",
+    "id": 79
+  },
+  {
+    "name": "Skikda Refineryh Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2012,
+    "location": "Algeria",
+    "service": "D,M",
+    "tool": "PDS",
+    "id": 80
+  },
+  {
+    "name": "Dow-Mitsui Faclon Project",
+    "client": "Samsung E&A",
+    "category": "화공",
+    "year": 2012,
+    "location": "U.S.A.",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 81
+  },
+  {
+    "name": "아산 탕정 HRSG",
+    "client": "비에이치아이㈜",
+    "category": "발전",
+    "year": 2026,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "E4D",
+    "id": 82
+  },
+  {
+    "name": "Makiminato HRSG",
+    "client": "비에이치아이㈜",
+    "category": "발전",
+    "year": 2026,
+    "location": "Japan",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 83
+  },
+  {
+    "name": "Tung Hsiao 2 HRSG",
+    "client": "비에이치아이㈜",
+    "category": "발전",
+    "year": 2025,
+    "location": "Taiwan",
+    "service": "D,M,S",
+    "tool": "SP3D",
+    "id": 84
+  },
+  {
+    "name": "O Mon IV HRSG",
+    "client": "비에이치아이㈜",
+    "category": "발전",
+    "year": 2025,
+    "location": "Vietnam",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 85
+  },
+  {
+    "name": "Qatar Facility E IWPP Project",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2025,
+    "location": "Qatar",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 86
+  },
+  {
+    "name": "KSA JUBAIL NET COGENERATION IPP Project",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2024,
+    "location": "Saudi",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 87
+  },
+  {
+    "name": "ROMANIA SMR FEED PHASE 2 Project",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2024,
+    "location": "Romania",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 88
+  },
+  {
+    "name": "KSA Amiral Cogen IPP",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2024,
+    "location": "Saudi",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 89
+  },
+  {
+    "name": "Saudi Arabia Amiral Cogen Project",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2022,
+    "location": "Saudi",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 90
+  },
+  {
+    "name": "Tanajib WISPP Project",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2021,
+    "location": "Saudi",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 91
+  },
+  {
+    "name": "우즈베키스탄 Talimarjan2",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2021,
+    "location": "우즈베기스탄",
+    "service": "D,M",
+    "tool": "E3D",
+    "id": 92
+  },
+  {
+    "name": "Shoaiba Ph.4",
+    "client": "두산중공업㈜",
+    "category": "발전",
+    "year": 2019,
+    "location": "Saudi",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 93
+  },
+  {
+    "name": "Qatar Facility D IWPP Project",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2015,
+    "location": "Qatar",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 94
+  },
+  {
+    "name": "Turkey Kirikkale Independent Power Project",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2014,
+    "location": "Turkey",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 95
+  },
+  {
+    "name": "EMAL PHASEE II CCPP Project (Rev.1)",
+    "client": "삼성물산(주)",
+    "category": "발전",
+    "year": 2014,
+    "location": "UAE",
+    "service": "D",
+    "tool": "-",
+    "id": 96
+  },
+  {
+    "name": "Brazil CSP Power",
+    "client": "(주)포스코건설",
+    "category": "발전",
+    "year": 2013,
+    "location": "Brazil",
+    "service": "D",
+    "tool": "-",
+    "id": 97
+  },
+  {
+    "name": "Combined Cycle Unit 7,8,9",
+    "client": "(주)포스코건설",
+    "category": "발전",
+    "year": 2012,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 98
+  },
+  {
+    "name": "Wasit Cogen. & Steam Generation",
+    "client": "Samsung E&A",
+    "category": "발전",
+    "year": 2012,
+    "location": "Saudi Arabia",
+    "service": "확인 필요",
+    "tool": "확인 필요",
+    "id": 99
+  },
+  {
+    "name": "카타르  LNG NFXP EPC.2 Project",
+    "client": "삼성물산(주)",
+    "category": "LNG",
+    "year": 2023,
+    "location": "Qatar",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 100
+  },
+  {
+    "name": "Philippines Atimonam One Energy LNG to Power Project",
+    "client": "삼성물산(주)",
+    "category": "LNG",
+    "year": 2023,
+    "location": "Philippines",
+    "service": "D,M",
+    "tool": "PDS",
+    "id": 101
+  },
+  {
+    "name": "YHP LPG Terminal Project",
+    "client": "에스지씨이테크건설(주)",
+    "category": "LNG",
+    "year": 2023,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "E3D",
+    "id": 102
+  },
+  {
+    "name": "사우디 Aramco FGIP Pkg.1 Gas Processing",
+    "client": "Samsung E&A",
+    "category": "LNG",
+    "year": 2023,
+    "location": "Saudi",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 103
+  },
+  {
+    "name": "당진기지#5~7저장탱크설계용역",
+    "client": "(주)삼안",
+    "category": "LNG",
+    "year": 2023,
+    "location": "Korea",
+    "service": "D,M",
+    "tool": "PDS",
+    "id": 104
+  },
+  {
+    "name": "카자흐스탄 KPO Gas Processing Plant",
+    "client": "Samsung E&A",
+    "category": "LNG",
+    "year": 2023,
+    "location": "Kazakhstan",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 105
+  },
+  {
+    "name": "카타르 NFS LNG Project",
+    "client": "삼성물산(주)",
+    "category": "LNG",
+    "year": 2022,
+    "location": "Qatar",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 106
+  },
+  {
+    "name": "Tilenga 3(OSBL)",
+    "client": "현대건설㈜",
+    "category": "LNG",
+    "year": 2020,
+    "location": "Uganda",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 107
+  },
+  {
+    "name": "한국가스공사 당진기지#1~4호기 저장탱크 설계용역",
+    "client": "Samsung E&A",
+    "category": "LNG",
+    "year": 2020,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 108
+  },
+  {
+    "name": "NFE.1 PKG A Project",
+    "client": "현대건설㈜",
+    "category": "LNG",
+    "year": 2019,
+    "location": "Qatar",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 109
+  },
+  {
+    "name": "PV Gas Thi Vai LNG Receiving Terminal",
+    "client": "삼성물산(주)",
+    "category": "LNG",
+    "year": 2019,
+    "location": "Vietnam",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 110
+  },
+  {
+    "name": "UAE Ruwais Gas station expansion (Rev.3)",
+    "client": "(주)포스코건설",
+    "category": "LNG",
+    "year": 2015,
+    "location": "UAE",
+    "service": "D",
+    "tool": "-",
+    "id": 111
+  },
+  {
+    "name": "Fadhili Gas Plant Pj_Saudi Arabia",
+    "client": "대우건설",
+    "category": "LNG",
+    "year": 2015,
+    "location": "Saudi Arabia",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 112
+  },
+  {
+    "name": "Texas LNG Feed Project",
+    "client": "Samsung E&A",
+    "category": "LNG",
+    "year": 2015,
+    "location": "U.S.A",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 113
+  },
+  {
+    "name": "Ca Mau Gas Processing Plant Project",
+    "client": "(주)포스코건설",
+    "category": "LNG",
+    "year": 2015,
+    "location": "Vietnam",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 114
+  },
+  {
+    "name": "GBARAN INFILL Project",
+    "client": "대우건설",
+    "category": "LNG",
+    "year": 2014,
+    "location": "Nigeria",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 115
+  },
+  {
+    "name": "Pacific Northwest LNG Project",
+    "client": "Samsung E&A",
+    "category": "LNG",
+    "year": 2013,
+    "location": "Canada",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 116
+  },
+  {
+    "name": "UAE SHAH Gas Development PKG.4 U&O",
+    "client": "Samsung E&A",
+    "category": "LNG",
+    "year": 2012,
+    "location": "UAE",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 117
+  },
+  {
+    "name": "POSCO SNG Project",
+    "client": "(주)포스코건설",
+    "category": "LNG",
+    "year": 2012,
+    "location": "Korea",
+    "service": "D,M,S",
+    "tool": "PDS",
+    "id": 118
+  },
+  {
+    "name": "현대제철 Louisiana Steel Mill",
+    "client": "현대제철",
+    "category": "산업설비",
+    "year": 2026,
+    "location": "U.S.A",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 119
+  },
+  {
+    "name": "2차 전지 Project",
+    "client": "주식회사 상생이엔지",
+    "category": "산업설비",
+    "year": 2023,
+    "location": "Korea",
+    "service": "D",
+    "tool": "-",
+    "id": 120
+  },
+  {
+    "name": "Shuaibah3 SWRO IWP Project",
+    "client": "두산중공업㈜",
+    "category": "산업설비",
+    "year": 2022,
+    "location": "Saudi",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 121
+  },
+  {
+    "name": "UHP RO Project",
+    "client": "삼성물산(주)",
+    "category": "산업설비",
+    "year": 2018,
+    "location": "Saudi Arabia",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 122
+  },
+  {
+    "name": "Shoaiba RO Project",
+    "client": "두산중공업(주)",
+    "category": "산업설비",
+    "year": 2017,
+    "location": "Saudi Arabia",
+    "service": "D,M",
+    "tool": "SP3d",
+    "id": 123
+  }
+]

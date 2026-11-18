@@ -1,3 +1,5 @@
+import excelProjects from "@/data/excelProjects.json";
+
 export type ProjectCategory = "화공" | "발전" | "LNG" | "산업설비";
 
 export interface Project {
@@ -15,7 +17,7 @@ export interface AdminProject extends Project {
   published: boolean;
 }
 
-export const projects: Project[] = [
+export const legacyProjects: Project[] = [
   // ── 화공 (Slide 13) ──
   {
     id: 1,
@@ -590,6 +592,8 @@ export const projects: Project[] = [
     location: "Korea",
   },
 ];
+
+export const projects = excelProjects as Project[];
 
 export function computeProjectStats(projectList: Project[]) {
   return {

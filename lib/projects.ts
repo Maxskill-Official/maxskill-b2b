@@ -1,15 +1,8 @@
-import { projects as legacyProjects } from "@/data/projects";
+import { projects as fallbackProjects } from "@/data/projects";
 import type { Project, ProjectCategory } from "@/data/projects";
-import { selectedProjects } from "@/data/selectedProjects";
 import { withoutCorporationMarker } from "@/lib/companyName";
 import { hasDatabaseConfig } from "@/lib/db";
-import { fetchProjectsFromGoogleSheet } from "@/lib/googleSheetProjects";
 import { getPublicProjectReferences } from "@/lib/projectReferencesDb";
-
-const fallbackProjects = [
-  ...legacyProjects.filter((project) => project.category !== "산업설비"),
-  ...selectedProjects.filter((project) => project.category === "산업설비"),
-];
 
 function correctProjectName(name: string) {
   return name
@@ -65,25 +58,7 @@ export async function getProjects(): Promise<Project[]> {
     }
   }
 
-  const csvUrl = process.env.GOOGLE_SHEETS_PROJECTS_CSV_URL;
-
-  if (!csvUrl) {
-    return normalizeProjects(fallbackProjects);
-  }
-
-  try {
-    const sheetProjects = await fetchProjectsFromGoogleSheet(csvUrl);
-    if (sheetProjects.length === 0) {
-      console.warn(
-        "Google Sheet returned no valid projects; using local fallback.",
-      );
-      return normalizeProjects(fallbackProjects);
-    }
-    return normalizeProjects(sheetProjects);
-  } catch (error) {
-    console.error("Failed to load projects from Google Sheet:", error);
-    return normalizeProjects(fallbackProjects);
-  }
+  return normalizeProjects(fallbackProjects);
 }
 
 export async function getProjectsPageData() {
@@ -93,10 +68,6 @@ export async function getProjectsPageData() {
     projects: projectList,
     groupedProjects: groupProjects(projectList),
     projectStats: computeProjectStats(projectList),
-    source: hasDatabaseConfig()
-      ? "database"
-      : process.env.GOOGLE_SHEETS_PROJECTS_CSV_URL
-        ? "sheet"
-        : "local",
+    source: hasDatabaseConfig() ? "database" : "local",
   } as const;
 }

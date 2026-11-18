@@ -1,7 +1,5 @@
 import postgres from "postgres";
-import { projects as legacyProjects } from "../data/projects";
-import { selectedProjects } from "../data/selectedProjects";
-import { fetchProjectsFromGoogleSheet } from "../lib/googleSheetProjects";
+import { projects as excelProjects } from "../data/projects";
 import { normalizeProjects } from "../lib/projects";
 
 const databaseUrl = (() => {
@@ -10,23 +8,8 @@ const databaseUrl = (() => {
   return value;
 })();
 
-async function loadPerformanceProjects() {
-  const csvUrl = process.env.GOOGLE_SHEETS_PROJECTS_CSV_URL?.trim();
-  const currentProjects = csvUrl
-    ? await fetchProjectsFromGoogleSheet(csvUrl)
-    : legacyProjects;
-  const industrialProjects = selectedProjects.filter(
-    (project) => project.category === "산업설비",
-  );
-
-  return normalizeProjects([
-    ...currentProjects.filter((project) => project.category !== "산업설비"),
-    ...industrialProjects,
-  ]).map((project, index) => ({ ...project, id: index + 1 }));
-}
-
 async function main() {
-  const projects = await loadPerformanceProjects();
+  const projects = normalizeProjects(excelProjects);
   const sql = postgres(databaseUrl, { ssl: "require", max: 1 });
 
   try {
