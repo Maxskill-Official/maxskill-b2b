@@ -194,7 +194,7 @@
     "client": "Samsung E&A",
     "category": "화공",
     "year": 2020,
-    "location": "확인 필요",
+    "location": "Korea",
     "service": "D,M",
     "tool": "SP2d",
     "id": 20
@@ -215,7 +215,7 @@
     "category": "화공",
     "year": 2020,
     "location": "Korea",
-    "service": "확인 필요",
+    "service": "D,M",
     "tool": "S3D",
     "id": 22
   },
@@ -985,7 +985,7 @@
     "category": "발전",
     "year": 2012,
     "location": "Saudi Arabia",
-    "service": "확인 필요",
+    "service": "D,M",
     "tool": "S3D",
     "id": 99
   },
