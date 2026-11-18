@@ -20,11 +20,17 @@ function correctClient(project: Project) {
   return client;
 }
 
+function correctTool(tool?: string) {
+  if (!tool) return tool;
+  return /^SP[0-3]D$/i.test(tool) ? "S3D" : tool;
+}
+
 export function normalizeProjects(projectList: Project[]) {
   return projectList.map((project) => ({
     ...project,
     name: withoutCorporationMarker(correctProjectName(project.name)),
     client: correctClient(project),
+    tool: correctTool(project.tool),
   }));
 }
 

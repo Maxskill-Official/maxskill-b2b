@@ -27,6 +27,13 @@ def contract_year(value: object) -> int:
     return int(match.group(1))
 
 
+def tool_name(value: object) -> str:
+    tool = text(value)
+    if re.fullmatch(r"SP[0-3]D", tool, flags=re.IGNORECASE):
+        return "S3D"
+    return tool
+
+
 def main() -> None:
     if len(sys.argv) != 3:
         raise SystemExit(
@@ -52,7 +59,7 @@ def main() -> None:
                     "year": contract_year(sheet.cell(row, 8).value),
                     "location": text(sheet.cell(row, 9).value),
                     "service": text(sheet.cell(row, 10).value),
-                    "tool": text(sheet.cell(row, 11).value),
+                    "tool": tool_name(sheet.cell(row, 11).value),
                 }
             )
 
