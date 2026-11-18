@@ -1,7 +1,9 @@
 import { projects as fallbackProjects } from "@/data/projects";
 import type { Project, ProjectCategory } from "@/data/projects";
 import { withoutCorporationMarker } from "@/lib/companyName";
+import { hasDatabaseConfig } from "@/lib/db";
 import { fetchProjectsFromGoogleSheet } from "@/lib/googleSheetProjects";
+import { getPublicProjectReferences } from "@/lib/projectReferencesDb";
 
 function correctProjectName(name: string) {
   return name
@@ -19,7 +21,7 @@ function correctClient(project: Project) {
   return client;
 }
 
-function correctProjectNames(projectList: Project[]) {
+export function normalizeProjects(projectList: Project[]) {
   return projectList.map((project) => ({
     ...project,
     name: withoutCorporationMarker(correctProjectName(project.name)),
@@ -49,10 +51,18 @@ export function groupProjects(
 }
 
 export async function getProjects(): Promise<Project[]> {
+  if (hasDatabaseConfig()) {
+    try {
+      return normalizeProjects(await getPublicProjectReferences());
+    } catch (error) {
+      console.error("Failed to load project references from database:", error);
+    }
+  }
+
   const csvUrl = process.env.GOOGLE_SHEETS_PROJECTS_CSV_URL;
 
   if (!csvUrl) {
-    return correctProjectNames(fallbackProjects);
+    return normalizeProjects(fallbackProjects);
   }
 
   try {
@@ -61,12 +71,12 @@ export async function getProjects(): Promise<Project[]> {
       console.warn(
         "Google Sheet returned no valid projects; using local fallback.",
       );
-      return correctProjectNames(fallbackProjects);
+      return normalizeProjects(fallbackProjects);
     }
-    return correctProjectNames(sheetProjects);
+    return normalizeProjects(sheetProjects);
   } catch (error) {
     console.error("Failed to load projects from Google Sheet:", error);
-    return correctProjectNames(fallbackProjects);
+    return normalizeProjects(fallbackProjects);
   }
 }
 
@@ -77,6 +87,10 @@ export async function getProjectsPageData() {
     projects: projectList,
     groupedProjects: groupProjects(projectList),
     projectStats: computeProjectStats(projectList),
-    source: process.env.GOOGLE_SHEETS_PROJECTS_CSV_URL ? "sheet" : "local",
+    source: hasDatabaseConfig()
+      ? "database"
+      : process.env.GOOGLE_SHEETS_PROJECTS_CSV_URL
+        ? "sheet"
+        : "local",
   } as const;
 }

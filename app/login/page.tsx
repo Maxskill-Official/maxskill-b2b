@@ -29,12 +29,20 @@ export default async function LoginPage({
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               {user.role === "admin" && (
-                <Link
-                  href="/admin/jobs"
-                  className="rounded-xl bg-brand-blue px-5 py-2.5 text-sm font-bold text-white transition hover:bg-brand-blue-light"
-                >
-                  채용공고 관리
-                </Link>
+                <>
+                  <Link
+                    href="/admin/jobs"
+                    className="rounded-xl bg-brand-blue px-5 py-2.5 text-sm font-bold text-white transition hover:bg-brand-blue-light"
+                  >
+                    채용공고 관리
+                  </Link>
+                  <Link
+                    href="/admin/projects"
+                    className="rounded-xl border border-white/20 px-5 py-2.5 text-sm font-bold text-white transition hover:border-white/50"
+                  >
+                    수행실적 관리
+                  </Link>
+                </>
               )}
               <LogoutButton />
             </div>

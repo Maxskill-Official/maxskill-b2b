@@ -55,6 +55,27 @@ CREATE TABLE IF NOT EXISTS job_postings (
 CREATE INDEX IF NOT EXISTS job_postings_public_idx
   ON job_postings (published, posted_at DESC);
 
+CREATE TABLE IF NOT EXISTS project_references (
+  id BIGSERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  client TEXT NOT NULL,
+  category TEXT NOT NULL
+    CHECK (category IN ('화공', '발전', 'LNG', '산업설비')),
+  project_year INTEGER NOT NULL DEFAULT 0
+    CHECK (project_year BETWEEN 0 AND 2100),
+  location TEXT NOT NULL,
+  service TEXT,
+  tool TEXT,
+  published BOOLEAN NOT NULL DEFAULT TRUE,
+  created_by BIGINT REFERENCES users(id) ON DELETE SET NULL,
+  updated_by BIGINT REFERENCES users(id) ON DELETE SET NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS project_references_public_idx
+  ON project_references (published, category, project_year DESC, id DESC);
+
 CREATE TABLE IF NOT EXISTS login_attempts (
   attempt_key TEXT PRIMARY KEY,
   failed_count INTEGER NOT NULL DEFAULT 0,

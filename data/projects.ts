@@ -11,6 +11,10 @@ export interface Project {
   tool?: string;
 }
 
+export interface AdminProject extends Project {
+  published: boolean;
+}
+
 export const projects: Project[] = [
   // ── 화공 (Slide 13) ──
   {

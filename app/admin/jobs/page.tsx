@@ -27,6 +27,12 @@ export default async function AdminJobsPage() {
         </div>
         <div className="flex gap-3">
           <Link
+            href="/admin/projects"
+            className="rounded-xl border border-white/20 px-5 py-2.5 text-sm font-semibold text-white"
+          >
+            수행실적 관리
+          </Link>
+          <Link
             href="/careers"
             className="rounded-xl border border-white/20 px-5 py-2.5 text-sm font-semibold text-white"
           >

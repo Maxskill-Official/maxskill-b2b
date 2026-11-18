@@ -1,5 +1,7 @@
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import ProjectsPageContent from "@/components/ProjectsPageContent";
+import { getCurrentUser } from "@/lib/auth";
 import { getProjectsPageData } from "@/lib/projects";
 
 export const revalidate = 300;
@@ -11,7 +13,10 @@ export const metadata = {
 };
 
 export default async function ProjectsListPage() {
-  const { groupedProjects, projectStats } = await getProjectsPageData();
+  const [{ groupedProjects, projectStats }, user] = await Promise.all([
+    getProjectsPageData(),
+    getCurrentUser().catch(() => null),
+  ]);
 
   return (
     <main>
@@ -25,9 +30,19 @@ export default async function ProjectsListPage() {
               프로젝트 목록
             </h2>
           </div>
-          <p className="text-sm font-medium text-gray-400">
-            Total {projectStats.total} Projects
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-sm font-medium text-gray-400">
+              Total {projectStats.total} Projects
+            </p>
+            {user?.role === "admin" && (
+              <Link
+                href="/admin/projects#project-form"
+                className="rounded-lg bg-brand-blue px-4 py-2.5 text-sm font-bold text-white transition hover:bg-brand-blue-light"
+              >
+                수행실적 관리
+              </Link>
+            )}
+          </div>
         </div>
 
         <ProjectsPageContent groupedProjects={groupedProjects} />
