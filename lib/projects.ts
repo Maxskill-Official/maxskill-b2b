@@ -1,9 +1,15 @@
+import { projects as legacyProjects } from "@/data/projects";
 import type { Project, ProjectCategory } from "@/data/projects";
-import { selectedProjects as fallbackProjects } from "@/data/selectedProjects";
+import { selectedProjects } from "@/data/selectedProjects";
 import { withoutCorporationMarker } from "@/lib/companyName";
 import { hasDatabaseConfig } from "@/lib/db";
 import { fetchProjectsFromGoogleSheet } from "@/lib/googleSheetProjects";
 import { getPublicProjectReferences } from "@/lib/projectReferencesDb";
+
+const fallbackProjects = [
+  ...legacyProjects.filter((project) => project.category !== "산업설비"),
+  ...selectedProjects.filter((project) => project.category === "산업설비"),
+];
 
 function correctProjectName(name: string) {
   return name
