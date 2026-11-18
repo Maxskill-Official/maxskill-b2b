@@ -9,6 +9,10 @@ from openpyxl import load_workbook
 
 
 CATEGORIES = ("화공", "발전", "LNG", "산업설비")
+TOOL_OVERRIDES = {
+    "HSVC PP5 Project": "S3D",
+    "Wasit Cogen. & Steam Generation": "S3D",
+}
 
 
 def text(value: object) -> str:
@@ -51,6 +55,11 @@ def main() -> None:
                 }
             )
 
+        for project in category_projects:
+            project["tool"] = TOOL_OVERRIDES.get(
+                str(project["name"]),
+                project["tool"],
+            )
         category_projects.sort(key=lambda project: int(project["year"]), reverse=True)
         projects.extend(category_projects)
 
