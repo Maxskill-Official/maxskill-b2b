@@ -1,6 +1,5 @@
 import postgres from "postgres";
-import { projects as fallbackProjects } from "../data/projects";
-import { fetchProjectsFromGoogleSheet } from "../lib/googleSheetProjects";
+import { selectedProjects as fallbackProjects } from "../data/selectedProjects";
 import { normalizeProjects } from "../lib/projects";
 
 const databaseUrl = (() => {
@@ -9,22 +8,14 @@ const databaseUrl = (() => {
   return value;
 })();
 
-async function loadCurrentProjects() {
-  const csvUrl = process.env.GOOGLE_SHEETS_PROJECTS_CSV_URL?.trim();
-  if (!csvUrl) return normalizeProjects(fallbackProjects);
-
-  const sheetProjects = await fetchProjectsFromGoogleSheet(csvUrl);
-  return normalizeProjects(
-    sheetProjects.length > 0 ? sheetProjects : fallbackProjects,
-  );
-}
-
 async function main() {
-  const projects = await loadCurrentProjects();
+  const projects = normalizeProjects(fallbackProjects);
   const sql = postgres(databaseUrl, { ssl: "require", max: 1 });
 
   try {
     await sql.begin(async (tx) => {
+      await tx`DELETE FROM project_references`;
+
       for (const project of projects) {
         await tx`
           INSERT INTO project_references (

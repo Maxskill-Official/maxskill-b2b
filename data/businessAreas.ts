@@ -1,5 +1,5 @@
-import { projects as fallbackProjects } from "@/data/projects";
 import type { Project, ProjectCategory } from "@/data/projects";
+import { selectedProjects as fallbackProjects } from "@/data/selectedProjects";
 import { withoutCorporationMarker } from "@/lib/companyName";
 
 export type FeaturedName = string | { match: string; display: string };
@@ -45,9 +45,9 @@ export const businessAreas: BusinessArea[] = [
       ],
     ],
     featuredNames: [
+      "카타르 RLP Ethylene",
       { match: "여수 금호폴리켐", display: "여수 금호폴리켐 EPDM PLANT" },
       "사우디 APOC PDH/UTOS Project",
-      "Sarawak PetChem Methanol",
     ],
     image: "/images/hero/chemical.jpg",
     imageAlt: "석유화학 플랜트 전경",
@@ -69,9 +69,9 @@ export const businessAreas: BusinessArea[] = [
       ],
     ],
     featuredNames: [
+      "O Mon IV HRSG",
       "Qatar Facility E IWPP Project",
       "KSA Amiral Cogen IPP",
-      "Tanajib WISPP Project",
     ],
     image: "/images/hero/power-plant-clean.jpg",
     imageAlt: "발전 설비 전경",
@@ -101,9 +101,9 @@ export const businessAreas: BusinessArea[] = [
       ],
     ],
     featuredNames: [
-      "YHP LPG Terminal Project",
-      "카타르 LNG NFXP EPC.2 Project",
-      "Philippines Atimonam One Energy LNG to Power Project",
+      "Texas LNG Feed Project",
+      "POSCO SNG Project",
+      "UAE SHAH Gas Development PKG.4 U&O",
     ],
     image: "/images/hero/gas-lng-terminal.jpg",
     imageAlt: "Gas/LNG 저장 및 공급시설 전경",
@@ -141,12 +141,9 @@ export const businessAreas: BusinessArea[] = [
       },
     ],
     featuredNames: [
-      { match: "현대제철", display: "미국현대제철소(HPLS)" },
-      {
-        match: "P5 Ph-1",
-        display: "삼성전자 P5 Ph-1/2공구(삼성물산)",
-      },
-      { match: "흑연", display: "DYPNF 구형흑연 기본설계" },
+      "현대제철 Louisiana Steel Mill",
+      "Shuaibah3 SWRO IWP Project",
+      "UHP RO Project",
     ],
     image: "/images/hero/semiconductor-building-clean.jpg",
     imageAlt: "반도체 산업설비 전경",

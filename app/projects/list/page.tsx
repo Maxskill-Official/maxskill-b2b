@@ -9,7 +9,7 @@ export const revalidate = 300;
 export const metadata = {
   title: "수행실적 | MAXSKILL",
   description:
-    "최근 10년간 화공, 발전, Gas/LNG, 산업설비 분야에서 수행한 프로젝트 목록입니다.",
+    "최근 15년간 화공, 발전, Gas/LNG, 산업설비 분야에서 수행한 프로젝트 목록입니다.",
 };
 
 export default async function ProjectsListPage() {
@@ -29,6 +29,9 @@ export default async function ProjectsListPage() {
             <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
               프로젝트 목록
             </h2>
+            <p className="mt-3 text-sm font-medium text-brand-blue">
+              최근 15년 수행 및 3D 업무 실적
+            </p>
           </div>
           <div className="flex items-center gap-4">
             <p className="text-sm font-medium text-gray-400">

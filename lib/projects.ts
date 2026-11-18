@@ -1,5 +1,5 @@
-import { projects as fallbackProjects } from "@/data/projects";
 import type { Project, ProjectCategory } from "@/data/projects";
+import { selectedProjects as fallbackProjects } from "@/data/selectedProjects";
 import { withoutCorporationMarker } from "@/lib/companyName";
 import { hasDatabaseConfig } from "@/lib/db";
 import { fetchProjectsFromGoogleSheet } from "@/lib/googleSheetProjects";
