@@ -81,7 +81,7 @@ export default function Header() {
     ? [sessionUser.name, sessionUser.position].filter(Boolean).join(" ")
     : "";
   const employeeHref =
-    sessionUser?.role === "admin" ? "/admin/jobs" : "/login";
+    sessionUser?.role === "admin" ? "/admin" : "/login";
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-brand-dark/95 backdrop-blur-md">
