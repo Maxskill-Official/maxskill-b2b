@@ -118,7 +118,7 @@ export default function ServiceDetail({
             fill
             className={
               service.id === "piping"
-                ? "object-contain object-center"
+                ? "object-cover object-center"
                 : "object-cover"
             }
             sizes="(max-width: 768px) 100vw, 1024px"

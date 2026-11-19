@@ -70,7 +70,7 @@ export const serviceItemImages: Record<
   "piping/Support Detail Dwg.": itemImage(
     "piping-support-detail.jpg",
     "Support Detail Drawing, LOOKING EAST, Section, Base Plate",
-    "object-cover object-center",
+    "scale-125 object-cover object-center",
     "relative h-56 overflow-hidden bg-black sm:h-64",
   ),
   "piping/Information Dwg. etc": itemImage(
@@ -107,7 +107,7 @@ export const serviceItemImages: Record<
   "stress/Support Optimization": itemImage(
     "stress-support-optimization.jpg",
     "E3D 3D Plant Model, Support 위치, 최적화 Review",
-    "object-cover object-center",
+    "scale-[1.18] object-cover object-center",
   ),
   "stress/Trouble Shooting": itemImage(
     "stress-trouble-shooting.jpg",
