@@ -69,9 +69,6 @@ export default function AdminCompanyMetrics({
         </label>
       </div>
 
-      <p className="mt-4 text-sm text-gray-400">
-        입력한 문구가 회사소개 페이지에 그대로 표시됩니다.
-      </p>
       {message && (
         <p
           className={`mt-4 text-sm ${
