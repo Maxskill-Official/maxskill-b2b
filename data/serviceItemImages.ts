@@ -96,7 +96,7 @@ export const serviceItemImages: Record<
   "stress/Analysis Report": itemImage(
     "stress-analysis-report.png",
     "P&ID, FEA Nozzle Stress, 3D Piping Stress Analysis Report",
-    "object-cover object-center",
+    "object-contain object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "stress/Special Support": itemImage(
