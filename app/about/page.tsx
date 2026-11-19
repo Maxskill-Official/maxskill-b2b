@@ -1,8 +1,14 @@
 import Image from "next/image";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import { companyInfo, history } from "@/data/company";
+import { getCompanyMetrics } from "@/lib/companyMetricsDb";
 
-export default function AboutPage() {
+export const dynamic = "force-dynamic";
+export const preferredRegion = "sin1";
+
+export default async function AboutPage() {
+  const metrics = await getCompanyMetrics();
+
   return (
     <main>
       <div className="flex min-h-[calc(100dvh-6rem)] flex-col">
@@ -95,13 +101,13 @@ export default function AboutPage() {
               {companyInfo.scaleYear}년 기준 매출
             </p>
             <p className="mt-2 text-3xl font-bold text-white">
-              {companyInfo.revenue}
+              {metrics.revenue}
             </p>
           </div>
           <div className="rounded-2xl border border-brand-card-border bg-brand-card px-6 py-6">
             <p className="text-sm text-gray-400">재직 인원</p>
             <p className="mt-2 text-3xl font-bold text-white">
-              {companyInfo.headcount}
+              {metrics.headcount}
             </p>
           </div>
         </div>

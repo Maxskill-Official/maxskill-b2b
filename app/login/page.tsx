@@ -42,6 +42,12 @@ export default async function LoginPage({
                   >
                     수행실적 관리
                   </Link>
+                  <Link
+                    href="/admin/company"
+                    className="rounded-xl border border-white/20 px-5 py-2.5 text-sm font-bold text-white transition hover:border-white/50"
+                  >
+                    회사정보 관리
+                  </Link>
                 </>
               )}
               <LogoutButton />

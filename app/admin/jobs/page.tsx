@@ -25,7 +25,13 @@ export default async function AdminJobsPage() {
             관리자 {user.name}님으로 로그인했습니다.
           </p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href="/admin/company"
+            className="rounded-xl border border-white/20 px-5 py-2.5 text-sm font-semibold text-white"
+          >
+            회사정보 관리
+          </Link>
           <Link
             href="/admin/projects"
             className="rounded-xl border border-white/20 px-5 py-2.5 text-sm font-semibold text-white"

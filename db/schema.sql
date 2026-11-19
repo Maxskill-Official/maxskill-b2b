@@ -76,6 +76,19 @@ CREATE TABLE IF NOT EXISTS project_references (
 CREATE INDEX IF NOT EXISTS project_references_public_idx
   ON project_references (published, category, project_year DESC, id DESC);
 
+CREATE TABLE IF NOT EXISTS company_metrics (
+  id SMALLINT PRIMARY KEY DEFAULT 1
+    CHECK (id = 1),
+  revenue TEXT NOT NULL,
+  headcount TEXT NOT NULL,
+  updated_by BIGINT REFERENCES users(id) ON DELETE SET NULL,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+INSERT INTO company_metrics (id, revenue, headcount)
+VALUES (1, '45억원', '60명')
+ON CONFLICT (id) DO NOTHING;
+
 CREATE TABLE IF NOT EXISTS login_attempts (
   attempt_key TEXT PRIMARY KEY,
   failed_count INTEGER NOT NULL DEFAULT 0,
