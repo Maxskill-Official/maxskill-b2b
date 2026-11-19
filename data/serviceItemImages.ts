@@ -64,7 +64,7 @@ export const serviceItemImages: Record<
   "piping/Stress ISO Dwg.": itemImage(
     "piping-stress-iso.jpg",
     "CAESAR II Stress ISO, Support, Node, Elevation 표기",
-    "object-cover object-center",
+    "scale-125 object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "piping/Support Detail Dwg.": itemImage(
@@ -112,7 +112,7 @@ export const serviceItemImages: Record<
   "stress/Trouble Shooting": itemImage(
     "stress-trouble-shooting.jpg",
     "Expansion Joint 현장 Damage, Trouble Shooting",
-    "object-cover object-center",
+    "scale-125 object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "stress/Field Supervision": itemImage(
@@ -169,6 +169,7 @@ export const serviceItemImages: Record<
   "cad/Model 검증": itemImage(
     "cad-clash-check.jpg",
     "Model 검증, 배관, 구조물 Hard Clash 검출",
+    "scale-125 object-cover object-center",
   ),
   "cad/3D Product Line Check": itemImage(
     "cad-product-line-check.jpg",

@@ -21,10 +21,6 @@ function renderServiceItemCard(
 ) {
   const itemImage = getServiceItemImage(serviceId, item.name);
   const imageBg = itemImageBackground(itemImage?.imageContainerClass);
-  const imageScale =
-    serviceId === "stress" && item.name === "Analysis Report"
-      ? ""
-      : "scale-[1.18]";
   const bodyClass =
     itemImage?.imageBodyClass ??
     "px-4 pb-5 pt-3 sm:px-5 sm:pb-6 sm:pt-4";
@@ -41,7 +37,7 @@ function renderServiceItemCard(
             <img
               src={itemImage.src}
               alt={itemImage.alt}
-              className={`h-full w-full ${imageScale} ${
+              className={`h-full w-full ${
                 itemImage.imageClass ?? "object-cover object-center"
               }`}
             />
@@ -50,9 +46,7 @@ function renderServiceItemCard(
               src={itemImage.src}
               alt={itemImage.alt}
               fill
-              className={`${imageScale} ${
-                itemImage.imageClass ?? "object-cover object-center"
-              }`}
+              className={itemImage.imageClass ?? "object-cover object-center"}
               sizes="(max-width: 1024px) 100vw, 512px"
               quality={95}
             />
