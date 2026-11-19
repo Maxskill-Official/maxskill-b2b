@@ -48,7 +48,7 @@ export default async function AdminPage() {
           >
             <h2 className="text-xl font-bold text-white">{menu.title}</h2>
             <span className="mt-6 inline-block text-sm font-bold text-brand-blue-light">
-              관리하기 →
+              바로가기 →
             </span>
           </Link>
         ))}
