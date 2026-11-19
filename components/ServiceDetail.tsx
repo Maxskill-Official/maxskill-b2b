@@ -104,7 +104,9 @@ export default function ServiceDetail({
         className={`relative overflow-hidden border-y border-white/10 ${
           service.id === "cad"
             ? "aspect-[50/31] bg-white"
-            : "h-72 sm:h-96"
+            : service.id === "piping"
+              ? "aspect-[16/9] bg-brand-dark"
+              : "h-72 sm:h-96"
         }`}
       >
         {service.id === "cad" ? (
@@ -116,8 +118,8 @@ export default function ServiceDetail({
             fill
             className={
               service.id === "piping"
-                ? "object-cover object-top"
-                : "object-cover object-center"
+                ? "object-contain object-center"
+                : "object-cover"
             }
             sizes="(max-width: 768px) 100vw, 1024px"
             priority={sectionId === "piping"}

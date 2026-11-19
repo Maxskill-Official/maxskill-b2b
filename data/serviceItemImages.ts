@@ -41,13 +41,13 @@ export const serviceItemImages: Record<
   "piping/Project Scheduling": itemImage(
     "piping-project-scheduling.png",
     "Project Scheduling, 일정표, Key Tasks, Deliverables",
-    "object-cover object-center",
+    "object-contain object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "piping/Coordination": itemImage(
     "piping-coordination.jpg",
     "Coordination Areas, Integrated Plot Plan, 다공종 협의",
-    "object-cover object-center",
+    "object-contain object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "piping/Plot Plan": itemImage(
@@ -64,7 +64,7 @@ export const serviceItemImages: Record<
   "piping/Stress ISO Dwg.": itemImage(
     "piping-stress-iso.jpg",
     "CAESAR II Stress ISO, Support, Node, Elevation 표기",
-    "scale-125 object-cover object-center",
+    "object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "piping/Support Detail Dwg.": itemImage(
@@ -76,7 +76,7 @@ export const serviceItemImages: Record<
   "piping/Information Dwg. etc": itemImage(
     "piping-information-dwg.jpg",
     "Stress List, Line No, ISO Dwg No 등 Information Sheet",
-    "object-cover object-center",
+    "object-contain object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
     undefined,
     true,
@@ -112,7 +112,7 @@ export const serviceItemImages: Record<
   "stress/Trouble Shooting": itemImage(
     "stress-trouble-shooting.jpg",
     "Expansion Joint 현장 Damage, Trouble Shooting",
-    "scale-125 object-cover object-center",
+    "object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "stress/Field Supervision": itemImage(
@@ -169,7 +169,6 @@ export const serviceItemImages: Record<
   "cad/Model 검증": itemImage(
     "cad-clash-check.jpg",
     "Model 검증, 배관, 구조물 Hard Clash 검출",
-    "scale-125 object-cover object-center",
   ),
   "cad/3D Product Line Check": itemImage(
     "cad-product-line-check.jpg",

@@ -7,6 +7,7 @@ interface ServiceCardProps {
   summary: string;
   image: string;
   imageAlt: string;
+  imageContain?: boolean;
   imageLight?: boolean;
 }
 
@@ -16,6 +17,7 @@ export default function ServiceCard({
   summary,
   image,
   imageAlt,
+  imageContain = false,
   imageLight = false,
 }: ServiceCardProps) {
   return (
@@ -32,7 +34,11 @@ export default function ServiceCard({
           src={image}
           alt={imageAlt}
           fill
-          className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+          className={
+            imageContain
+              ? "object-contain object-center"
+              : "object-cover transition-transform duration-700 group-hover:scale-105"
+          }
           sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
