@@ -116,11 +116,7 @@ export default function ServiceDetail({
             src={service.image}
             alt={service.imageAlt}
             fill
-            className={
-              service.id === "piping"
-                ? "object-contain object-center"
-                : "object-cover"
-            }
+            className="object-cover object-center"
             sizes="(max-width: 768px) 100vw, 1024px"
             priority={sectionId === "piping"}
           />

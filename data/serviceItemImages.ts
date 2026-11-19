@@ -41,13 +41,13 @@ export const serviceItemImages: Record<
   "piping/Project Scheduling": itemImage(
     "piping-project-scheduling.png",
     "Project Scheduling, 일정표, Key Tasks, Deliverables",
-    "object-contain object-center",
+    "object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "piping/Coordination": itemImage(
     "piping-coordination.jpg",
     "Coordination Areas, Integrated Plot Plan, 다공종 협의",
-    "object-contain object-center",
+    "object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "piping/Plot Plan": itemImage(
@@ -76,7 +76,7 @@ export const serviceItemImages: Record<
   "piping/Information Dwg. etc": itemImage(
     "piping-information-dwg.jpg",
     "Stress List, Line No, ISO Dwg No 등 Information Sheet",
-    "object-contain object-center",
+    "object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
     undefined,
     true,
@@ -96,7 +96,7 @@ export const serviceItemImages: Record<
   "stress/Analysis Report": itemImage(
     "stress-analysis-report.png",
     "P&ID, FEA Nozzle Stress, 3D Piping Stress Analysis Report",
-    "object-contain object-center",
+    "object-cover object-center",
     "relative h-56 overflow-hidden bg-white sm:h-64",
   ),
   "stress/Special Support": itemImage(

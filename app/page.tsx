@@ -40,9 +40,6 @@ export default function HomePage() {
               summary={service.summary}
               image={service.image}
               imageAlt={service.imageAlt}
-              imageContain={
-                service.id === "piping" || service.id === "cad"
-              }
               imageLight={service.id === "cad"}
             />
           ))}
