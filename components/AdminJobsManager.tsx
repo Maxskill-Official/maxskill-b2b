@@ -206,7 +206,12 @@ export default function AdminJobsManager({
               공고일
               <input
                 name="postedAt"
-                type="date"
+                type="text"
+                inputMode="numeric"
+                placeholder="YYYY-MM-DD"
+                pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                maxLength={10}
+                title="YYYY-MM-DD 형식으로 입력해 주세요."
                 required
                 defaultValue={editing?.postedAt ?? today}
                 className="mt-2 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2.5 text-white"
@@ -216,7 +221,12 @@ export default function AdminJobsManager({
               접수 시작
               <input
                 name="periodStart"
-                type="date"
+                type="text"
+                inputMode="numeric"
+                placeholder="YYYY-MM-DD"
+                pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                maxLength={10}
+                title="YYYY-MM-DD 형식으로 입력해 주세요."
                 defaultValue={editing?.periodStart ?? ""}
                 className="mt-2 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2.5 text-white"
               />
@@ -225,7 +235,12 @@ export default function AdminJobsManager({
               접수 종료
               <input
                 name="periodEnd"
-                type="date"
+                type="text"
+                inputMode="numeric"
+                placeholder="YYYY-MM-DD"
+                pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                maxLength={10}
+                title="YYYY-MM-DD 형식으로 입력해 주세요."
                 defaultValue={editing?.periodEnd ?? ""}
                 className="mt-2 w-full rounded-lg border border-white/15 bg-black/20 px-3 py-2.5 text-white"
               />
