@@ -11,7 +11,7 @@ function WorkflowImage({
 }) {
   return (
     <div className={`cad-workflow-node ${className}`}>
-      <Image src={src} alt={alt} fill className="object-contain" sizes="30vw" />
+      <Image src={src} alt={alt} fill className="object-cover" sizes="30vw" />
     </div>
   );
 }

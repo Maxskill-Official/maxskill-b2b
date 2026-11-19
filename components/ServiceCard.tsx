@@ -32,7 +32,7 @@ export default function ServiceCard({
           src={image}
           alt={imageAlt}
           fill
-          className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+          className="scale-110 object-cover object-center transition-transform duration-700 group-hover:scale-[1.15]"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>

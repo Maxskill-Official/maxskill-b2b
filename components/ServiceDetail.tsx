@@ -37,7 +37,7 @@ function renderServiceItemCard(
             <img
               src={itemImage.src}
               alt={itemImage.alt}
-              className={`h-full w-full ${
+              className={`h-full w-full scale-[1.18] ${
                 itemImage.imageClass ?? "object-cover object-center"
               }`}
             />
@@ -46,7 +46,9 @@ function renderServiceItemCard(
               src={itemImage.src}
               alt={itemImage.alt}
               fill
-              className={itemImage.imageClass ?? "object-cover object-center"}
+              className={`scale-[1.18] ${
+                itemImage.imageClass ?? "object-cover object-center"
+              }`}
               sizes="(max-width: 1024px) 100vw, 512px"
               quality={95}
             />
@@ -104,9 +106,7 @@ export default function ServiceDetail({
         className={`relative overflow-hidden border-y border-white/10 ${
           service.id === "cad"
             ? "aspect-[50/31] bg-white"
-            : service.id === "piping"
-              ? "aspect-[16/9] bg-brand-dark"
-              : "h-72 sm:h-96"
+            : "h-72 sm:h-96"
         }`}
       >
         {service.id === "cad" ? (
@@ -116,7 +116,11 @@ export default function ServiceDetail({
             src={service.image}
             alt={service.imageAlt}
             fill
-            className="object-cover object-center"
+            className={
+              service.id === "piping"
+                ? "object-cover object-top"
+                : "object-cover object-center"
+            }
             sizes="(max-width: 768px) 100vw, 1024px"
             priority={sectionId === "piping"}
           />
