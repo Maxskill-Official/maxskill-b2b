@@ -105,7 +105,7 @@ export default function ServiceDetail({
         <p className="readable-copy mt-6 text-base font-medium leading-[1.9] text-brand-blue sm:text-lg sm:leading-[2]">
           {service.summary}
         </p>
-        <p className="mt-5 text-base font-semibold leading-7 text-white sm:text-lg">
+        <p className="mt-5 text-base font-medium leading-[1.9] text-white sm:text-lg sm:leading-[2]">
           {service.tools.join(", ")}
         </p>
       </div>
