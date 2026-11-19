@@ -19,6 +19,7 @@ export interface Service {
   id: string;
   title: string;
   summary: string;
+  tools: string[];
   intro: string[];
   highlights: string[];
   platformLogos?: PlatformLogo[];
@@ -38,6 +39,7 @@ export const services: Service[] = [
     id: "piping",
     title: "Piping Design",
     summary: "Planning, Basic Design, Detail Design",
+    tools: ["AutoCAD", "Navisworks", "E3D", "S3D", "Revit"],
     intro: [
       "Planning 단계 WBS, 마일스톤 기반 일정 수립, Mechanical, Instrument, Electrical, Civil 등 유관 공종 간 인터페이스 조율. Basic Design Plot Plan을 통한 배관 라우팅, 설비 배치 작성, Detail Design Piping Plan/ISO, Stress ISO, Support Detail, Information 도면 작성.",
       "국내외 대형 EPC 프로젝트 배관 설계.",
@@ -110,6 +112,7 @@ export const services: Service[] = [
     id: "stress",
     title: "Stress Analysis",
     summary: "Thermal Analysis, Special Support, Trouble Shooting",
+    tools: ["CAESAR II", "AutoPIPE", "NozzlePRO"],
     intro: [
       "설계 단계 Operating, Transient, Occasional Load Case 검토, 현장 Support 이슈, 진동, Leak 등 긴급 문제 해석 및 대응안 작성. Piping Design 연계 Stress ISO 도면 작성.",
       "국내외 화공, 발전, LNG 프로젝트 High Temperature, High Pressure 배관, Critical Line 해석 경험 보유, Owner, EPC, Contractor 요구 Specification에 맞춘 해석 보고서 작성.",
@@ -182,6 +185,7 @@ export const services: Service[] = [
     id: "cad",
     title: "3D CAD",
     summary: "Modeling, Model Check",
+    tools: ["E3D", "S3D", "Revit", "Navisworks"],
     intro: [
       "Piping, Structure, Equipment, Support, Instrument & Electrical, Duct, HVAC 등 전 공종 3D Modeling.",
       "3D Model 기반 Clash Check 및 Design Review, 설계 오류 사전 검증",
@@ -261,6 +265,14 @@ export const services: Service[] = [
     id: "programming",
     title: "설계 IT",
     summary: "Admin, Programming",
+    tools: [
+      "E3D",
+      "S3D",
+      "Revit",
+      "Navisworks",
+      "AutoCAD",
+      "Visual Studio",
+    ],
     intro: [],
     highlights: [],
     sectionsLayout: "split",
