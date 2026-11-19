@@ -21,6 +21,14 @@ function renderServiceItemCard(
 ) {
   const itemImage = getServiceItemImage(serviceId, item.name);
   const imageBg = itemImageBackground(itemImage?.imageContainerClass);
+  const imageScale =
+    serviceId === "piping" && item.name === "Support Detail Dwg."
+      ? 1.25
+      : serviceId === "stress" && item.name === "Support Optimization"
+        ? 1.18
+        : 1;
+  const imageStyle =
+    imageScale === 1 ? undefined : { transform: `scale(${imageScale})` };
   const bodyClass =
     itemImage?.imageBodyClass ??
     "px-4 pb-5 pt-3 sm:px-5 sm:pb-6 sm:pt-4";
@@ -37,6 +45,7 @@ function renderServiceItemCard(
             <img
               src={itemImage.src}
               alt={itemImage.alt}
+              style={imageStyle}
               className={`h-full w-full ${
                 itemImage.imageClass ?? "object-cover object-center"
               }`}
@@ -46,6 +55,7 @@ function renderServiceItemCard(
               src={itemImage.src}
               alt={itemImage.alt}
               fill
+              style={imageStyle}
               className={itemImage.imageClass ?? "object-cover object-center"}
               sizes="(max-width: 1024px) 100vw, 512px"
               quality={95}
