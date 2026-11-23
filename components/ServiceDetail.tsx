@@ -103,7 +103,7 @@ export default function ServiceDetail({
           {service.title}
         </h2>
         <div className="mt-6 space-y-1 pl-5 text-base font-medium leading-[1.9] text-brand-blue sm:pl-6 sm:text-lg sm:leading-[2]">
-          <p>{service.summary}</p>
+          <p>주요업무 : {service.summary}</p>
           <p>사용프로그램 : {service.tools.join(", ")}</p>
         </div>
       </div>

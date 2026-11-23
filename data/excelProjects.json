@@ -1180,6 +1180,26 @@
     "id": 118
   },
   {
+    "name": "기흥 NRD-K2 설비 Shop 설계 용역",
+    "client": "삼성물산(주)",
+    "category": "산업설비",
+    "year": 2026,
+    "location": "Korea",
+    "service": "D",
+    "tool": "",
+    "id": 119
+  },
+  {
+    "name": "평택 P5-PH1 마감공사",
+    "client": "삼성물산(주)",
+    "category": "산업설비",
+    "year": 2026,
+    "location": "Korea",
+    "service": "D",
+    "tool": "",
+    "id": 120
+  },
+  {
     "name": "현대제철 Louisiana Steel Mill",
     "client": "현대제철",
     "category": "산업설비",
@@ -1187,7 +1207,7 @@
     "location": "U.S.A",
     "service": "D,M",
     "tool": "S3D",
-    "id": 119
+    "id": 121
   },
   {
     "name": "2차 전지 Project",
@@ -1197,7 +1217,7 @@
     "location": "Korea",
     "service": "D",
     "tool": "-",
-    "id": 120
+    "id": 122
   },
   {
     "name": "Shuaibah3 SWRO IWP Project",
@@ -1207,7 +1227,7 @@
     "location": "Saudi",
     "service": "D,M",
     "tool": "S3D",
-    "id": 121
+    "id": 123
   },
   {
     "name": "UHP RO Project",
@@ -1217,7 +1237,7 @@
     "location": "Saudi Arabia",
     "service": "D,M",
     "tool": "S3D",
-    "id": 122
+    "id": 124
   },
   {
     "name": "Shoaiba RO Project",
@@ -1227,6 +1247,6 @@
     "location": "Saudi Arabia",
     "service": "D,M",
     "tool": "S3D",
-    "id": 123
+    "id": 125
   }
 ]
