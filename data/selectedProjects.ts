@@ -94,7 +94,7 @@ export const selectedProjects: Project[] = [
   },
   {
     id: 10,
-    name: "기흥 NRD-K2 설비 Shop 설계 용역",
+    name: "기흥 NRD-K2 설비 Shop 설계 용역(반도체)",
     client: "삼성물산",
     category: "산업설비",
     year: 2026,

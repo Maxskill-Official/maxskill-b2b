@@ -141,7 +141,7 @@ export const businessAreas: BusinessArea[] = [
       },
     ],
     featuredNames: [
-      "기흥 NRD-K2 설비 Shop 설계 용역",
+      "기흥 NRD-K2 설비 Shop 설계 용역(반도체)",
       "현대제철 Louisiana Steel Mill",
       "Shuaibah3 SWRO IWP Project",
     ],
