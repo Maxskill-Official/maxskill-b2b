@@ -142,9 +142,7 @@ export const businessAreas: BusinessArea[] = [
     ],
     featuredNames: [
       "기흥 NRD-K2 설비 Shop 설계 용역",
-      "평택 P5-PH1 마감공사",
       "현대제철 Louisiana Steel Mill",
-      "2차 전지 Project",
       "Shuaibah3 SWRO IWP Project",
     ],
     image: "/images/hero/semiconductor-building-clean.jpg",

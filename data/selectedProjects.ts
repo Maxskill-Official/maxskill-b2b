@@ -103,15 +103,6 @@ export const selectedProjects: Project[] = [
   },
   {
     id: 11,
-    name: "평택 P5-PH1 마감공사",
-    client: "삼성물산",
-    category: "산업설비",
-    year: 2026,
-    location: "Korea",
-    service: "D",
-  },
-  {
-    id: 12,
     name: "현대제철 Louisiana Steel Mill",
     client: "현대제철",
     category: "산업설비",
@@ -121,16 +112,7 @@ export const selectedProjects: Project[] = [
     tool: "S3D",
   },
   {
-    id: 13,
-    name: "2차 전지 Project",
-    client: "상생이엔지",
-    category: "산업설비",
-    year: 2023,
-    location: "Korea",
-    service: "D",
-  },
-  {
-    id: 14,
+    id: 12,
     name: "Shuaibah3 SWRO IWP Project",
     client: "두산중공업",
     category: "산업설비",
