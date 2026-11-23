@@ -102,12 +102,10 @@ export default function ServiceDetail({
         <h2 className="mt-3 text-3xl font-bold text-brand-blue-light sm:text-4xl">
           {service.title}
         </h2>
-        <p className="readable-copy mt-6 text-base font-medium leading-[1.9] text-brand-blue sm:text-lg sm:leading-[2]">
-          {service.summary}
-        </p>
-        <p className="mt-5 text-base font-medium leading-[1.9] text-white sm:text-lg sm:leading-[2]">
-          {service.tools.join(", ")}
-        </p>
+        <div className="mt-6 space-y-1 pl-5 text-base font-medium leading-[1.9] text-brand-blue sm:pl-6 sm:text-lg sm:leading-[2]">
+          <p>{service.summary}</p>
+          <p>사용프로그램 : {service.tools.join(", ")}</p>
+        </div>
       </div>
 
       <div
