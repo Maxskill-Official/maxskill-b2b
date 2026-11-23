@@ -156,11 +156,9 @@ export default function BusinessAreasContent({
                 <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
                   {area.title}
                 </h2>
-                {area.titleEn !== area.title && (
-                  <p className="mt-3 text-base font-medium text-sky-300 sm:text-lg">
-                    {area.titleEn}
-                  </p>
-                )}
+                <p className="mt-3 text-base font-medium text-sky-300 sm:text-lg">
+                  {area.titleEn}
+                </p>
               </div>
 
               <div className="min-w-0 space-y-3 overflow-x-auto lg:overflow-visible lg:pt-36 xl:pt-44">

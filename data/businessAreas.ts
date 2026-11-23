@@ -78,7 +78,7 @@ export const businessAreas: BusinessArea[] = [
   },
   {
     id: "LNG",
-    title: "가스/LNG",
+    title: "Gas/LNG",
     titleEn: "Gas/LNG",
     paragraphs: [
       "천연가스 및 산업용 가스를 생산·처리·저장·공급하는 플랜트",

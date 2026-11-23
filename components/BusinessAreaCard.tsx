@@ -21,11 +21,9 @@ export default function BusinessAreaCard({ area }: { area: BusinessArea }) {
 
       <div className="relative flex flex-1 flex-col">
         <h3 className="text-xl font-bold text-brand-blue-light">{area.title}</h3>
-        {area.titleEn !== area.title && (
-          <p className="mt-2 text-sm font-medium text-brand-blue">
-            {area.titleEn}
-          </p>
-        )}
+        <p className="mt-2 text-sm font-medium text-brand-blue">
+          {area.titleEn}
+        </p>
         <div className="readable-copy mt-5 flex-1 space-y-3 text-[0.95rem] text-brand-blue-light">
           {preview.map((text) => (
             <p key={text}>{text}</p>
